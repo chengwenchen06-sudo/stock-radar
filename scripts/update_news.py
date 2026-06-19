@@ -42,14 +42,16 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
 
     tasks = []
     for src in fetchers.BUILTIN_SOURCES:
-        if src["id"] == "cninfo":
-            tasks.append(("cninfo", src, fetchers.fetch_cninfo))
-        elif src["id"] == "sec_edgar_8k":
-            tasks.append(("sec_edgar_8k", src, fetchers.fetch_sec_edgar))
+        if src["id"] == "eastmoney_ann":
+            tasks.append(("eastmoney_ann", src, fetchers.fetch_eastmoney_ann))
+        elif src["id"] == "wallstcn_live":
+            tasks.append(("wallstcn_live", src, fetchers.fetch_wallstcn_live))
+        elif src["id"] == "wallstcn_art":
+            tasks.append(("wallstcn_art", src, fetchers.fetch_wallstcn_articles))
         elif src["id"] == "hkexnews":
             tasks.append(("hkexnews", src, fetchers.fetch_hkexnews))
-        elif src["kind"] == "rss":
-            tasks.append((src["id"], src, fetchers.fetch_rss_source))
+        elif src["id"] == "sec_edgar_8k":
+            tasks.append(("sec_edgar_8k", src, fetchers.fetch_sec_edgar))
 
     if opml_path and Path(opml_path).exists():
         tasks.append(("opml", {"id": "opml", "name": "私有OPML", "market": "global", "tier": 3, "url": opml_path},
@@ -233,7 +235,7 @@ def load_demo():
     raw = [
         {"title": "[600519 贵州茅台] 2024年三季报点评：营收同比增长15.2%，净利润增长13.1%",
          "url": "https://example.com/maotai-q3", "summary": "茅台发布三季度报告",
-         "market": "cn", "source": "巨潮资讯", "source_id": "cninfo", "source_tier_rank": 0,
+         "market": "cn", "source": "东方财富公告", "source_id": "eastmoney_ann", "source_tier_rank": 0,
          "published_at": (now - timedelta(hours=3)).isoformat()},
         {"title": "[AAPL] Apple Q4 earnings beat expectations, revenue $94.9B",
          "url": "https://example.com/aapl-q4", "summary": "Apple reported quarterly results",
@@ -241,11 +243,11 @@ def load_demo():
          "published_at": (now - timedelta(hours=5)).isoformat()},
         {"title": "美联储12月议息会议：维持利率不变，鲍威尔暗示2026年降息节奏放缓",
          "url": "https://example.com/fed-dec", "summary": "美联储议息会议",
-         "market": "us", "source": "Reuters Biz", "source_id": "reuters_biz", "source_tier_rank": 1,
+         "market": "us", "source": "华尔街见闻快讯", "source_id": "wallstcn_live", "source_tier_rank": 1,
          "published_at": (now - timedelta(hours=2)).isoformat()},
         {"title": "英伟达拟收购以色列AI芯片公司Mellanox剩余股份，交易金额50亿美元",
          "url": "https://example.com/nvda-acq", "summary": "并购重组",
-         "market": "us", "source": "MarketWatch", "source_id": "marketwatch", "source_tier_rank": 1,
+         "market": "us", "source": "华尔街见闻文章", "source_id": "wallstcn_art", "source_tier_rank": 1,
          "published_at": (now - timedelta(hours=8)).isoformat()},
         {"title": "[00700 腾讯控股] 宣布回购100亿港元股票",
          "url": "https://example.com/tencent-buyback", "summary": "回购",
@@ -253,23 +255,23 @@ def load_demo():
          "published_at": (now - timedelta(hours=6)).isoformat()},
         {"title": "证监会发布上市公司治理新规，要求独立董事比例提升至1/3",
          "url": "https://example.com/csrc-rule", "summary": "监管政策",
-         "market": "cn", "source": "证券时报", "source_id": "stcn", "source_tier_rank": 1,
+         "market": "cn", "source": "华尔街见闻快讯", "source_id": "wallstcn_live", "source_tier_rank": 1,
          "published_at": (now - timedelta(hours=10)).isoformat()},
         {"title": "特斯拉Model Y 2026款发布，起售价上调2000美元",
          "url": "https://example.com/tesla-y", "summary": "产品发布",
-         "market": "us", "source": "CNBC", "source_id": "cnbc", "source_tier_rank": 1,
+         "market": "us", "source": "华尔街见闻快讯", "source_id": "wallstcn_live", "source_tier_rank": 1,
          "published_at": (now - timedelta(hours=12)).isoformat()},
         {"title": "中国11月CPI同比上涨0.5%，高于市场预期",
          "url": "https://example.com/cpi-nov", "summary": "宏观数据",
-         "market": "cn", "source": "财新网", "source_id": "caixin", "source_tier_rank": 1,
+         "market": "cn", "source": "华尔街见闻文章", "source_id": "wallstcn_art", "source_tier_rank": 1,
          "published_at": (now - timedelta(hours=14)).isoformat()},
         {"title": "比亚迪11月新能源汽车销量50.6万辆，同比增长67%",
          "url": "https://example.com/byd-sales", "summary": "销量",
-         "market": "cn", "source": "华尔街见闻", "source_id": "wallstreetcn", "source_tier_rank": 1,
+         "market": "cn", "source": "华尔街见闻快讯", "source_id": "wallstcn_live", "source_tier_rank": 1,
          "published_at": (now - timedelta(hours=16)).isoformat()},
         {"title": "[02318 中国平安] 董事会审议通过50亿元H股回购方案",
          "url": "https://example.com/pingan-buyback", "summary": "回购方案",
-         "market": "hk", "source": "AAStocks", "source_id": "aastocks", "source_tier_rank": 2,
+         "market": "hk", "source": "港交所披露", "source_id": "hkexnews", "source_tier_rank": 0,
          "published_at": (now - timedelta(hours=18)).isoformat()},
     ]
     # 给 demo 条目补齐 id / label / importance 等字段，保持与 collect_all 一致
@@ -289,7 +291,7 @@ def load_demo():
     status = {
         s["id"]: {"site_id": s["id"], "site_name": s["name"], "ok": True, "error": "",
                   "item_count": 0, "elapsed_seconds": 0.1}
-        for s in fetchers.BUILTIN_SOURCES if s["kind"] == "rss"
+        for s in fetchers.BUILTIN_SOURCES
     }
     for it in base_items:
         sid = it["source_id"]

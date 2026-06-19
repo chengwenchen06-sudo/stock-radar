@@ -56,25 +56,36 @@ def classify(title: str, summary: str = "") -> str:
     """
     blob = f"{title} {summary or ''}".lower()
 
-    # 优先：精确短语（高特异性场景）
+    # 优先：精确短语（高特异性场景），含繁体
     precise = [
-        ("macro",      [r"cpi", r"ppi", r"gdp", r"pmi", r"非农", r"失业率", r"零售销售", r"通胀"]),
-        ("industry",   [r"产业链", r"出货量", r"销量", r"行业动态", r"产能"]),
+        ("macro",      [r"cpi", r"ppi", r"gdp", r"pmi", r"非农", r"失业率", r"零售销售", r"通胀",
+                       r"通脹", r"失業率"]),
+        ("industry",   [r"产业链", r"出货量", r"销量", r"行业动态", r"产能",
+                       r"出貨量", r"銷量", r"產能"]),
         ("mna",        [r"并购", r"收购", r"私有化", r"退市", r"分拆", r"重组",
+                       r"併購", r"收購", r"重組", r"重大資產重組",
                        r"acqui", r"merger", r"buyout", r"spin.?off", r"delist"]),
         ("policy",     [r"证监会", r"央行", r"美联储", r"sec\b", r"加息", r"降息",
+                       r"證監會", r"美聯儲", r"監管",
                        r"antitrust", r"tariff", r"sanction"]),
         ("earnings",   [r"财报", r"季报", r"年报", r"净利润", r"营收", r"eps",
-                       r"earnings", r"quarterly results"]),
+                       r"財報", r"季報", r"年報", r"淨利潤", r"營收",
+                       r"业绩", r"盈利", r"全年業績", r"中期業績",
+                       r"earnings", r"quarterly results", r"interim results"]),
         ("capital",    [r"回购", r"分红", r"派息", r"增发", r"配股", r"ipo",
+                       r"回購", r"分紅", r"增發", r"股東回報",
                        r"buyback", r"dividend", r"offering"]),
         ("product",    [r"发布", r"新品", r"上市", r"芯片", r"车型",
+                       r"發布", r"車型",
                        r"launch", r"unveil", r"ship"]),
         ("management", [r"ceo", r"cfo", r"董事长", r"总经理", r"辞职", r"任命",
+                       r"董事長", r"總經理", r"辭職", r"董事會",
                        r"resign", r"appoint"]),
         ("market",     [r"大盘", r"开盘", r"收盘", r"恒指", r"hang seng",
+                       r"大盤", r"開盤", r"收盤",
                        r"nasdaq", r"s&p", r"dow"]),
         ("guidance",   [r"业绩指引", r"业绩预告", r"业绩快报",
+                       r"業績指引", r"業績預告", r"業績快報",
                        r"guidance", r"outlook", r"preliminary"]),
     ]
     for label, patterns in precise:
