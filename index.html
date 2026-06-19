@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Radar · 24h 股票/财经信号雷达</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <span class="logo">📈</span>
+        <div>
+          <h1>Stock Radar</h1>
+          <p class="subtitle">24 小时股票/财经信号雷达 · 覆盖 A 股 / 港股 / 美股</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span id="data-meta">加载中…</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs container">
+    <button class="tab active" data-view="signal">🎯 信号</button>
+    <button class="tab" data-view="all">📰 全部</button>
+    <button class="tab" data-view="stories">🧩 故事线</button>
+    <button class="tab" data-view="daily">📋 日报</button>
+    <button class="tab" data-view="status">🩺 信源健康</button>
+  </nav>
+
+  <main class="container">
+    <!-- 筛选区 -->
+    <section class="filters">
+      <div class="filter-group">
+        <label>市场</label>
+        <div class="chips" id="market-chips">
+          <button class="chip active" data-market="all">全部</button>
+          <button class="chip" data-market="cn">A股</button>
+          <button class="chip" data-market="hk">港股</button>
+          <button class="chip" data-market="us">美股</button>
+          <button class="chip" data-market="global">全球</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <label>分类</label>
+        <div class="chips" id="label-chips">
+          <button class="chip active" data-label="all">全部</button>
+          <button class="chip" data-label="earnings">财报业绩</button>
+          <button class="chip" data-label="guidance">业绩指引</button>
+          <button class="chip" data-label="mna">并购重组</button>
+          <button class="chip" data-label="policy">监管政策</button>
+          <button class="chip" data-label="macro">宏观数据</button>
+          <button class="chip" data-label="product">产品业务</button>
+          <button class="chip" data-label="capital">资本运作</button>
+          <button class="chip" data-label="management">管理层</button>
+          <button class="chip" data-label="industry">行业动态</button>
+          <button class="chip" data-label="market">大盘行情</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <label>重要性</label>
+        <div class="chips" id="importance-chips">
+          <button class="chip active" data-importance="all">全部</button>
+          <button class="chip" data-importance="high">高</button>
+          <button class="chip" data-importance="medium">中</button>
+          <button class="chip" data-importance="low">低</button>
+        </div>
+      </div>
+      <div class="filter-group filter-search">
+        <label>搜索</label>
+        <input id="search" type="search" placeholder="搜股票代码/标题/关键词…">
+      </div>
+    </section>
+
+    <!-- Signal 视图 -->
+    <section id="view-signal" class="view active">
+      <div class="section-header">
+        <h2>🎯 高价值信号</h2>
+        <p>按信源权威度 + 重要性打分排序，优先一手公告 + 财报/并购/政策类事件</p>
+      </div>
+      <ul id="signal-list" class="item-list"></ul>
+    </section>
+
+    <!-- 全部 -->
+    <section id="view-all" class="view">
+      <div class="section-header">
+        <h2>📰 全部条目</h2>
+        <p id="all-count"></p>
+      </div>
+      <ul id="all-list" class="item-list"></ul>
+    </section>
+
+    <!-- 故事线 -->
+    <section id="view-stories" class="view">
+      <div class="section-header">
+        <h2>🧩 合并后的故事线</h2>
+        <p>同一事件的多个报道合并展示</p>
+      </div>
+      <ul id="stories-list" class="item-list"></ul>
+    </section>
+
+    <!-- 日报 -->
+    <section id="view-daily" class="view">
+      <div class="section-header">
+        <h2>📋 每日精选</h2>
+        <p>Top 20 重要事件</p>
+      </div>
+      <ul id="daily-list" class="item-list"></ul>
+    </section>
+
+    <!-- 信源健康 -->
+    <section id="view-status" class="view">
+      <div class="section-header">
+        <h2>🩺 信源健康</h2>
+        <p>每个信源的抓取状态、耗时、产出条数</p>
+      </div>
+      <table id="status-table" class="status-table">
+        <thead><tr><th>信源</th><th>状态</th><th>条数</th><th>耗时</th><th>错误</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>
+      数据由 GitHub Actions 每日自动更新 ·
+      <a href="https://github.com/LearnPrompt/stock-radar" target="_blank" rel="noopener">GitHub</a> ·
+      基于 AI News Radar 架构 fork
+    </p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

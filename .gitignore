@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+data/*.json
+!data/.gitkeep
+feeds/follow.opml
+.DS_Store

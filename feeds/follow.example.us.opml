@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Stock Radar — 私有信源示例（SEC EDGAR + 港交所 + 巨潮，按需复制到 follow.opml）</title>
+    <dateCreated>2026-06-19T00:00:00Z</dateCreated>
+  </head>
+  <body>
+    <!--
+      这些是生成式 / JSON 接口，不是传统 RSS。
+      项目里的 fetcher 会单独抓它们，无需填到 follow.opml 里。
+      保留此文件仅供维护者参考哪些是「自带 fetcher 处理」的源。
+    -->
+    <!-- A股 官方公告 -->
+    <!-- 巨潮资讯网：http://www.cninfo.com.cn/new/disclosure  （fetcher 走 POST API） -->
+
+    <!-- 美股 官方公告 -->
+    <!-- SEC EDGAR Form 8-K：https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&type=8-K （fetcher 走 SEC API） -->
+
+    <!-- 港股 官方公告 -->
+    <!-- 港交所 HKEXnews：https://www1.hkexnews.hk/ （fetcher 走 listfile 接口） -->
+  </body>
+</opml>

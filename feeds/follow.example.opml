@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Stock Radar — 示例信源（公开）</title>
+    <dateCreated>2026-06-19T00:00:00Z</dateCreated>
+  </head>
+  <body>
+    <!-- A股 财经媒体 -->
+    <outline text="财新网" type="rss" xmlUrl="https://www.caixin.com/feed/" htmlUrl="https://www.caixin.com/"/>
+    <outline text="华尔街见闻" type="rss" xmlUrl="https://wallstreetcn.com/rss" htmlUrl="https://wallstreetcn.com/"/>
+    <outline text="证券时报" type="rss" xmlUrl="https://www.stcn.com/rss/stcn.xml" htmlUrl="https://www.stcn.com/"/>
+
+    <!-- 美股 财经媒体 -->
+    <outline text="Reuters Business" type="rss" xmlUrl="https://feeds.reuters.com/reuters/businessNews" htmlUrl="https://www.reuters.com/business"/>
+    <outline text="MarketWatch Real-time" type="rss" xmlUrl="https://feeds.marketwatch.com/marketwatch/topstories/" htmlUrl="https://www.marketwatch.com/"/>
+    <outline text="CNBC Top News" type="rss" xmlUrl="https://www.cnbc.com/id/100003114/device/rss/rss.html" htmlUrl="https://www.cnbc.com/"/>
+
+    <!-- 港股 -->
+    <outline text="AAStocks" type="rss" xmlUrl="https://www.aastocks.com/sc/stocks/analysis/company-fundamental/news/rss.aspx" htmlUrl="https://www.aastocks.com/"/>
+  </body>
+</opml>
