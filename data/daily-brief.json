@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T15:01:17.102259+00:00",
+  "generated_at": "2026-06-19T15:22:08.478833+00:00",
   "total_items": 20,
   "items": [
     {
@@ -19,7 +19,7 @@
         "raw_label": "other",
         "market_code": "1"
       },
-      "id": "a763666e1c86",
+      "id": "199159cfbeb1",
       "label": "mna",
       "label_zh": "并购重组",
       "market_zh": "A股",
@@ -43,7 +43,7 @@
         "raw_label": "other",
         "market_code": "1"
       },
-      "id": "8025c6566c5d",
+      "id": "b3cdd31201e3",
       "label": "earnings",
       "label_zh": "财报业绩",
       "market_zh": "A股",
@@ -67,7 +67,7 @@
         "raw_label": "other",
         "market_code": "1"
       },
-      "id": "7a9bd3db0f9a",
+      "id": "3e4d1bf3b7e9",
       "label": "mna",
       "label_zh": "并购重组",
       "market_zh": "A股",
@@ -91,7 +91,7 @@
         "raw_label": "other",
         "market_code": "1"
       },
-      "id": "d9caa1a00341",
+      "id": "de6b65f1ecf5",
       "label": "mna",
       "label_zh": "并购重组",
       "market_zh": "A股",
@@ -115,7 +115,7 @@
         "raw_label": "other",
         "market_code": "1"
       },
-      "id": "547f995f2b66",
+      "id": "9ea603963979",
       "label": "earnings",
       "label_zh": "财报业绩",
       "market_zh": "A股",
@@ -125,7 +125,7 @@
     {
       "title": "截至二零二六年三月三十一日止年度之全年業績公告",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802255_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196942+00:00",
+      "published_at": "2026-06-19T15:21:24.907432+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -145,7 +145,7 @@
         "STOCK_CODE": "00567",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802255_c.pdf"
       },
-      "id": "ac360049203f",
+      "id": "6db68ef334b9",
       "label": "earnings",
       "label_zh": "财报业绩",
       "market_zh": "港股",
@@ -155,7 +155,7 @@
     {
       "title": "海外監管公告 - 三年（2026 &ndash; 2028年）股東回報規劃、關於無需編製前次募集資金使用情況報告的公告、關於公司向特定對象發行A股股票不存在直接或通過利益相關方向參與認購的投資者提供財務資助或補償事宜的公告、關於向特定對象發行A股股票預案披露的提示性公告、關於向特定對象發行A股股票攤薄即期回報與採取填補措施及相關主體承諾的公告、關於最近五年未被證券監管部門和交易所處罰或採取監管措施的公告、向特定對象發行A股股票方案的論證分析報告、向特定對象發行A股股票預案、向特定對象發行A股股票募集資金使用的可行性分析報告、募集資金使用管理辦法、第九屆董事會審計委員會關於公司向特定對象發行A股股票的書面審核意見",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802256_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196933+00:00",
+      "published_at": "2026-06-19T15:21:24.907426+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -175,7 +175,7 @@
         "STOCK_CODE": "00107",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802256_c.pdf"
       },
-      "id": "abe031ec2d06",
+      "id": "63e9f037e496",
       "label": "policy",
       "label_zh": "监管政策",
       "market_zh": "港股",
@@ -185,7 +185,7 @@
     {
       "title": "海外監管公告 - 北京市中倫（上海）律師事務所關於中證中小投資者服務中心有限責任公司公開征集廣州廣合科技股份有限公司表決權的法律意見書",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802276_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196857+00:00",
+      "published_at": "2026-06-19T15:21:24.907372+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -205,7 +205,7 @@
         "STOCK_CODE": "01989",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802276_c.pdf"
       },
-      "id": "5b0dec51d9f4",
+      "id": "887106b455ae",
       "label": "policy",
       "label_zh": "监管政策",
       "market_zh": "港股",
@@ -215,7 +215,7 @@
     {
       "title": "海外監管公告 - 上海市錦天城（深圳）律師事務所關於廣州廣合科技股份有限公司2025年年度股東會的法律意見書",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802278_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196849+00:00",
+      "published_at": "2026-06-19T15:21:24.907366+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -235,7 +235,7 @@
         "STOCK_CODE": "01989",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802278_c.pdf"
       },
-      "id": "0b7823aaecc5",
+      "id": "5c0a70e395a6",
       "label": "policy",
       "label_zh": "监管政策",
       "market_zh": "港股",
@@ -245,7 +245,7 @@
     {
       "title": "海外監管公告",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802280_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196841+00:00",
+      "published_at": "2026-06-19T15:21:24.907360+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -265,7 +265,7 @@
         "STOCK_CODE": "01528",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802280_c.pdf"
       },
-      "id": "0e49efd85e3b",
+      "id": "ac0338bf7c25",
       "label": "policy",
       "label_zh": "监管政策",
       "market_zh": "港股",
@@ -275,7 +275,7 @@
     {
       "title": "盈利警告",
       "url": "/listedco/listconews/gem/2026/0618/2026061802283_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196832+00:00",
+      "published_at": "2026-06-19T15:21:24.907354+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -295,7 +295,7 @@
         "STOCK_CODE": "08619",
         "FILE_LINK": "/listedco/listconews/gem/2026/0618/2026061802283_c.pdf"
       },
-      "id": "ad507b83219f",
+      "id": "257000e0fd8d",
       "label": "earnings",
       "label_zh": "财报业绩",
       "market_zh": "港股",
@@ -305,7 +305,7 @@
     {
       "title": "海外監管公告 - 廣州廣合科技股份有限公司關於回購註銷部分限制性股票減少註冊資本暨通知債權人的公告",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802290_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196798+00:00",
+      "published_at": "2026-06-19T15:21:24.907329+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -325,7 +325,7 @@
         "STOCK_CODE": "01989",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802290_c.pdf"
       },
-      "id": "ddba8d4a421d",
+      "id": "77a7b7e33d0a",
       "label": "policy",
       "label_zh": "监管政策",
       "market_zh": "港股",
@@ -335,7 +335,7 @@
     {
       "title": "截至二零二六年三月三十一日止年度之全年業績公告",
       "url": "/listedco/listconews/gem/2026/0618/2026061802305_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196736+00:00",
+      "published_at": "2026-06-19T15:21:24.907276+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -355,7 +355,7 @@
         "STOCK_CODE": "08320",
         "FILE_LINK": "/listedco/listconews/gem/2026/0618/2026061802305_c.pdf"
       },
-      "id": "2e35def54893",
+      "id": "8d5ccd9c635f",
       "label": "earnings",
       "label_zh": "财报业绩",
       "market_zh": "港股",
@@ -365,7 +365,7 @@
     {
       "title": "2025&#x2f;26 年報",
       "url": "/listedco/listconews/gem/2026/0618/2026061802307_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196726+00:00",
+      "published_at": "2026-06-19T15:21:24.907269+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -385,7 +385,7 @@
         "STOCK_CODE": "08320",
         "FILE_LINK": "/listedco/listconews/gem/2026/0618/2026061802307_c.pdf"
       },
-      "id": "3c50aeb858ec",
+      "id": "676ee6153fbd",
       "label": "earnings",
       "label_zh": "财报业绩",
       "market_zh": "港股",
@@ -395,7 +395,7 @@
     {
       "title": "董事會審計委員會工作細則",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802285_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196824+00:00",
+      "published_at": "2026-06-19T15:21:24.907348+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -415,7 +415,7 @@
         "STOCK_CODE": "06866",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802285_c.pdf"
       },
-      "id": "595b370f29aa",
+      "id": "d894fdcfb794",
       "label": "management",
       "label_zh": "管理层",
       "market_zh": "港股",
@@ -425,7 +425,7 @@
     {
       "title": "董事會審計委員會工作細則",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802287_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196815+00:00",
+      "published_at": "2026-06-19T15:21:24.907341+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -445,7 +445,7 @@
         "STOCK_CODE": "01528",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802287_c.pdf"
       },
-      "id": "0c36a6c2b7f6",
+      "id": "084c586d6a15",
       "label": "management",
       "label_zh": "管理层",
       "market_zh": "港股",
@@ -455,7 +455,7 @@
     {
       "title": "董事會薪酬與考核委員會工作細則",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802293_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196790+00:00",
+      "published_at": "2026-06-19T15:21:24.907322+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -475,7 +475,7 @@
         "STOCK_CODE": "01528",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802293_c.pdf"
       },
-      "id": "badfa54c211c",
+      "id": "116fcb55c99e",
       "label": "management",
       "label_zh": "管理层",
       "market_zh": "港股",
@@ -485,7 +485,7 @@
     {
       "title": "董事會提名委員會工作細則",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802297_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196772+00:00",
+      "published_at": "2026-06-19T15:21:24.907310+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -505,7 +505,7 @@
         "STOCK_CODE": "01528",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802297_c.pdf"
       },
-      "id": "2cc7a45fef0c",
+      "id": "3feacb504a51",
       "label": "management",
       "label_zh": "管理层",
       "market_zh": "港股",
@@ -515,7 +515,7 @@
     {
       "title": "董事會薪酬與考核委員會工作細則",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802299_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196763+00:00",
+      "published_at": "2026-06-19T15:21:24.907303+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -535,7 +535,7 @@
         "STOCK_CODE": "06866",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802299_c.pdf"
       },
-      "id": "a97e3f6c7a54",
+      "id": "b992724304cc",
       "label": "management",
       "label_zh": "管理层",
       "market_zh": "港股",
@@ -545,7 +545,7 @@
     {
       "title": "董事會戰略與投資委員會工作細則",
       "url": "/listedco/listconews/sehk/2026/0618/2026061802301_c.pdf",
-      "published_at": "2026-06-19T15:01:01.196755+00:00",
+      "published_at": "2026-06-19T15:21:24.907296+00:00",
       "source": "港交所披露",
       "source_id": "hkexnews",
       "source_tier_rank": 0,
@@ -565,7 +565,7 @@
         "STOCK_CODE": "01528",
         "FILE_LINK": "/listedco/listconews/sehk/2026/0618/2026061802301_c.pdf"
       },
-      "id": "200c77fe575c",
+      "id": "fe74aa6bdf35",
       "label": "management",
       "label_zh": "管理层",
       "market_zh": "港股",

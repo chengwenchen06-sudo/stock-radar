@@ -42,16 +42,25 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
 
     tasks = []
     for src in fetchers.BUILTIN_SOURCES:
-        if src["id"] == "eastmoney_ann":
-            tasks.append(("eastmoney_ann", src, fetchers.fetch_eastmoney_ann))
-        elif src["id"] == "wallstcn_live":
-            tasks.append(("wallstcn_live", src, fetchers.fetch_wallstcn_live))
-        elif src["id"] == "wallstcn_art":
-            tasks.append(("wallstcn_art", src, fetchers.fetch_wallstcn_articles))
-        elif src["id"] == "hkexnews":
-            tasks.append(("hkexnews", src, fetchers.fetch_hkexnews))
-        elif src["id"] == "sec_edgar_8k":
-            tasks.append(("sec_edgar_8k", src, fetchers.fetch_sec_edgar))
+        sid = src["id"]
+        if sid == "eastmoney_ann":
+            tasks.append((sid, src, fetchers.fetch_eastmoney_ann))
+        elif sid == "wallstcn_live":
+            tasks.append((sid, src, fetchers.fetch_wallstcn_live))
+        elif sid == "wallstcn_art":
+            tasks.append((sid, src, fetchers.fetch_wallstcn_articles))
+        elif sid == "hkexnews":
+            tasks.append((sid, src, fetchers.fetch_hkexnews))
+        elif sid == "sec_edgar_8k":
+            tasks.append((sid, src, fetchers.fetch_sec_edgar))
+        elif sid == "akshare_zt":
+            tasks.append((sid, src, fetchers.fetch_akshare_zt))
+        elif sid == "akshare_zbgc":
+            tasks.append((sid, src, fetchers.fetch_akshare_zbgc))
+        elif sid == "akshare_eco":
+            tasks.append((sid, src, fetchers.fetch_akshare_eco))
+        elif sid == "akshare_news":
+            tasks.append((sid, src, fetchers.fetch_akshare_news))
 
     if opml_path and Path(opml_path).exists():
         tasks.append(("opml", {"id": "opml", "name": "私有OPML", "market": "global", "tier": 3, "url": opml_path},
@@ -95,7 +104,7 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
             ts = ts.replace(tzinfo=timezone.utc)
         if ts < cutoff:
             continue
-        h = _hash_id(it["url"])
+        h = _hash_id(it["url"] + "|" + it.get("title", ""))
         if h in seen:
             continue
         seen.add(h)
@@ -279,7 +288,7 @@ def load_demo():
         label = classify.classify(it.get("title", ""), it.get("summary", ""))
         imp_label, imp_score = classify.importance(it)
         it.update({
-            "id": _hash_id(it["url"]),
+            "id": _hash_id(it["url"] + "|" + it.get("title", "")),
             "label": label,
             "label_zh": classify.LABEL_ZH.get(label, label),
             "market_zh": classify.MARKET_ZH.get(it.get("market", "global"), "全球"),

@@ -49,7 +49,16 @@ BUILTIN_SOURCES = [
     # 美股公告（一手）
     {"id": "sec_edgar_8k",   "name": "SEC EDGAR 8-K", "market": "us",     "tier": 0, "kind": "json",
      "url": "https://data.sec.gov/submissions/CIK0000320193.json"},
+    # AkShare 异动层（A 股实时）
+    {"id": "akshare_zt",     "name": "AkShare 涨停池",   "market": "cn", "tier": 1, "kind": "akshare", "url": "zt"},
+    {"id": "akshare_zbgc",   "name": "AkShare 炸板池",   "market": "cn", "tier": 1, "kind": "akshare", "url": "zbgc"},
+    {"id": "akshare_eco",    "name": "AkShare 财经日历", "market": "global", "tier": 1, "kind": "akshare", "url": "eco"},
+    {"id": "akshare_news",   "name": "AkShare 个股新闻", "market": "cn", "tier": 2, "kind": "akshare", "url": "news"},
 ]
+
+# AkShare 个股新闻关注列表（持仓/自选股）
+WATCHLIST = ["600519", "000001", "000002", "600036", "601318", "300750", "688981"]
+
 
 # ---------- 通用 fetcher ----------
 
@@ -389,4 +398,175 @@ def _parse_rss(url: str, source_name: str, market: str, tier: int, limit: int = 
             {"id": source_name, "name": source_name, "market": market, "tier": tier, "kind": "rss"},
             summary=(e.get("summary") or "")[:500],
         ))
+    return out
+
+# ---------- AkShare 异动层（A 股实时） ----------
+
+def _ak_dt_now():
+    return datetime.now(timezone.utc)
+
+def _ak_dt_today(hour: int, minute: int = 0):
+    now = datetime.now(timezone.utc)
+    return now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+
+def fetch_akshare_zt(session, src) -> list[dict]:
+    """涨停池：当日涨停个股清单（异动信号 / 当日实时）。"""
+    out = []
+    try:
+        import akshare as ak
+        today = datetime.now().strftime("%Y%m%d")
+        df = ak.stock_zt_pool_em(date=today)
+    except Exception as e:
+        log.warning("akshare zt failed: %s", e)
+        return out
+    for _, row in df.iterrows():
+        code = str(row.get("代码", "")).strip()
+        name = str(row.get("名称", "")).strip()
+        if not code or not name:
+            continue
+        change = row.get("涨跌幅", 0)
+        first_time = str(row.get("首次封板时间", "")).strip()
+        ts = _ak_dt_now()
+        try:
+            if len(first_time) == 6 and first_time.isdigit():
+                ts = _ak_dt_today(int(first_time[:2]), int(first_time[2:4]))
+        except Exception:
+            pass
+        seal = row.get("封板资金", 0)
+        limit_n = row.get("连板数", 0)
+        industry = str(row.get("所属行业", "")).strip()
+        title = f"[{code} {name}] 涨停 +{change:.2f}% 连板{limit_n}板（{industry}）"
+        summary = f"首次封板 {first_time or '-'} · 封板资金 {seal/1e8:.2f}亿"
+        url = f"https://quote.eastmoney.com/concept/{'sh' if str(code).startswith('6') else 'sz'}{code}.html"
+        out.append(_mk_item(
+            title, url, ts, src, summary=summary,
+            raw={"code": code, "name": name, "change": float(change),
+                 "limit_n": int(limit_n), "industry": industry, "seal_money": float(seal)},
+        ))
+    return out
+
+def fetch_akshare_zbgc(session, src) -> list[dict]:
+    """炸板池：触及涨停后开板的个股（异动信号）。"""
+    out = []
+    try:
+        import akshare as ak
+        today = datetime.now().strftime("%Y%m%d")
+        df = ak.stock_zt_pool_zbgc_em(date=today)
+    except Exception as e:
+        log.warning("akshare zbgc failed: %s", e)
+        return out
+    for _, row in df.iterrows():
+        code = str(row.get("代码", "")).strip()
+        name = str(row.get("名称", "")).strip()
+        if not code or not name:
+            continue
+        change = row.get("涨跌幅", 0)
+        first_time = str(row.get("首次封板时间", "")).strip()
+        zb_n = row.get("炸板次数", 0)
+        industry = str(row.get("所属行业", "")).strip()
+        ts = _ak_dt_now()
+        try:
+            if len(first_time) == 6 and first_time.isdigit():
+                ts = _ak_dt_today(int(first_time[:2]), int(first_time[2:4]))
+        except Exception:
+            pass
+        title = f"[{code} {name}] 炸板 {zb_n}次 涨{change:.2f}%（{industry}）"
+        summary = f"首次封板 {first_time or '-'} · 炸板 {zb_n} 次"
+        url = f"https://quote.eastmoney.com/concept/{'sh' if str(code).startswith('6') else 'sz'}{code}.html"
+        out.append(_mk_item(
+            title, url, ts, src, summary=summary,
+            raw={"code": code, "name": name, "change": float(change),
+                 "zb_n": int(zb_n), "industry": industry},
+        ))
+    return out
+
+def fetch_akshare_eco(session, src) -> list[dict]:
+    """财经日历：未来 7 天重要经济数据 / 央行决议。"""
+    out = []
+    try:
+        import akshare as ak
+        from datetime import date as _date, timedelta as _td
+        dfs = []
+        for d in range(0, 8):
+            ds = (_date.today() + _td(days=d)).strftime("%Y%m%d")
+            try:
+                df = ak.news_economic_baidu(date=ds)
+                if df is not None and len(df):
+                    dfs.append(df)
+            except Exception:
+                continue
+        if not dfs:
+            return out
+        import pandas as pd
+        full = pd.concat(dfs, ignore_index=True)
+    except Exception as e:
+        log.warning("akshare eco failed: %s", e)
+        return out
+    for _, row in full.iterrows():
+        region = str(row.get("地区", "")).strip()
+        event = str(row.get("事件", "")).strip()
+        importance = row.get("重要性", 1)
+        date_s = str(row.get("日期", "")).strip()
+        time_s = str(row.get("时间", "")).strip()
+        if not event:
+            continue
+        try:
+            imp_val = float(importance) if importance not in (None, "") else 1
+        except Exception:
+            imp_val = 1
+        # 数据重要性只有 1-2，所以全收，按地区分级：
+        # 美国 / 中国 全收；其他地区只收重要性 = 2
+        if region not in ("美国", "中国") and imp_val < 2:
+            continue
+        ts = _ak_dt_now()
+        try:
+            if date_s and time_s:
+                ts = datetime.strptime(f"{date_s} {time_s}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+        except Exception:
+            pass
+        title = f"[{region}] {event}"
+        summary = f"公布:{row.get('公布','-')} 预期:{row.get('预期','-')} 前值:{row.get('前值','-')} 重要性:{imp_val}"
+        market = "us" if region in ("美国", "北美洲") else ("cn" if region in ("中国",) else "global")
+        src_market = {**src, "market": market}
+        out.append(_mk_item(
+            title, "https://www.cls.cn/telegraph", ts, src_market, summary=summary,
+            raw={"region": region, "importance": imp_val, "event": event,
+                 "date": date_s, "time": time_s},
+        ))
+    return out
+
+def fetch_akshare_news(session, src) -> list[dict]:
+    """关注列表个股新闻（按 watchlist）。"""
+    out = []
+    try:
+        import akshare as ak
+        watch = WATCHLIST
+    except Exception as e:
+        log.warning("akshare news init failed: %s", e)
+        return out
+    for code in watch:
+        try:
+            df = ak.stock_news_em(symbol=code)
+        except Exception as e:
+            log.warning("akshare news %s failed: %s", code, e)
+            continue
+        for _, row in df.iterrows():
+            title = str(row.get("新闻标题", "")).strip()
+            url = str(row.get("新闻链接", "")).strip()
+            src_name = str(row.get("文章来源", "")).strip()
+            pub = str(row.get("发布时间", "")).strip()
+            ts = _ak_dt_now()
+            try:
+                ts = datetime.strptime(pub, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
+            except Exception:
+                pass
+            if not title:
+                continue
+            full_title = f"[{code}] {title}"
+            out.append(_mk_item(
+                full_title, url or f"https://so.eastmoney.com/news/s?keyword={code}",
+                ts, src, summary=f"来源:{src_name}",
+                raw={"code": code, "source_name": src_name},
+            ))
+        time.sleep(0.3)
     return out
