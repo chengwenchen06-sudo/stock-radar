@@ -45,10 +45,14 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
         sid = src["id"]
         if sid == "eastmoney_ann":
             tasks.append((sid, src, fetchers.fetch_eastmoney_ann))
+        elif sid == "cninfo":
+            tasks.append((sid, src, fetchers.fetch_cninfo))
         elif sid == "wallstcn_live":
             tasks.append((sid, src, fetchers.fetch_wallstcn_live))
         elif sid == "wallstcn_art":
             tasks.append((sid, src, fetchers.fetch_wallstcn_articles))
+        elif sid == "cls_telegraph":
+            tasks.append((sid, src, fetchers.fetch_cls_telegraph))
         elif sid == "hkexnews":
             tasks.append((sid, src, fetchers.fetch_hkexnews))
         elif sid == "sec_edgar_8k":
@@ -57,6 +61,10 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
             tasks.append((sid, src, fetchers.fetch_akshare_zt))
         elif sid == "akshare_zbgc":
             tasks.append((sid, src, fetchers.fetch_akshare_zbgc))
+        elif sid == "akshare_sector_flow":
+            tasks.append((sid, src, fetchers.fetch_akshare_sector_flow))
+        elif sid == "akshare_lhb":
+            tasks.append((sid, src, fetchers.fetch_akshare_lhb))
         elif sid == "akshare_eco":
             tasks.append((sid, src, fetchers.fetch_akshare_eco))
         elif sid == "akshare_news":
