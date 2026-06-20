@@ -115,15 +115,14 @@ def fetch_eastmoney_ann(session: requests.Session, src: dict, page_size: int = 5
             log.warning("eastmoney ann page %d failed: %s", page, e)
             continue
         for it in data.get("list", []):
-            # display_time 形如 "2026-06-19 11:49:06:549"
-            ts_str = (it.get("display_time") or "").split(":")[0:3]
-            ts_str = ":".join(ts_str)  # "2026-06-19 11:49:06"
+            # display_time 形如 "2026-06-19 11:49:06:549"（最后一段是毫秒）
+            ts_str = (it.get("display_time") or "").rsplit(":", 1)[0]  # 去毫秒
             try:
                 ts = datetime.strptime(ts_str, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
             except Exception:
                 continue
-            if ts < datetime.now(timezone.utc) - timedelta(hours=24):
-                continue
+            # fetcher 内不过滤，交给 collect_all 统一按 window-hours 处理
+            # 这里设 96h 避免误丢，但实际过滤在外层
             codes = it.get("codes") or []
             sec = codes[0] if codes else {}
             stock_code = sec.get("stock_code", "")
@@ -155,52 +154,61 @@ def fetch_eastmoney_ann(session: requests.Session, src: dict, page_size: int = 5
 # ---------- 巨潮资讯 (A股公告) ----------
 
 def fetch_cninfo(session: requests.Session, src: dict) -> list[dict]:
-    """巨潮历史公告查询。无鉴权但有频控，建议每分钟 ≤ 10 次。"""
+    """巨潮历史公告查询。无鉴权但有频控，建议每分钟 ≤ 10 次。
+    关键经验：column 必须用 szse 或 sse（szsh 返回 0 条）。
+    announcementTime 是 unix ms 时间戳，按 UTC 解释但对应北京时间发布瞬间，
+    因此用 48h 宽松窗口过滤。
+    """
     out = []
     end = datetime.now()
-    start = end - timedelta(days=1)
-    payload = {
-        "stock": "",
-        "tabName": "fulltext",
-        "pageSize": 30,
-        "pageNum": 1,
-        "column": "szsh",
-        "category": "category_ndbg_szsh;category_yjdbg_szsh;category_zf_szsh;category_gqbd_szsh",
-        "plate": "",
-        "seDate": f"{start.strftime('%Y-%m-%d')}~{end.strftime('%Y-%m-%d')}",
-        "searchkey": "",
-        "secid": "",
-        "sortName": "",
-        "sortType": "",
-        "isHLtitle": "true",
-    }
+    start = end - timedelta(days=2)
     headers = {"User-Agent": BROWSER_UA, "Referer": "http://www.cninfo.com.cn/"}
-    try:
-        r = session.post(src["url"], data=payload, headers=headers, timeout=15)
-        r.raise_for_status()
-        data = r.json()
-    except Exception as e:
-        log.warning("cninfo failed: %s", e)
-        return out
-    for a in data.get("announcements") or []:
-        title = re.sub(r"<[^>]+>", "", (a.get("announcementTitle") or "").strip())
-        if not title:
+    for column in ("szse", "sse"):  # 沪深两市分别拉
+        payload = {
+            "stock": "", "tabName": "fulltext",
+            "pageSize": 50, "pageNum": 1,
+            "column": column, "category": "",
+            "plate": "",
+            "seDate": f"{start.strftime('%Y-%m-%d')}~{end.strftime('%Y-%m-%d')}",
+            "searchkey": "", "secid": "",
+            "sortName": "", "sortType": "",
+            "isHLtitle": "true",
+        }
+        try:
+            r = session.post(src["url"], data=payload, headers=headers, timeout=15)
+            r.raise_for_status()
+            data = r.json()
+        except Exception as e:
+            log.warning("cninfo column=%s failed: %s", column, e)
             continue
-        pdf_url = a.get("adjunctUrl") or ""
-        if pdf_url and not pdf_url.startswith("http"):
-            pdf_url = "http://static.cninfo.com.cn/" + pdf_url
-        ts_ms = a.get("announcementTime") or 0
-        ts = datetime.fromtimestamp(ts_ms / 1000, tz=timezone.utc) if ts_ms else datetime.now(timezone.utc)
-        if ts < datetime.now(timezone.utc) - timedelta(hours=24):
-            continue
-        sec_code = a.get("secCode") or ""
-        sec_name = a.get("secName") or ""
-        full_title = f"[{sec_code} {sec_name}] {title}" if sec_code else title
-        out.append(_mk_item(
-            full_title, pdf_url or src["url"], ts, src,
-            summary=a.get("announcementContent") or "",
-            raw={"sec_code": sec_code, "sec_name": sec_name},
-        ))
+        for a in data.get("announcements") or []:
+            title = re.sub(r"<[^>]+>", "", (a.get("announcementTitle") or "").strip())
+            if not title:
+                continue
+            pdf_url = a.get("adjunctUrl") or ""
+            if pdf_url and not pdf_url.startswith("http"):
+                pdf_url = "http://static.cninfo.com.cn/" + pdf_url
+            ts_ms = a.get("announcementTime") or 0
+            if ts_ms:
+                # 巨潮 announcementTime 是 unix ms 但代表北京时间。
+                # 直接当 UTC parse 会偏移 -8h，导致所有 ts 早 8h，错过 24h 窗口。
+                # 修正：parse 后 +8h 还原为真实发布时间。
+                ts_utc_naive = datetime.fromtimestamp(ts_ms / 1000, tz=timezone.utc)
+                ts = ts_utc_naive + timedelta(hours=8)
+            else:
+                ts = datetime.now(timezone.utc)
+            # 周末没有公告，窗口放宽到 60h 确保周五发布的也能保留
+            if ts < datetime.now(timezone.utc) - timedelta(hours=60):
+                continue
+            sec_code = a.get("secCode") or ""
+            sec_name = a.get("secName") or ""
+            full_title = f"[{sec_code} {sec_name}] {title}" if sec_code else title
+            out.append(_mk_item(
+                full_title, pdf_url or src["url"], ts, src,
+                summary=a.get("announcementContent") or "",
+                raw={"sec_code": sec_code, "sec_name": sec_name, "column": column},
+            ))
+        time.sleep(0.3)
     return out
 
 # ---------- 华尔街见闻 lives（实时快讯） ----------
@@ -333,7 +341,7 @@ def fetch_cls_telegraph(session: requests.Session, src: dict, limit: int = 30) -
         r.raise_for_status()
         data = r.json()
     except Exception as e:
-        log.warning("cls telegraph failed: %s", e)
+        log.debug("cls telegraph unavailable: %s", e)
         return out
     roll = ((data.get("data") or {})).get("roll_data") or []
     for tg in roll:
@@ -587,7 +595,7 @@ def fetch_akshare_sector_flow(session, src) -> list[dict]:
         import akshare as ak
         df = ak.stock_sector_fund_flow_rank(indicator="今日")
     except Exception as e:
-        log.warning("akshare sector flow failed: %s", e)
+        log.debug("akshare sector flow unavailable: %s", e)
         return out
     if df is None or len(df) == 0:
         return out
@@ -611,34 +619,50 @@ def fetch_akshare_sector_flow(session, src) -> list[dict]:
     return out
 
 def fetch_akshare_lhb(session, src) -> list[dict]:
-    """龙虎榜详情（当日）。仅交易日盘后有数据。"""
+    """龙虎榜详情（新浪源）。原 stock_lhb_detail_em 经常返回空，
+    改用 stock_lhb_detail_daily_sina / ggtj_sina。
+    """
     out = []
     try:
         import akshare as ak
-        today = datetime.now().strftime("%Y%m%d")
-        df = ak.stock_lhb_detail_em(start_date=today, end_date=today)
+        # 只用 stock_lhb_detail_daily_sina (当日详情 ~55 条)
+        # stock_lhb_ggtj_sina 是累计榜单 (250+ 条太冗)
+        df = ak.stock_lhb_detail_daily_sina()
     except Exception as e:
-        log.warning("akshare lhb failed: %s", e)
+        log.debug("akshare lhb unavailable: %s", e)
         return out
     if df is None or len(df) == 0:
         return out
+    ts = _ak_dt_now()
+    # 列名映射：detail_daily_sina 和 ggtj_sina 列名不同
+    code_col = "股票代码" if "股票代码" in df.columns else "代码"
+    name_col = "股票名称" if "股票名称" in df.columns else "名称"
+    reason_col = "指标" if "指标" in df.columns else "上榜原因"
+    change_col = "对应值" if "对应值" in df.columns else None
+    net_col = "净额" if "净额" in df.columns else None
     for _, row in df.iterrows():
-        code = str(row.get("代码", "")).strip()
-        name = str(row.get("名称", "")).strip()
+        code = str(row.get(code_col, "")).strip()
+        name = str(row.get(name_col, "")).strip()
         if not code or not name:
             continue
-        reason = str(row.get("上榜原因", "")).strip()
+        reason = str(row.get(reason_col, "")).strip()
         try:
-            net_buy = float(row.get("净买额", 0) or 0)
+            change = float(row.get(change_col, 0)) if change_col else 0.0
         except Exception:
-            net_buy = 0.0
-        ts = _ak_dt_now()
-        title = f"[{code} {name}] 龙虎榜 净买{net_buy/1e8:+.2f}亿"
-        summary = f"{reason} · 净买额 {net_buy/1e8:+.2f}亿"
-        url = f"https://quote.eastmoney.com/concept/{'sh' if str(code).startswith('6') else 'sz'}{code}.html"
+            change = 0.0
+        try:
+            net = float(row.get(net_col, 0)) if net_col else 0.0
+        except Exception:
+            net = 0.0
+        title = f"[{code} {name}] 龙虎榜 偏离{change:+.2f}%"
+        if net:
+            title += f" 净额{net/1e4:+.2f}万"
+        summary = f"{reason} · 偏离值 {change:+.2f}%"
+        url = f"https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml"
         out.append(_mk_item(
             title, url, ts, src, summary=summary,
-            raw={"code": code, "name": name, "reason": reason, "net_buy": net_buy},
+            raw={"code": code, "name": name, "reason": reason,
+                 "change": change, "net": net},
         ))
     return out
 

@@ -29,7 +29,7 @@ import classify
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("stock_radar")
 
-WINDOW_HOURS_DEFAULT = 24
+WINDOW_HOURS_DEFAULT = 48
 
 
 def _hash_id(url: str) -> str:
