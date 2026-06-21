@@ -96,6 +96,19 @@
         <h2>⭐ 我的关注</h2>
         <p id="watchlist-summary">载入中…</p>
       </div>
+      <div class="watchlist-editor">
+        <div class="editor-inputs">
+          <input id="watchlist-code-input" type="text" placeholder="代码 (如 600519 / 00700 / NVDA)" maxlength="8">
+          <input id="watchlist-name-input" type="text" placeholder="名称 (可选)" maxlength="20">
+          <button id="watchlist-add-btn" class="primary-btn">+ 添加</button>
+          <button id="watchlist-reset-btn" class="ghost-btn" title="恢复内置 7 只默认关注股">↺ 重置</button>
+        </div>
+        <div id="watchlist-error" class="editor-error"></div>
+        <p class="editor-hint">
+          💾 列表自动保存到本地浏览器（localStorage）。代码格式：6 位数字（A 股 / 港股）或 1-5 位字母（美股）。
+          示例：<code>002594</code>、<code>00700</code>、<code>NVDA</code>。
+        </p>
+      </div>
       <div id="watchlist-cards" class="watchlist-cards"></div>
     </section>
 
@@ -152,6 +165,7 @@
     </p>
   </footer>
 
+  <script src="assets/stock-names.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

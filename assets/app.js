@@ -1,15 +1,16 @@
 /* Stock Radar 前端逻辑
  * 设计目标：承载 ~700 条真实数据而不卡顿。
- *  - 用 requestAnimationFrame 分块渲染大列表
- *  - 「全部」视图分页（每页 50 + 加载更多）
- *  - 「我的关注」视图按股票分组（watchlist 卡片）
+ *  - requestAnimationFrame 分块渲染大列表
+ *  - 「全部」分页（每页 50 + 加载更多）
+ *  - watchlist 可编辑（localStorage 持久化）
  */
 const DATA_BASE = "data";
 const PAGE_SIZE = 50;
 const RENDER_CHUNK = 30;
+const WATCHLIST_KEY = "stock-radar:watchlist:v1";
 
-// 与 scripts/fetchers.py 中 WATCHLIST 保持一致
-const WATCHLIST = [
+// 内置默认关注股（用户清空 localStorage 或首次访问时使用）
+const DEFAULT_WATCHLIST = [
   { code: "600519", name: "贵州茅台" },
   { code: "000001", name: "平安银行" },
   { code: "000002", name: "万科A" },
@@ -30,9 +31,9 @@ const state = {
   stories: null,
   status: null,
   daily: null,
-  // 「全部」分页状态
   allPage: 0,
   allRendered: [],
+  watchlist: [],
 };
 
 const el = (sel) => document.querySelector(sel);
@@ -67,26 +68,84 @@ function escapeHTML(s) {
   }[c]));
 }
 
-/** 提取标题里的股票代码（[] 中的数字） */
+/* ---------- Watchlist 持久化 ---------- */
+
+function loadWatchlist() {
+  try {
+    const raw = localStorage.getItem(WATCHLIST_KEY);
+    if (raw) {
+      const arr = JSON.parse(raw);
+      if (Array.isArray(arr) && arr.length > 0 && arr.every((x) => x.code)) {
+        return arr;
+      }
+    }
+  } catch (_) { /* fall through */ }
+  return DEFAULT_WATCHLIST.slice();
+}
+
+function saveWatchlist(arr) {
+  try {
+    localStorage.setItem(WATCHLIST_KEY, JSON.stringify(arr));
+  } catch (_) { /* quota or private mode, just skip */ }
+}
+
+function addStock(code, name) {
+  code = (code || "").trim();
+  name = (name || "").trim();
+  if (!code) return { ok: false, error: "代码不能为空" };
+  if (!/^[0-9]{6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(code)) {
+    return { ok: false, error: "代码格式：6 位数字（A 股 / 港股）或 1-5 位字母（美股）" };
+  }
+  if (state.watchlist.some((w) => w.code === code)) {
+    return { ok: false, error: "已在关注列表中" };
+  }
+  state.watchlist.push({ code, name: name || lookupStockName(code) || "" });
+  saveWatchlist(state.watchlist);
+  rebuildWatchlistChips();
+  rerender();
+  return { ok: true };
+}
+
+function removeStock(code) {
+  state.watchlist = state.watchlist.filter((w) => w.code !== code);
+  saveWatchlist(state.watchlist);
+  if (state.stock === code) state.stock = "";
+  rebuildWatchlistChips();
+  rerender();
+}
+
+function resetWatchlist() {
+  state.watchlist = DEFAULT_WATCHLIST.slice();
+  saveWatchlist(state.watchlist);
+  state.stock = "";
+  rebuildWatchlistChips();
+  rerender();
+}
+
+/* ---------- 匹配 ---------- */
+
 function extractStockCode(title) {
-  const m = (title || "").match(/[\[【\(]\s*([0-9]{6})\s*[】\]\)]/);
+  // A 股 / 港股 5-6 位数字 或 美股 1-5 位字母（+可选 .B）
+  // 注意：右方括号 ] 在 JS regex 字符类中要放在第一位，否则被解析为结束符
+  const m = (title || "").match(/[\[【\(]\s*([0-9]{5,6}|[A-Z]{1,5}(\.[A-Z])?)[\s】\]\)]/);
   return m ? m[1] : "";
 }
 
-/** 匹配关注股 */
 function isInWatchlist(it) {
   const code = extractStockCode(it.title);
-  if (code && WATCHLIST.some((w) => w.code === code)) return true;
-  // 也支持 raw 里的 code
+  if (code && state.watchlist.some((w) => w.code === code)) return true;
   const rawCode = (it.raw && (it.raw.code || it.raw.sec_code || it.raw.stock_code)) || "";
-  if (rawCode && WATCHLIST.some((w) => w.code === rawCode)) return true;
+  if (rawCode && state.watchlist.some((w) => w.code === rawCode)) return true;
   return false;
 }
 
+/* ---------- HTML 渲染 ---------- */
+
 function itemHTML(it) {
   const code = extractStockCode(it.title);
+  const isWatched = code && state.watchlist.some((w) => w.code === code);
   const stockTag = code
-    ? (WATCHLIST.find((w) => w.code === code)
+    ? (isWatched
         ? `<span class="tag watchlist-hit">⭐ ${code}</span>`
         : `<span class="tag">${code}</span>`)
     : "";
@@ -133,7 +192,6 @@ function applyFilters(items) {
     if (state.label !== "all" && it.label !== state.label) return false;
     if (state.importance !== "all" && it.importance_label !== state.importance) return false;
     if (state.stock) {
-      // 按股票代码过滤：标题里有该代码，或 raw.code 等
       const code = extractStockCode(it.title);
       const rawCode = (it.raw && (it.raw.code || it.raw.sec_code || it.raw.stock_code)) || "";
       if (code !== state.stock && rawCode !== state.stock) return false;
@@ -147,29 +205,23 @@ function applyFilters(items) {
   });
 }
 
-/* ---------- 分块渲染工具 ---------- */
-
 function renderInChunks(container, items, buildHTML, chunkSize = RENDER_CHUNK) {
   container.innerHTML = "";
   let i = 0;
   function step() {
     if (i >= items.length) return;
     const slice = items.slice(i, i + chunkSize);
-    const html = slice.map(buildHTML).join("");
-    container.insertAdjacentHTML("beforeend", html);
+    container.insertAdjacentHTML("beforeend", slice.map(buildHTML).join(""));
     i += chunkSize;
-    if (i < items.length) {
-      requestAnimationFrame(step);
-    }
+    if (i < items.length) requestAnimationFrame(step);
   }
   step();
 }
 
-/* ---------- 各视图渲染 ---------- */
+/* ---------- 视图 ---------- */
 
 function renderSignal() {
   if (!state.data) return;
-  // 高重要性 + 各市场分布均衡（每个市场前 N 条）
   const high = state.data.items.filter((i) => i.importance_label === "high");
   const filtered = applyFilters(high).slice(0, 60);
   el("#signal-list").innerHTML = filtered.map(itemHTML).join("") ||
@@ -185,8 +237,7 @@ function renderAll(reset = true) {
   }
   const start = state.allPage * PAGE_SIZE;
   const slice = state.allRendered.slice(start, start + PAGE_SIZE);
-  const html = slice.map(itemHTML).join("");
-  el("#all-list").insertAdjacentHTML("beforeend", html);
+  el("#all-list").insertAdjacentHTML("beforeend", slice.map(itemHTML).join(""));
   state.allPage++;
   el("#all-count").textContent = `共 ${state.allRendered.length} 条 · 已显示 ${Math.min(state.allPage * PAGE_SIZE, state.allRendered.length)}`;
   const loadmore = el("#all-loadmore");
@@ -199,14 +250,12 @@ function renderAll(reset = true) {
 
 function renderWatchlist() {
   if (!state.data) return;
-  // 找出所有匹配 watchlist 的条目，按股票代码分组
   const groups = {};
-  for (const w of WATCHLIST) groups[w.code] = [];
+  for (const w of state.watchlist) groups[w.code] = [];
   for (const it of state.data.items) {
     const code = extractStockCode(it.title) ||
                  (it.raw && (it.raw.code || it.raw.sec_code || it.raw.stock_code)) || "";
     if (groups[code]) {
-      // 套用市场/分类/重要性/搜索过滤（但忽略 stock 自身）
       if (state.market !== "all" && it.market !== state.market) continue;
       if (state.label !== "all" && it.label !== state.label) continue;
       if (state.importance !== "all" && it.importance_label !== state.importance) continue;
@@ -219,40 +268,44 @@ function renderWatchlist() {
     }
   }
 
-  // 渲染每只股的卡片
   const cards = el("#watchlist-cards");
   cards.innerHTML = "";
   let totalHits = 0;
   let activeStocks = 0;
-
-  for (const w of WATCHLIST) {
+  for (const w of state.watchlist) {
     const items = groups[w.code];
     totalHits += items.length;
     if (items.length > 0) activeStocks++;
     items.sort((a, b) => (a.source_tier_rank - b.source_tier_rank) ||
                           (-b.importance_score - -a.importance_score));
-    const card = document.createElement("div");
-    card.className = "watchlist-card";
     const topItems = items.slice(0, 5);
     const recentEvents = items.length
       ? topItems.map(itemHTML).join("")
       : `<li class="story empty"><p>暂无相关条目</p></li>`;
+    const card = document.createElement("div");
+    card.className = "watchlist-card";
     card.innerHTML = `
       <div class="watchlist-card-header">
         <h3>
-          <span class="stock-code">${w.code}</span>
-          <span class="stock-name">${w.name}</span>
+          <span class="stock-code">${escapeHTML(w.code)}</span>
+          <span class="stock-name">${escapeHTML(w.name || lookupStockName(w.code) || "—")}</span>
+          <button class="stock-remove" data-code="${escapeHTML(w.code)}" title="移除">×</button>
         </h3>
         <span class="badge ${items.length > 0 ? 'has' : 'empty'}">${items.length} 条</span>
       </div>
       <ul class="item-list compact">${recentEvents}</ul>
-      ${items.length > 5 ? `<div class="watchlist-more">还有 ${items.length - 5} 条 · 切换到「全部」并按代码过滤查看</div>` : ""}
+      ${items.length > 5 ? `<div class="watchlist-more">还有 ${items.length - 5} 条</div>` : ""}
     `;
     cards.appendChild(card);
   }
 
+  // 绑定每张卡片的删除按钮
+  cards.querySelectorAll(".stock-remove").forEach((btn) => {
+    btn.addEventListener("click", () => removeStock(btn.dataset.code));
+  });
+
   el("#watchlist-summary").textContent =
-    `${WATCHLIST.length} 只关注股 · ${activeStocks} 只有信号 · 共 ${totalHits} 条命中`;
+    `${state.watchlist.length} 只关注股 · ${activeStocks} 只有信号 · 共 ${totalHits} 条命中`;
 }
 
 function renderStories() {
@@ -263,7 +316,6 @@ function renderStories() {
     published_at: s.items?.[0]?.published_at || new Date().toISOString(),
     summary: "",
   })));
-  // 故事线优先 importance 排序 + 分块渲染（避免一次 394 条卡顿）
   renderInChunks(el("#stories-list"), stories, storyHTML);
 }
 
@@ -311,19 +363,36 @@ function setView(v) {
 
 /* ---------- watchlist chips ---------- */
 
-function buildWatchlistChips() {
+function rebuildWatchlistChips() {
   const container = el("#watchlist-chips");
-  for (const w of WATCHLIST) {
+  container.innerHTML = "";
+  const allBtn = document.createElement("button");
+  allBtn.className = "chip" + (state.stock === "" ? " active" : "");
+  allBtn.dataset.stock = "";
+  allBtn.textContent = "全部";
+  container.appendChild(allBtn);
+  for (const w of state.watchlist) {
     const btn = document.createElement("button");
-    btn.className = "chip";
+    btn.className = "chip" + (state.stock === w.code ? " active" : "");
     btn.dataset.stock = w.code;
-    btn.textContent = `${w.code} ${w.name}`;
+    btn.textContent = `${w.code}${w.name ? " " + w.name : ""}`;
     container.appendChild(btn);
   }
+  bindWatchlistChipEvents();
+}
+
+function bindWatchlistChipEvents() {
+  els("#watchlist-chips .chip").forEach((c) => {
+    c.addEventListener("click", () => {
+      state.stock = c.dataset.stock || "";
+      els("#watchlist-chips .chip").forEach((x) => x.classList.toggle("active", x === c));
+      rerender();
+    });
+  });
 }
 
 function bindChips() {
-  buildWatchlistChips();
+  rebuildWatchlistChips();
 
   els("#market-chips .chip").forEach((c) => {
     c.addEventListener("click", () => {
@@ -346,22 +415,51 @@ function bindChips() {
       rerender();
     });
   });
-  els("#watchlist-chips .chip").forEach((c) => {
-    c.addEventListener("click", () => {
-      state.stock = c.dataset.stock || "";
-      els("#watchlist-chips .chip").forEach((x) => x.classList.toggle("active", x === c));
-      rerender();
-    });
-  });
   el("#search").addEventListener("input", (e) => {
     state.search = e.target.value.trim();
     rerender();
   });
   els(".tab").forEach((t) => t.addEventListener("click", () => setView(t.dataset.view)));
 
-  // 加载更多按钮
   const lm = el("#loadmore-btn");
   if (lm) lm.addEventListener("click", () => renderAll(false));
+
+  // watchlist 编辑 UI
+  const addBtn = el("#watchlist-add-btn");
+  const codeInput = el("#watchlist-code-input");
+  const nameInput = el("#watchlist-name-input");
+  const resetBtn = el("#watchlist-reset-btn");
+  const errBox = el("#watchlist-error");
+
+  if (addBtn) {
+    addBtn.addEventListener("click", () => {
+      errBox.textContent = "";
+      const r = addStock(codeInput.value, nameInput.value);
+      if (!r.ok) {
+        errBox.textContent = r.error;
+        return;
+      }
+      codeInput.value = "";
+      nameInput.value = "";
+    });
+  }
+  if (codeInput) {
+    codeInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") addBtn && addBtn.click();
+    });
+  }
+  if (nameInput) {
+    nameInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") addBtn && addBtn.click();
+    });
+  }
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      if (confirm("确认重置关注股列表为内置默认值？")) {
+        resetWatchlist();
+      }
+    });
+  }
 }
 
 function rerender() {
@@ -375,6 +473,7 @@ function rerender() {
 }
 
 async function init() {
+  state.watchlist = loadWatchlist();
   bindChips();
   try {
     const [data, stories, status, daily] = await Promise.all([
