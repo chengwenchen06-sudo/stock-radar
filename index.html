@@ -13,7 +13,7 @@
         <span class="logo">📈</span>
         <div>
           <h1>Stock Radar</h1>
-          <p class="subtitle">24 小时股票/财经信号雷达 · 覆盖 A 股 / 港股 / 美股</p>
+          <p class="subtitle">24-48 小时股票/财经信号雷达 · 覆盖 A 股 / 港股 / 美股 / 全球宏观</p>
         </div>
       </div>
       <div class="meta">
@@ -24,6 +24,7 @@
 
   <nav class="tabs container">
     <button class="tab active" data-view="signal">🎯 信号</button>
+    <button class="tab" data-view="watchlist">⭐ 我的关注</button>
     <button class="tab" data-view="all">📰 全部</button>
     <button class="tab" data-view="stories">🧩 故事线</button>
     <button class="tab" data-view="daily">📋 日报</button>
@@ -68,6 +69,12 @@
           <button class="chip" data-importance="low">低</button>
         </div>
       </div>
+      <div class="filter-group">
+        <label>关注股 <span class="hint">(来自 watchlist)</span></label>
+        <div class="chips" id="watchlist-chips">
+          <button class="chip active" data-stock="">全部</button>
+        </div>
+      </div>
       <div class="filter-group filter-search">
         <label>搜索</label>
         <input id="search" type="search" placeholder="搜股票代码/标题/关键词…">
@@ -83,13 +90,27 @@
       <ul id="signal-list" class="item-list"></ul>
     </section>
 
+    <!-- 我的关注 -->
+    <section id="view-watchlist" class="view">
+      <div class="section-header">
+        <h2>⭐ 我的关注</h2>
+        <p id="watchlist-summary">载入中…</p>
+      </div>
+      <div id="watchlist-cards" class="watchlist-cards"></div>
+    </section>
+
     <!-- 全部 -->
     <section id="view-all" class="view">
       <div class="section-header">
         <h2>📰 全部条目</h2>
         <p id="all-count"></p>
       </div>
-      <ul id="all-list" class="item-list"></ul>
+      <div id="all-list-wrapper">
+        <ul id="all-list" class="item-list"></ul>
+        <div id="all-loadmore" class="loadmore" style="display:none">
+          <button id="loadmore-btn">加载更多</button>
+        </div>
+      </div>
     </section>
 
     <!-- 故事线 -->
@@ -125,8 +146,8 @@
 
   <footer class="footer container">
     <p>
-      数据由 GitHub Actions 每日自动更新 ·
-      <a href="https://github.com/LearnPrompt/stock-radar" target="_blank" rel="noopener">GitHub</a> ·
+      数据由本地脚本每日更新 · 13 个数据源 ·
+      <a href="https://github.com/chengwenchen06-sudo/stock-radar" target="_blank" rel="noopener">GitHub</a> ·
       基于 AI News Radar 架构 fork
     </p>
   </footer>

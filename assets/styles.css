@@ -258,3 +258,104 @@ a:hover { text-decoration: underline; }
   .filter-search input { min-width: 180px; }
   .item-header { flex-direction: column; }
 }
+
+/* Watchlist 卡片网格 */
+.watchlist-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 14px;
+}
+.watchlist-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  transition: border-color 0.15s;
+}
+.watchlist-card:hover { border-color: var(--accent-info); }
+.watchlist-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.watchlist-card-header h3 {
+  margin: 0;
+  font-size: 15px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.stock-code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-weight: 700;
+  color: var(--accent-info);
+  font-size: 16px;
+}
+.stock-name {
+  color: var(--text-dim);
+  font-size: 13px;
+  font-weight: 400;
+}
+.watchlist-card-header .badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.badge.has { background: rgba(63,185,80,0.15); color: var(--accent); }
+.badge.empty { background: var(--bg-elev-2); color: var(--text-faint); }
+
+.item-list.compact { gap: 6px; }
+.item-list.compact .item { padding: 8px 10px; }
+.item-list.compact .item-title { font-size: 13px; line-height: 1.4; }
+.item-list.compact .item-meta { font-size: 10px; gap: 4px; }
+.item-list.compact .item-summary { display: none; }
+.item-list.compact .empty { color: var(--text-faint); padding: 14px; text-align: center; }
+
+.watchlist-more {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+  color: var(--text-faint);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* tag 关注股高亮 */
+.tag.watchlist-hit {
+  background: rgba(255, 215, 0, 0.12);
+  color: #ffd700;
+  border-color: rgba(255, 215, 0, 0.3);
+  font-weight: 600;
+}
+
+/* 加载更多 */
+.loadmore {
+  text-align: center;
+  padding: 20px;
+}
+#loadmore-btn {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 10px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s;
+}
+#loadmore-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* hint 文字 */
+.hint {
+  color: var(--text-faint);
+  font-size: 11px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .watchlist-cards { grid-template-columns: 1fr; }
+}
