@@ -197,9 +197,43 @@ function applyFilters(items) {
       if (code !== state.stock && rawCode !== state.stock) return false;
     }
     if (state.search) {
-      const q = state.search.toLowerCase();
-      const blob = `${it.title} ${it.summary || ""} ${it.source}`.toLowerCase();
-      if (!blob.includes(q)) return false;
+      const q = state.search.toLowerCase().trim();
+      if (q) {
+        const blob = [
+          it.title || "",
+          it.summary || "",
+          it.source || "",
+          (it.raw && it.raw.code) || "",
+          (it.raw && it.raw.sec_code) || "",
+          (it.raw && it.raw.stock_code) || "",
+          (it.raw && it.raw.short_name) || "",
+          (it.raw && it.raw.sec_name) || "",
+          (it.raw && it.raw.name) || "",
+          (it.raw && it.raw.industry) || "",
+          (it.raw && it.raw.sector) || "",
+        ].join(" ").toLowerCase();
+        // 多 token AND；每个 token 可展开为自身 + 代码别名
+        const rawTokens = q.split(/\s+/).filter(Boolean);
+        const expandedTokens = rawTokens.flatMap((t) => {
+          const out = [t];
+          // 如果 token 看起来像股票代码，自动加入名称别名（如 "300750" → ["300750","宁德时代","时代"]）
+          if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(t.toUpperCase())) {
+            const aliases = lookupAliases(t.toUpperCase());
+            for (const a of aliases) out.push(a.toLowerCase());
+          }
+          return out;
+        });
+        // 一个 token 命中它自己 OR 任意别名即可
+        const ok = rawTokens.every((origTok) => {
+          const cands = [origTok];
+          if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(origTok.toUpperCase())) {
+            const aliases = lookupAliases(origTok.toUpperCase());
+            for (const a of aliases) cands.push(a.toLowerCase());
+          }
+          return cands.some((c) => blob.includes(c));
+        });
+        if (!ok) return false;
+      }
     }
     return true;
   });
@@ -260,9 +294,27 @@ function renderWatchlist() {
       if (state.label !== "all" && it.label !== state.label) continue;
       if (state.importance !== "all" && it.importance_label !== state.importance) continue;
       if (state.search) {
-        const q = state.search.toLowerCase();
-        const blob = `${it.title} ${it.summary || ""}`.toLowerCase();
-        if (!blob.includes(q)) continue;
+        const q = state.search.toLowerCase().trim();
+        if (q) {
+          const blob = [
+            it.title || "", it.summary || "", it.source || "",
+            (it.raw && it.raw.code) || "",
+            (it.raw && it.raw.sec_code) || "",
+            (it.raw && it.raw.short_name) || "",
+            (it.raw && it.raw.sec_name) || "",
+            (it.raw && it.raw.industry) || "",
+          ].join(" ").toLowerCase();
+          const rawTokens = q.split(/\s+/).filter(Boolean);
+          const ok = rawTokens.every((origTok) => {
+            const cands = [origTok];
+            if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(origTok.toUpperCase())) {
+              const aliases = lookupAliases(origTok.toUpperCase());
+              for (const a of aliases) cands.push(a.toLowerCase());
+            }
+            return cands.some((c) => blob.includes(c));
+          });
+          if (!ok) continue;
+        }
       }
       groups[code].push(it);
     }

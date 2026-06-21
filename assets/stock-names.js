@@ -37,3 +37,28 @@ const STOCK_NAMES = {
 function lookupStockName(code) {
   return STOCK_NAMES[code] || "";
 }
+
+/**
+ * 根据股票代码反查所有别名（名称 + 名称里的关键词）。
+ * 例如 lookupAliases("600519") 返回 ["贵州茅台", "茅台"]。
+ * 用于搜索时代码 → 名称扩展。
+ */
+function lookupAliases(code) {
+  const name = STOCK_NAMES[code];
+  if (!name) return [];
+  const aliases = [name];
+  // 取中文部分
+  const cn = name.match(/[\u4e00-\u9fa5]+/g);
+  if (cn) {
+    const full = cn.join("");
+    if (full !== name) aliases.push(full);
+    // ≥ 3 个汉字时取最后 2 个作为常用简称（"贵州茅台" → "茅台"）
+    if (cn.join("").length >= 3) {
+      // 把所有汉字片段拼起来再取末尾 2 字
+      const joined = cn.join("");
+      const short = joined.slice(-2);
+      if (!aliases.includes(short)) aliases.push(short);
+    }
+  }
+  return aliases;
+}
