@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-21T10:54:47.458367+00:00",
+  "generated_at": "2026-06-22T16:14:45.441093+00:00",
   "successful_sites": 11,
   "failed_sites": 0,
-  "zero_item_sites": 7,
+  "zero_item_sites": 6,
   "sites": [
     {
       "site_id": "caixin",
@@ -10,7 +10,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 3.1
+      "elapsed_seconds": 1.94
     },
     {
       "site_id": "wallstreetcn",
@@ -18,7 +18,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.74
+      "elapsed_seconds": 1.1
     },
     {
       "site_id": "stcn",
@@ -26,7 +26,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 1.06
+      "elapsed_seconds": 1.29
     },
     {
       "site_id": "reuters_biz",
@@ -34,7 +34,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.07
+      "elapsed_seconds": 0.15
     },
     {
       "site_id": "marketwatch",
@@ -42,7 +42,7 @@
       "ok": true,
       "error": "",
       "item_count": 10,
-      "elapsed_seconds": 0.18
+      "elapsed_seconds": 0.19
     },
     {
       "site_id": "cnbc",
@@ -50,7 +50,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 0.13
+      "elapsed_seconds": 0.12
     },
     {
       "site_id": "aastocks",
@@ -58,15 +58,15 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 1.01
+      "elapsed_seconds": 2.55
     },
     {
       "site_id": "cninfo",
       "site_name": "巨潮资讯",
       "ok": true,
       "error": "",
-      "item_count": 0,
-      "elapsed_seconds": 1.86
+      "item_count": 30,
+      "elapsed_seconds": 2.78
     },
     {
       "site_id": "sec_edgar_8k",
@@ -74,15 +74,15 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.12
+      "elapsed_seconds": 0.29
     },
     {
       "site_id": "hkexnews",
       "site_name": "港交所披露",
       "ok": true,
       "error": "",
-      "item_count": 22,
-      "elapsed_seconds": 2.43
+      "item_count": 30,
+      "elapsed_seconds": 3.51
     },
     {
       "site_id": "opml",
@@ -90,7 +90,7 @@
       "ok": true,
       "error": "",
       "item_count": 40,
-      "elapsed_seconds": 5.44
+      "elapsed_seconds": 5.56
     }
   ]
 }
