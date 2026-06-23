@@ -256,10 +256,17 @@ function renderInChunks(container, items, buildHTML, chunkSize = RENDER_CHUNK) {
 
 function renderSignal() {
   if (!state.data) return;
-  const high = state.data.items.filter((i) => i.importance_label === "high");
-  const filtered = applyFilters(high).slice(0, 60);
-  el("#signal-list").innerHTML = filtered.map(itemHTML).join("") ||
-    `<li class="story"><p>没有匹配的信号。试试切换市场或分类筛选。</p></li>`;
+  // 有搜索 query 时显示所有匹配（不限 high importance）
+  // 否则只显示 high importance（前 60 条）
+  let items;
+  if (state.search && state.search.trim()) {
+    items = applyFilters(state.data.items).slice(0, 60);
+  } else {
+    items = state.data.items.filter((i) => i.importance_label === "high");
+    items = applyFilters(items).slice(0, 60);
+  }
+  el("#signal-list").innerHTML = items.map(itemHTML).join("") ||
+    `<li class="story"><p>没有匹配的条目。试试切换市场/分类筛选，或清空搜索。</p></li>`;
 }
 
 function renderAll(reset = true) {
@@ -280,6 +287,66 @@ function renderAll(reset = true) {
   } else {
     loadmore.style.display = "none";
   }
+}
+
+function updateSearchStatus() {
+  const box = el("#search-status");
+  if (!box) return;
+  const q = state.search.trim();
+  if (!q) {
+    box.className = "search-status";
+    box.textContent = "";
+    return;
+  }
+  if (!state.data) return;
+  const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+  const matched = state.data.items.filter((it) => {
+    const blob = [
+      it.title || "", it.summary || "", it.source || "",
+      (it.raw && it.raw.code) || "",
+      (it.raw && it.raw.sec_code) || "",
+      (it.raw && it.raw.stock_code) || "",
+      (it.raw && it.raw.short_name) || "",
+      (it.raw && it.raw.sec_name) || "",
+      (it.raw && it.raw.name) || "",
+      (it.raw && it.raw.industry) || "",
+      (it.raw && it.raw.sector) || "",
+    ].join(" ").toLowerCase();
+    return tokens.every((tok) => {
+      const cands = [tok];
+      if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(tok.toUpperCase())) {
+        for (const a of lookupAliases(tok.toUpperCase())) cands.push(a.toLowerCase());
+      }
+      return cands.some((c) => blob.includes(c));
+    });
+  });
+  // 按来源统计
+  const bySrc = {};
+  for (const it of matched) bySrc[it.source] = (bySrc[it.source] || 0) + 1;
+  if (matched.length === 0) {
+    box.className = "search-status empty";
+    // 给出可能的建议
+    const codeLike = q.match(/^[0-9]{5,6}|[A-Z]{1,5}/i);
+    let hint = `未找到与「<span class="code-chip">${escapeHTML(q)}</span>」相关的条目`;
+    if (codeLike) {
+      const code = codeLike[0].toUpperCase();
+      const name = lookupStockName(code);
+      hint += `。`;
+      if (name) {
+        hint += `<br>💡 你搜的是 <span class="code-chip">${code}</span> ${escapeHTML(name)} —— 可试试热门代码按钮，或加到「我的关注」。`;
+      } else {
+        hint += `<br>💡 <span class="code-chip">${code}</span> 不在常用代码表里，今天 (${new Date().toLocaleDateString("zh-CN")}) 该股可能没有公告/新闻/异动。`;
+      }
+    }
+    box.innerHTML = hint;
+    return;
+  }
+  box.className = "search-status ok";
+  const srcs = Object.entries(bySrc)
+    .sort((a, b) => b[1] - a[1])
+    .map(([s, n]) => `${escapeHTML(s)} ${n}`)
+    .join(" · ");
+  box.innerHTML = `找到 <strong>${matched.length}</strong> 条匹配「<span class="code-chip">${escapeHTML(q)}</span>」 · ${srcs}`;
 }
 
 function renderWatchlist() {
@@ -470,6 +537,39 @@ function bindChips() {
   el("#search").addEventListener("input", (e) => {
     state.search = e.target.value.trim();
     rerender();
+    updateSearchStatus();
+  });
+  el("#search").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      state.search = e.target.value.trim();
+      rerender();
+      updateSearchStatus();
+      // 滚动到列表顶部（让用户立即看到结果）
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
+  el("#search-btn").addEventListener("click", () => {
+    const v = el("#search").value.trim();
+    state.search = v;
+    rerender();
+    updateSearchStatus();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  el("#search-clear-btn").addEventListener("click", () => {
+    el("#search").value = "";
+    state.search = "";
+    rerender();
+    updateSearchStatus();
+  });
+  els(".hot-chip").forEach((c) => {
+    c.addEventListener("click", () => {
+      const q = c.dataset.q;
+      el("#search").value = q;
+      state.search = q;
+      rerender();
+      updateSearchStatus();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   });
   els(".tab").forEach((t) => t.addEventListener("click", () => setView(t.dataset.view)));
 

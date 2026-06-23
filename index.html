@@ -77,7 +77,21 @@
       </div>
       <div class="filter-group filter-search">
         <label>搜索</label>
-        <input id="search" type="search" placeholder="搜股票代码/标题/关键词…">
+        <div class="search-row">
+          <input id="search" type="search" placeholder="代码 (300750)、名称 (茅台)、关键词 (并购)…" autocomplete="off">
+          <button id="search-btn" class="primary-btn">🔍 搜索</button>
+          <button id="search-clear-btn" class="ghost-btn" title="清空搜索">×</button>
+        </div>
+        <div class="hot-codes">
+          <span class="hot-label">热门代码：</span>
+          <button class="hot-chip" data-q="600519" data-name="茅台">600519 茅台</button>
+          <button class="hot-chip" data-q="300750" data-name="宁德">300750 宁德</button>
+          <button class="hot-chip" data-q="002594" data-name="比亚迪">002594 比亚迪</button>
+          <button class="hot-chip" data-q="601318" data-name="平安">601318 平安</button>
+          <button class="hot-chip" data-q="00700" data-name="腾讯">00700 腾讯</button>
+          <button class="hot-chip" data-q="NVDA" data-name="英伟达">NVDA</button>
+        </div>
+        <div id="search-status" class="search-status"></div>
       </div>
     </section>
 

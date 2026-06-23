@@ -459,3 +459,77 @@ a:hover { text-decoration: underline; }
 @media (max-width: 768px) {
   .editor-inputs input { min-width: 120px; }
 }
+
+/* 搜索行 */
+.search-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.search-row input {
+  flex: 1;
+  min-width: 200px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.search-row input:focus { outline: none; border-color: var(--accent-info); }
+
+#search-clear-btn {
+  padding: 6px 10px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* 热门代码 chips */
+.hot-codes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+  align-items: center;
+}
+.hot-label {
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-right: 4px;
+}
+.hot-chip {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  transition: all 0.15s;
+}
+.hot-chip:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* 搜索状态 */
+.search-status {
+  margin-top: 8px;
+  font-size: 12px;
+  min-height: 18px;
+  line-height: 1.5;
+}
+.search-status.ok { color: var(--accent); }
+.search-status.empty { color: var(--accent-warn); }
+.search-status.empty a { color: var(--accent-info); }
+.search-status .code-chip {
+  display: inline-block;
+  background: rgba(88,166,255,0.12);
+  color: var(--accent-info);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  margin: 0 2px;
+}
