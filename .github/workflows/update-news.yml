@@ -38,6 +38,11 @@ jobs:
       - name: Run update (with optional private OPML)
         env:
           FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
+          NOTIFY_ENABLED: ${{ secrets.NOTIFY_ENABLED }}
+          WECHAT_WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WATCHLIST_CODES: ${{ secrets.WATCHLIST_CODES }}
         run: |
           if [ -n "$FOLLOW_OPML_B64" ]; then
             echo "Using private OPML from secret"
@@ -48,6 +53,10 @@ jobs:
             OPML_ARG="--rss-opml feeds/follow.example.opml"
           fi
           python scripts/update_news.py --output-dir data --window-hours 24 $OPML_ARG
+
+      - name: Fetch stock quotes
+        run: |
+          python scripts/fetch_quotes.py --output-dir data
 
       - name: Clean up private OPML
         if: always()

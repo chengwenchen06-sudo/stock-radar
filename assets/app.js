@@ -8,6 +8,7 @@ const DATA_BASE = "data";
 const PAGE_SIZE = 50;
 const RENDER_CHUNK = 30;
 const WATCHLIST_KEY = "stock-radar:watchlist:v1";
+const REFRESH_API = "http://127.0.0.1:8766";  // refresh_server.py 端口
 
 // 内置默认关注股（用户清空 localStorage 或首次访问时使用）
 const DEFAULT_WATCHLIST = [
@@ -31,6 +32,7 @@ const state = {
   stories: null,
   status: null,
   daily: null,
+  quotes: null,          // { code: {price, change_pct, market} }
   allPage: 0,
   allRendered: [],
   watchlist: [],
@@ -66,6 +68,22 @@ function escapeHTML(s) {
   return (s || "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   }[c]));
+}
+
+/* ---------- 行情显示 ---------- */
+
+function quoteTag(code) {
+  if (!state.quotes) return "";
+  const q = state.quotes[code];
+  if (!q || q.price == null) return "";
+  const price = q.market === "hk" ? `HK$${q.price.toFixed(3)}`
+               : q.market === "us" ? `$${q.price.toFixed(2)}`
+               : `¥${q.price.toFixed(2)}`;
+  const pct = q.change_pct;
+  if (pct == null) return `<span class="tag price">${escapeHTML(price)}</span>`;
+  const cls = pct > 0 ? "up" : pct < 0 ? "down" : "flat";
+  const sign = pct > 0 ? "+" : "";
+  return `<span class="tag price ${cls}">${escapeHTML(price)} ${sign}${pct.toFixed(2)}%</span>`;
 }
 
 /* ---------- Watchlist 持久化 ---------- */
@@ -149,6 +167,7 @@ function itemHTML(it) {
         ? `<span class="tag watchlist-hit">⭐ ${code}</span>`
         : `<span class="tag">${code}</span>`)
     : "";
+  const qTag = code ? quoteTag(code) : "";
   return `
     <li class="item importance-${it.importance_label}">
       <div class="item-header">
@@ -161,6 +180,7 @@ function itemHTML(it) {
         <span class="tag importance-${it.importance_label}">重要性 · ${it.importance_label} (${it.importance_score})</span>
         <span class="tag">${escapeHTML(it.source)}</span>
         ${stockTag}
+        ${qTag}
         <span class="tag">${relTime(it.published_at)}</span>
       </div>
       ${it.summary ? `<div class="item-summary">${escapeHTML(it.summary)}</div>` : ""}
@@ -266,7 +286,12 @@ function renderSignal() {
     items = applyFilters(items).slice(0, 60);
   }
   el("#signal-list").innerHTML = items.map(itemHTML).join("") ||
-    `<li class="story"><p>没有匹配的条目。试试切换市场/分类筛选，或清空搜索。</p></li>`;
+    `<li class="story empty-state">
+      <p>${state.search ? '未搜索到匹配条目' : '暂无高重要性信号'}</p>
+      <p class="empty-hint">${state.search
+        ? '检查搜索关键词是否正确，或试试热门代码按钮。也可切换到「📰 全部」tab 查看所有条目。'
+        : '切换市场/分类筛选，或尝试搜索感兴趣的关键词/代码。'}</p>
+    </li>`;
 }
 
 function renderAll(reset = true) {
@@ -325,18 +350,16 @@ function updateSearchStatus() {
   for (const it of matched) bySrc[it.source] = (bySrc[it.source] || 0) + 1;
   if (matched.length === 0) {
     box.className = "search-status empty";
-    // 给出可能的建议
-    const codeLike = q.match(/^[0-9]{5,6}|[A-Z]{1,5}/i);
+    // 判断是否像股票代码（纯数字 5-6 位，或 1-5 位字母）
+    const isCode = /^[0-9]{5,6}$/.test(q) || /^[A-Za-z]{1,5}(\.[A-Za-z])?$/.test(q);
+    const name = isCode ? lookupStockName(q.toUpperCase()) : "";
     let hint = `未找到与「<span class="code-chip">${escapeHTML(q)}</span>」相关的条目`;
-    if (codeLike) {
-      const code = codeLike[0].toUpperCase();
-      const name = lookupStockName(code);
-      hint += `。`;
-      if (name) {
-        hint += `<br>💡 你搜的是 <span class="code-chip">${code}</span> ${escapeHTML(name)} —— 可试试热门代码按钮，或加到「我的关注」。`;
-      } else {
-        hint += `<br>💡 <span class="code-chip">${code}</span> 不在常用代码表里，今天 (${new Date().toLocaleDateString("zh-CN")}) 该股可能没有公告/新闻/异动。`;
-      }
+    if (isCode) {
+      const c = q.toUpperCase();
+      hint += `。当前 48 小时数据窗口内${name ? `「${escapeHTML(name)}」` : "该股"}没有公告、新闻或异动。`;
+      hint += `<br>💡 点击 <button class="chip add-watchlist-hint" data-code="${escapeHTML(c)}" data-name="${escapeHTML(name || c)}">+ 加入「我的关注」</button> 以便在有相关信号时第一时间看到。`;
+    } else {
+      hint += `。换个关键词试试，或使用股票代码（如 600519 / 00700 / NVDA）搜索。`;
     }
     box.innerHTML = hint;
     return;
@@ -408,6 +431,7 @@ function renderWatchlist() {
         <h3>
           <span class="stock-code">${escapeHTML(w.code)}</span>
           <span class="stock-name">${escapeHTML(w.name || lookupStockName(w.code) || "—")}</span>
+          ${quoteTag(w.code)}
           <button class="stock-remove" data-code="${escapeHTML(w.code)}" title="移除">×</button>
         </h3>
         <span class="badge ${items.length > 0 ? 'has' : 'empty'}">${items.length} 条</span>
@@ -461,8 +485,42 @@ function renderStatus() {
 function updateMeta() {
   if (!state.data) return;
   const d = state.data;
+  const ts = new Date(d.generated_at);
+  const elapsed = Math.max(0, Math.floor((Date.now() - ts.getTime()) / 1000));
+  const timeStr = elapsed < 60 ? `${elapsed}秒前`
+    : elapsed < 3600 ? `${Math.floor(elapsed / 60)}分钟前`
+    : `${Math.floor(elapsed / 3600)}小时前`;
   el("#data-meta").textContent =
-    `数据: ${new Date(d.generated_at).toLocaleString("zh-CN")} · ${d.total_items} 条 · ${d.source_count} 个信源`;
+    `更新于 ${timeStr} · ${d.total_items} 条 · ${d.source_count} 个信源`;
+}
+
+/* ---------- 自动刷新 ---------- */
+
+let autoRefreshInterval = null;
+let metaTimer = null;
+
+function startAutoRefresh() {
+  // 每秒更新 meta 显示
+  metaTimer = setInterval(updateMeta, 1000);
+
+  // 每 2 分钟重新拉取数据
+  autoRefreshInterval = setInterval(async () => {
+    try {
+      await loadAllData();
+      // 闪烁一下提示用户数据已刷新
+      const elm = el("#data-meta");
+      elm.style.transition = "color 0.3s";
+      elm.style.color = "var(--accent)";
+      setTimeout(() => { elm.style.color = ""; }, 800);
+    } catch (_) {
+      // 静默失败，下次自动刷新继续
+    }
+  }, 120_000);
+}
+
+function stopAutoRefresh() {
+  if (metaTimer) clearInterval(metaTimer);
+  if (autoRefreshInterval) clearInterval(autoRefreshInterval);
 }
 
 function setView(v) {
@@ -561,6 +619,21 @@ function bindChips() {
     rerender();
     updateSearchStatus();
   });
+  // 搜索无结果时，「加入关注」快捷按钮
+  el("#search-status").addEventListener("click", (e) => {
+    const btn = e.target.closest(".add-watchlist-hint");
+    if (btn) {
+      const code = btn.dataset.code;
+      const name = btn.dataset.name;
+      addStock(code, name || code);
+      el("#search").value = code;
+      state.search = code;
+      rerender();
+      updateSearchStatus();
+      // 切到 watchlist tab 让用户看到
+      setView("watchlist");
+    }
+  });
   els(".hot-chip").forEach((c) => {
     c.addEventListener("click", () => {
       const q = c.dataset.q;
@@ -612,6 +685,133 @@ function bindChips() {
       }
     });
   }
+
+  // 刷新数据按钮
+  const refreshBtn = el("#refresh-btn");
+  if (refreshBtn) {
+    refreshBtn.addEventListener("click", triggerRefresh);
+  }
+}
+
+/* ---------- 刷新数据 ---------- */
+
+function showRefreshToast(title, detail, kind) {
+  let toast = el("#refresh-toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "refresh-toast";
+    toast.className = "refresh-toast";
+    toast.innerHTML = `<div class="toast-title"></div><div class="toast-detail"></div>`;
+    document.body.appendChild(toast);
+  }
+  toast.className = "refresh-toast show " + (kind || "");
+  toast.querySelector(".toast-title").textContent = title;
+  toast.querySelector(".toast-detail").textContent = detail;
+}
+
+function hideRefreshToast() {
+  const toast = el("#refresh-toast");
+  if (toast) toast.classList.remove("show");
+}
+
+async function triggerRefresh() {
+  const btn = el("#refresh-btn");
+  if (btn && btn.classList.contains("spinning")) return;  // 防重复点击
+
+  if (btn) {
+    btn.classList.add("spinning");
+    btn.textContent = "刷新中…";
+  }
+  showRefreshToast("正在抓取数据…", "已提交到本地刷新服务，预计 30-90 秒", "");
+
+  try {
+    const r = await fetch(`${REFRESH_API}/refresh`, { method: "POST" });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const { job_id } = await r.json();
+    pollJobStatus(job_id);
+  } catch (e) {
+    showRefreshToast("❌ 刷新失败", `无法连接刷新服务: ${e.message}。请确认 scripts/refresh_server.py 已在 8766 端口运行。`, "err");
+    if (btn) {
+      btn.classList.remove("spinning");
+      btn.textContent = "🔄 刷新";
+    }
+  }
+}
+
+async function pollJobStatus(jobId) {
+  const btn = el("#refresh-btn");
+  const start = Date.now();
+  const poll = async () => {
+    try {
+      const r = await fetch(`${REFRESH_API}/status/${jobId}`);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const job = await r.json();
+      if (job.status === "running" || job.status === "pending") {
+        const elapsed = Math.floor((Date.now() - start) / 1000);
+        showRefreshToast(
+          "正在抓取数据…",
+          `已用时 ${elapsed}s · 仍在运行中`,
+          ""
+        );
+        setTimeout(poll, 1500);
+        return;
+      }
+      // 终态
+      if (job.status === "success") {
+        showRefreshToast(
+          "✅ 刷新成功",
+          `共 ${job.total_items || "?"} 条 · 数据时间: ${new Date(job.generated_at).toLocaleString("zh-CN")}`,
+          "ok"
+        );
+        // 自动重新加载数据
+        setTimeout(async () => {
+          await loadAllData();
+          hideRefreshToast();
+        }, 1500);
+      } else if (job.status === "failed" || job.status === "timeout" || job.status === "crashed") {
+        showRefreshToast(
+          "❌ 刷新失败",
+          `状态: ${job.status}${job.stderr_tail ? " · " + job.stderr_tail.split("\n").slice(-1)[0] : ""}`,
+          "err"
+        );
+      }
+      if (btn) {
+        btn.classList.remove("spinning");
+        btn.textContent = "🔄 刷新";
+      }
+    } catch (e) {
+      showRefreshToast("❌ 轮询失败", e.message, "err");
+      if (btn) {
+        btn.classList.remove("spinning");
+        btn.textContent = "🔄 刷新";
+      }
+    }
+  };
+  poll();
+}
+
+async function loadAllData() {
+  const [data, stories, status, daily] = await Promise.all([
+    fetchJSON("latest-24h.json"),
+    fetchJSON("stories-merged.json"),
+    fetchJSON("source-status.json"),
+    fetchJSON("daily-brief.json"),
+  ]);
+  state.data = data;
+  state.stories = stories;
+  state.status = status;
+  state.daily = daily;
+
+  // 尝试加载行情数据（可选）
+  try {
+    const q = await fetchJSON("latest-quotes.json");
+    state.quotes = q.quotes || {};
+  } catch (_) {
+    state.quotes = null;
+  }
+
+  updateMeta();
+  rerender();
 }
 
 function rerender() {
@@ -638,7 +838,17 @@ async function init() {
     state.stories = stories;
     state.status = status;
     state.daily = daily;
+
+    // 尝试加载行情数据（可选）
+    try {
+      const q = await fetchJSON("latest-quotes.json");
+      state.quotes = q.quotes || {};
+    } catch (_) {
+      state.quotes = null;
+    }
+
     updateMeta();
+    startAutoRefresh();
     setView("signal");
   } catch (e) {
     document.body.innerHTML = `<div style="padding:40px;text-align:center;color:#f85149">数据加载失败：${e.message}<br><br>本地预览请运行 <code>python3 -m http.server 8080</code> 后访问 <a href="http://localhost:8080">localhost:8080</a></div>`;

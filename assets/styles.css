@@ -194,6 +194,17 @@ a:hover { text-decoration: underline; }
 .tag.tier-3 { color: var(--tier-3); }
 .tag.tier-5 { color: var(--tier-5); }
 
+/* 行情价格标签 */
+.tag.price {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+.tag.price.up { color: #f85149; border-color: rgba(248,81,73,0.35); }
+.tag.price.down { color: #3fb950; border-color: rgba(63,185,80,0.35); }
+.tag.price.flat { color: var(--text-dim); border-color: var(--border); }
+
 .item-summary {
   color: var(--text-dim);
   font-size: 13px;
@@ -206,6 +217,18 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 14px 16px;
+}
+.story.empty-state {
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--text-dim);
+}
+.story.empty-state p { margin: 0 0 8px; font-size: 14px; }
+.story.empty-state .empty-hint {
+  font-size: 12px;
+  color: var(--text-faint);
+  max-width: 400px;
+  margin: 0 auto;
 }
 .story-header {
   display: flex;
@@ -533,3 +556,55 @@ a:hover { text-decoration: underline; }
   font-size: 11px;
   margin: 0 2px;
 }
+
+/* 顶部刷新按钮 */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.refresh-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.refresh-btn.spinning {
+  pointer-events: none;
+  opacity: 0.7;
+}
+.refresh-btn.spinning::before {
+  content: "⟳";
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.refresh-btn.ok { border-color: var(--accent); color: var(--accent); }
+.refresh-btn.err { border-color: var(--accent-bad); color: var(--accent-bad); }
+
+/* 刷新进度浮窗 */
+.refresh-toast {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 13px;
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  z-index: 9999;
+  min-width: 240px;
+  max-width: 380px;
+  display: none;
+}
+.refresh-toast.show { display: block; }
+.refresh-toast.ok { border-color: var(--accent); }
+.refresh-toast.err { border-color: var(--accent-bad); }
+.refresh-toast .toast-title { font-weight: 600; margin-bottom: 4px; }
+.refresh-toast .toast-detail { color: var(--text-dim); font-size: 12px; }

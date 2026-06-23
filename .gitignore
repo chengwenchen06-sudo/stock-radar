@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 feeds/follow.opml
 .DS_Store
+.env

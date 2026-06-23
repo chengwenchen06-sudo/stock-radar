@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -243,6 +244,30 @@ def main():
 
     log.info("done: %d items, %d stories, %d sources", len(items), len(stories), len(status))
 
+    # 行情数据
+    try:
+        from fetch_quotes import fetch_quotes
+        q = fetch_quotes()
+        if q:
+            _save("latest-quotes.json", {
+                "generated_at": generated_at,
+                "total": len(q),
+                "quotes": q,
+            })
+    except Exception as e:
+        log.warning("quotes fetch skipped: %s", e)
+
+    # 通知推送（可选，依赖 NOTIFY_ENABLED 环境变量）
+    try:
+        from notify import push_alerts
+        watch_codes = os.environ.get("WATCHLIST_CODES", "").split(",")
+        watch_codes = [c.strip() for c in watch_codes if c.strip()]
+        if watch_codes:
+            n = push_alerts(items, watchlist=watch_codes)
+            log.info("notify pushed: %d alerts", n)
+    except Exception as e:
+        log.warning("notify skipped: %s", e)
+
 
 def load_demo():
     """跳过网络时的 demo 数据，方便本地测试前端和分类逻辑。"""
@@ -318,4 +343,8 @@ def load_demo():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        log.exception("pipeline crashed")
+        sys.exit(1)
