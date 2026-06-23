@@ -45,8 +45,10 @@ BUILTIN_SOURCES = [
      "url": "https://api-one.wallstcn.com/apiv1/content/lives"},
     {"id": "wallstcn_art",   "name": "华尔街见闻文章",   "market": "cn",     "tier": 1, "kind": "json",
      "url": "https://api-one.wallstcn.com/apiv1/content/articles"},
-    {"id": "cls_telegraph",  "name": "财联社电报",     "market": "cn",     "tier": 1, "kind": "json",
-     "url": "https://www.cls.cn/nodeapi/updateTelegraphList"},
+    # 注释掉的源（接口下线/被代理挡，保留代码作 fallback）：
+    # - cls_telegraph: 财联社 nodeapi 接口下线（404）
+    # {"id": "cls_telegraph",  "name": "财联社电报",     "market": "cn",     "tier": 1, "kind": "json",
+    #  "url": "https://www.cls.cn/nodeapi/updateTelegraphList"},
     # 港股（一手）
     {"id": "hkexnews",       "name": "港交所披露",     "market": "hk",     "tier": 0, "kind": "json",
      "url": "https://www1.hkexnews.hk/search/titleSearchServlet.do"},
@@ -56,7 +58,8 @@ BUILTIN_SOURCES = [
     # AkShare 异动层（A 股实时）
     {"id": "akshare_zt",     "name": "AkShare 涨停池",   "market": "cn", "tier": 1, "kind": "akshare", "url": "zt"},
     {"id": "akshare_zbgc",   "name": "AkShare 炸板池",   "market": "cn", "tier": 1, "kind": "akshare", "url": "zbgc"},
-    {"id": "akshare_sector_flow", "name": "AkShare 板块资金流", "market": "cn", "tier": 1, "kind": "akshare", "url": "sector_flow"},
+    # - akshare_sector_flow: push2.eastmoney.com 被代理挡（ProxyError），HTML 入口 404
+    # {"id": "akshare_sector_flow", "name": "AkShare 板块资金流", "market": "cn", "tier": 1, "kind": "akshare", "url": "sector_flow"},
     {"id": "akshare_lhb",    "name": "AkShare 龙虎榜",   "market": "cn", "tier": 2, "kind": "akshare", "url": "lhb"},
     {"id": "akshare_eco",    "name": "AkShare 财经日历", "market": "global", "tier": 1, "kind": "akshare", "url": "eco"},
     {"id": "akshare_news",   "name": "AkShare 个股新闻", "market": "cn", "tier": 2, "kind": "akshare", "url": "news"},
@@ -370,8 +373,9 @@ def fetch_cls_telegraph(session: requests.Session, src: dict, limit: int = 30) -
 def fetch_hkexnews(session: requests.Session, src: dict) -> list[dict]:
     """港交所披露易：titleSearchServlet 标题列表。"""
     out = []
-    end = datetime.now()
-    start = end - timedelta(days=1)
+    # 跨 2 天避免时区问题：start = 昨天 00:00, end = 今天 23:59
+    end = datetime.now(timezone.utc)
+    start = end - timedelta(days=2)
     params = {
         "sortDir": "0", "sortByOptions": "DateTime", "category": "0", "market": "SEHK",
         "stockId": "", "documentType": "-1",
@@ -381,12 +385,17 @@ def fetch_hkexnews(session: requests.Session, src: dict) -> list[dict]:
     }
     headers = {"User-Agent": BROWSER_UA, "Referer": "https://www1.hkexnews.hk/"}
     try:
-        r = session.get(src["url"], params=params, headers=headers, timeout=15)
+        # macOS 上 www1.hkexnews.hk 证书链不被信任，禁用验证
+        r = session.get(src["url"], params=params, headers=headers,
+                        timeout=15, verify=False)
         r.raise_for_status()
         data = r.json()
     except Exception as e:
         log.warning("hkexnews failed: %s", e)
         return out
+    # 抑制 urllib3 InsecureRequestWarning
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     result = data.get("result") or ""
     try:
         inner = json.loads(result)
@@ -419,41 +428,69 @@ DEFAULT_CIKS = [
 ]
 
 def fetch_sec_edgar(session: requests.Session, src: dict, ciks: list[tuple[str, str]] | None = None) -> list[dict]:
+    """SEC EDGAR 全文搜索（最近 48h 8-K / 10-K / 10-Q）。
+    用 efts.sec.gov/LATEST/search-index 拿全市场最新 8-K，
+    比按 CIK 列表轮询覆盖率更高（任何公司提交都能捕获）。
+    """
     out = []
-    ciks = ciks or DEFAULT_CIKS
-    for cik, ticker in ciks:
-        url = f"https://data.sec.gov/submissions/CIK{cik}.json"
-        headers = {"User-Agent": f"Stock Radar admin@example.com (test project)"}
+    headers = {"User-Agent": "Stock Radar admin@example.com (test project)"}
+    end = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    start = (datetime.now(timezone.utc) - timedelta(days=2)).strftime("%Y-%m-%d")
+    # efts 接受多 form 用 | 分隔。q 必须为空（不能 %22%22），否则 0 hits
+    hits = []
+    for form_filter in ("8-K", "10-K", "10-Q"):
         try:
-            r = session.get(url, headers=headers, timeout=15)
+            url = (
+                f"https://efts.sec.gov/LATEST/search-index?q="
+                f"&dateRange=custom&startdt={start}&enddt={end}"
+                f"&forms={form_filter}"
+            )
+            r = session.get(url, headers=headers, timeout=30)
             r.raise_for_status()
             data = r.json()
+            hits.extend(data.get("hits", {}).get("hits", []))
         except Exception as e:
-            log.warning("sec edgar failed %s: %s", cik, e)
+            log.debug("sec edgar efts %s failed: %s", form_filter, e)
             continue
-        recent = data.get("filings", {}).get("recent", {})
-        forms = recent.get("form", []) or []
-        dates = recent.get("filingDate", []) or []
-        accs = recent.get("accessionNumber", []) or []
-        primary_docs = recent.get("primaryDocument", []) or []
-        for form, date, acc, doc in zip(forms, dates, accs, primary_docs):
-            if form not in ("8-K", "10-Q", "10-K", "4"):
-                continue
-            try:
-                ts = datetime.fromisoformat(date).replace(tzinfo=timezone.utc)
-            except Exception:
-                continue
-            if ts < datetime.now(timezone.utc) - timedelta(hours=36):
-                continue
-            acc_clean = acc.replace("-", "")
-            filing_url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{acc_clean}/{doc}"
-            title = f"[{ticker}] {form} 公告"
-            out.append(_mk_item(
-                title, filing_url, ts, src,
-                summary=f"{ticker} 于 {date} 提交 {form}",
-                raw={"ticker": ticker, "form": form, "accession": acc},
-            ))
-        time.sleep(0.12)
+        time.sleep(0.2)  # 礼貌限流
+    if not hits:
+        return out
+    for h in hits[:80]:  # 限制最多 80 条避免噪音
+        src_field = h.get("_source", {})
+        # 提取公司信息
+        display_names = src_field.get("display_names", [])
+        company = display_names[0] if display_names else "Unknown"
+        # 解析 ticker (e.g. "Apple Inc.  (AAPL)  (CIK 0000320193)" -> "AAPL")
+        ticker = ""
+        m = re.search(r"\(([A-Z]{1,5})\)", company)
+        if m: ticker = m.group(1)
+        # 提交日期作为发布时间
+        file_date = src_field.get("file_date", "")  # 形如 "2026-06-22"
+        try:
+            ts = datetime.strptime(file_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except Exception:
+            continue
+        if ts < datetime.now(timezone.utc) - timedelta(hours=48):
+            continue
+        form = src_field.get("form", "8-K")
+        adsh = src_field.get("adsh", "")
+        cik_list = src_field.get("ciks", [])
+        cik = cik_list[0] if cik_list else ""
+        # filing URL: Archives/edgar/data/{cik}/{adsh去掉横线}/
+        acc_clean = adsh.replace("-", "")
+        filing_url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{acc_clean}/" if cik else f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}&type={form}"
+        # 标题：优先 ticker，否则公司名
+        prefix = f"[{ticker}] " if ticker else ""
+        title = f"{prefix}{company} 提交 {form}"
+        # 取第一条 highlight 作 summary
+        hlts = h.get("highlight", {}).get("content", [])
+        summary = hlts[0][:300] if hlts else f"{company} 于 {file_date} 提交 {form} 公告"
+        out.append(_mk_item(
+            title, filing_url, ts, src,
+            summary=summary,
+            raw={"ticker": ticker, "form": form, "company": company,
+                 "adsh": adsh, "ciks": cik_list},
+        ))
     return out
 
 # ---------- OPML 私有 RSS（兜底） ----------
