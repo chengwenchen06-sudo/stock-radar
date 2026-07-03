@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T08:36:32.825941+00:00",
+  "generated_at": "2026-07-03T09:44:49.405862+00:00",
   "successful_sites": 11,
   "failed_sites": 0,
   "zero_item_sites": 6,
@@ -10,7 +10,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 13.99
+      "elapsed_seconds": 2.4
     },
     {
       "site_id": "wallstreetcn",
@@ -18,7 +18,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.77
+      "elapsed_seconds": 0.73
     },
     {
       "site_id": "stcn",
@@ -26,7 +26,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 1.3
+      "elapsed_seconds": 1.34
     },
     {
       "site_id": "reuters_biz",
@@ -34,7 +34,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.1
+      "elapsed_seconds": 0.03
     },
     {
       "site_id": "marketwatch",
@@ -50,7 +50,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 0.07
+      "elapsed_seconds": 0.09
     },
     {
       "site_id": "aastocks",
@@ -58,7 +58,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 2.98
+      "elapsed_seconds": 2.32
     },
     {
       "site_id": "cninfo",
@@ -66,7 +66,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 2.96
+      "elapsed_seconds": 1.83
     },
     {
       "site_id": "sec_edgar_8k",
@@ -82,7 +82,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 3.59
+      "elapsed_seconds": 1.39
     },
     {
       "site_id": "opml",
@@ -90,7 +90,7 @@
       "ok": true,
       "error": "",
       "item_count": 40,
-      "elapsed_seconds": 21.9
+      "elapsed_seconds": 6.08
     }
   ]
 }
