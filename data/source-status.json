@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T06:45:07.233506+00:00",
+  "generated_at": "2026-07-09T10:32:59.320808+00:00",
   "successful_sites": 11,
   "failed_sites": 0,
   "zero_item_sites": 6,
@@ -10,7 +10,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 2.47
+      "elapsed_seconds": 2.35
     },
     {
       "site_id": "wallstreetcn",
@@ -18,7 +18,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.85
+      "elapsed_seconds": 1.7
     },
     {
       "site_id": "stcn",
@@ -34,7 +34,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.15
+      "elapsed_seconds": 0.03
     },
     {
       "site_id": "marketwatch",
@@ -42,7 +42,7 @@
       "ok": true,
       "error": "",
       "item_count": 10,
-      "elapsed_seconds": 0.31
+      "elapsed_seconds": 0.22
     },
     {
       "site_id": "cnbc",
@@ -50,7 +50,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 0.19
+      "elapsed_seconds": 0.33
     },
     {
       "site_id": "aastocks",
@@ -58,7 +58,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 1.55
+      "elapsed_seconds": 1.72
     },
     {
       "site_id": "cninfo",
@@ -66,7 +66,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 2.43
+      "elapsed_seconds": 2.29
     },
     {
       "site_id": "sec_edgar_8k",
@@ -74,7 +74,7 @@
       "ok": true,
       "error": "",
       "item_count": 0,
-      "elapsed_seconds": 0.2
+      "elapsed_seconds": 0.14
     },
     {
       "site_id": "hkexnews",
@@ -82,7 +82,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 3.41
+      "elapsed_seconds": 2.42
     },
     {
       "site_id": "opml",
@@ -90,7 +90,7 @@
       "ok": true,
       "error": "",
       "item_count": 40,
-      "elapsed_seconds": 4.91
+      "elapsed_seconds": 5.12
     }
   ]
 }
