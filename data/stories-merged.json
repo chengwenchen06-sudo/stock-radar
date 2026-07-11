@@ -1,157 +1,25 @@
 {
-  "generated_at": "2026-07-10T22:46:37.993974+00:00",
-  "total_stories": 77,
+  "generated_at": "2026-07-11T22:34:57.597621+00:00",
+  "total_stories": 51,
   "stories": [
     {
-      "story_id": "4b62f451194f",
-      "title": "[301613 新铝时代] 关于公司发行股份及支付现金购买资产并募集配套资金暨关联交易事项获得深圳证券交易所并购重组审核委员会审核通过的公告",
-      "label": "mna",
-      "label_zh": "并购重组",
-      "importance_label": "high",
-      "importance_score": 95,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225420278.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225420278.PDF",
-          "published_at": "2026-07-10T12:39:26+00:00",
-          "importance_score": 95
-        }
-      ]
-    },
-    {
-      "story_id": "a2980a9189a2",
-      "title": "[300269 联建光电] 关于部分业绩承诺对应补偿股份回购注销完成的公告",
-      "label": "capital",
-      "label_zh": "资本运作",
-      "importance_label": "high",
-      "importance_score": 85,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419551.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419551.PDF",
-          "published_at": "2026-07-10T10:30:11+00:00",
-          "importance_score": 85
-        }
-      ]
-    },
-    {
-      "story_id": "ed934226268f",
-      "title": "[301059 金三江] 关于股份回购完成暨股份变动的公告",
-      "label": "capital",
-      "label_zh": "资本运作",
+      "story_id": "e73067435b3c",
+      "title": "Trump threatens to 'decimate' Iran if it tries to kill him, as Treasury sanctions alleged Iranian financier",
+      "label": "policy",
+      "label_zh": "监管政策",
       "importance_label": "high",
       "importance_score": 75,
       "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419369.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419369.PDF",
-          "published_at": "2026-07-10T13:39:32+00:00",
-          "importance_score": 75
-        }
-      ]
-    },
-    {
-      "story_id": "9ce8484dddab",
-      "title": "[301236 软通动力] 回购报告书",
-      "label": "capital",
-      "label_zh": "资本运作",
-      "importance_label": "high",
-      "importance_score": 75,
-      "source_count": 2,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419868.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419868.PDF",
-          "published_at": "2026-07-10T11:50:10+00:00",
-          "importance_score": 75
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419869.PDF",
-          "published_at": "2026-07-10T11:50:09+00:00",
-          "importance_score": 75
-        }
-      ]
-    },
-    {
-      "story_id": "7614dedb8f7b",
-      "title": "As bank earnings approach, a market anomaly emerges",
-      "label": "earnings",
-      "label_zh": "财报业绩",
-      "importance_label": "high",
-      "importance_score": 75,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/as-bank-earnings-approach-a-market-anomaly-emerges.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/trump-threat.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/as-bank-earnings-approach-a-market-anomaly-emerges.html",
-          "published_at": "2026-07-10T17:18:36+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/trump-threat.html",
+          "published_at": "2026-07-11T20:35:21+00:00",
           "importance_score": 75
-        }
-      ]
-    },
-    {
-      "story_id": "9436b55b42d5",
-      "title": "The ETF market is pushing the limits of the leverage it can handle. SK Hynix is the latest example",
-      "label": "macro",
-      "label_zh": "宏观数据",
-      "importance_label": "medium",
-      "importance_score": 65,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/etfs-investing-market-risk-leverage.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/etfs-investing-market-risk-leverage.html",
-          "published_at": "2026-07-10T19:12:18+00:00",
-          "importance_score": 65
-        }
-      ]
-    },
-    {
-      "story_id": "d173c17c7c1b",
-      "title": "OpenAI exec Fidji Simo says she's stepping down due to chronic illness, will transition to advisor",
-      "label": "macro",
-      "label_zh": "宏观数据",
-      "importance_label": "medium",
-      "importance_score": 65,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/09/openai-exec-fidji-simo-says-she-will-step-down-and-transition-to-part-time-advisor.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/09/openai-exec-fidji-simo-says-she-will-step-down-and-transition-to-part-time-advisor.html",
-          "published_at": "2026-07-10T11:10:28+00:00",
-          "importance_score": 65
         }
       ]
     },
@@ -171,7 +39,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001494_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465898+00:00",
+          "published_at": "2026-07-11T22:34:53.044177+00:00",
           "importance_score": 60
         }
       ]
@@ -192,7 +60,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001496_c.xlsx",
-          "published_at": "2026-07-10T22:46:32.465893+00:00",
+          "published_at": "2026-07-11T22:34:53.044172+00:00",
           "importance_score": 60
         }
       ]
@@ -213,7 +81,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001498_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465888+00:00",
+          "published_at": "2026-07-11T22:34:53.044167+00:00",
           "importance_score": 60
         }
       ]
@@ -234,7 +102,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001500_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465883+00:00",
+          "published_at": "2026-07-11T22:34:53.044162+00:00",
           "importance_score": 60
         }
       ]
@@ -255,7 +123,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001502_c.xlsx",
-          "published_at": "2026-07-10T22:46:32.465879+00:00",
+          "published_at": "2026-07-11T22:34:53.044157+00:00",
           "importance_score": 60
         }
       ]
@@ -276,13 +144,13 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001504_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465874+00:00",
+          "published_at": "2026-07-11T22:34:53.044151+00:00",
           "importance_score": 60
         },
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001522_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465827+00:00",
+          "published_at": "2026-07-11T22:34:53.044097+00:00",
           "importance_score": 60
         }
       ]
@@ -303,7 +171,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001506_c.xlsx",
-          "published_at": "2026-07-10T22:46:32.465869+00:00",
+          "published_at": "2026-07-11T22:34:53.044146+00:00",
           "importance_score": 60
         }
       ]
@@ -324,7 +192,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001508_c.xlsx",
-          "published_at": "2026-07-10T22:46:32.465864+00:00",
+          "published_at": "2026-07-11T22:34:53.044140+00:00",
           "importance_score": 60
         }
       ]
@@ -345,7 +213,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001510_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465860+00:00",
+          "published_at": "2026-07-11T22:34:53.044135+00:00",
           "importance_score": 60
         }
       ]
@@ -366,7 +234,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001512_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465855+00:00",
+          "published_at": "2026-07-11T22:34:53.044129+00:00",
           "importance_score": 60
         }
       ]
@@ -387,13 +255,13 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/gem/2026/0710/2026071001514_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465850+00:00",
+          "published_at": "2026-07-11T22:34:53.044124+00:00",
           "importance_score": 60
         },
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/gem/2026/0710/2026071001524_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465823+00:00",
+          "published_at": "2026-07-11T22:34:53.044091+00:00",
           "importance_score": 60
         }
       ]
@@ -414,7 +282,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001516_c.xlsx",
-          "published_at": "2026-07-10T22:46:32.465845+00:00",
+          "published_at": "2026-07-11T22:34:53.044118+00:00",
           "importance_score": 60
         }
       ]
@@ -435,7 +303,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001518_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465837+00:00",
+          "published_at": "2026-07-11T22:34:53.044112+00:00",
           "importance_score": 60
         }
       ]
@@ -456,7 +324,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001520_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465832+00:00",
+          "published_at": "2026-07-11T22:34:53.044106+00:00",
           "importance_score": 60
         }
       ]
@@ -477,7 +345,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001525_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465817+00:00",
+          "published_at": "2026-07-11T22:34:53.044085+00:00",
           "importance_score": 60
         }
       ]
@@ -498,7 +366,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/gem/2026/0710/2026071001528_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465813+00:00",
+          "published_at": "2026-07-11T22:34:53.044080+00:00",
           "importance_score": 60
         }
       ]
@@ -519,13 +387,13 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001529_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465807+00:00",
+          "published_at": "2026-07-11T22:34:53.044074+00:00",
           "importance_score": 60
         },
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001534_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465802+00:00",
+          "published_at": "2026-07-11T22:34:53.044068+00:00",
           "importance_score": 60
         }
       ]
@@ -546,13 +414,13 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001536_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465796+00:00",
+          "published_at": "2026-07-11T22:34:53.044061+00:00",
           "importance_score": 60
         },
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001612_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465782+00:00",
+          "published_at": "2026-07-11T22:34:53.044045+00:00",
           "importance_score": 60
         }
       ]
@@ -573,7 +441,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001537_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465790+00:00",
+          "published_at": "2026-07-11T22:34:53.044054+00:00",
           "importance_score": 60
         }
       ]
@@ -594,7 +462,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001616_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465772+00:00",
+          "published_at": "2026-07-11T22:34:53.044035+00:00",
           "importance_score": 60
         }
       ]
@@ -615,7 +483,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001618_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465763+00:00",
+          "published_at": "2026-07-11T22:34:53.044026+00:00",
           "importance_score": 60
         }
       ]
@@ -636,7 +504,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001620_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465756+00:00",
+          "published_at": "2026-07-11T22:34:53.044019+00:00",
           "importance_score": 60
         }
       ]
@@ -657,7 +525,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001622_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465748+00:00",
+          "published_at": "2026-07-11T22:34:53.044010+00:00",
           "importance_score": 60
         }
       ]
@@ -678,7 +546,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001624_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465728+00:00",
+          "published_at": "2026-07-11T22:34:53.043991+00:00",
           "importance_score": 60
         }
       ]
@@ -699,7 +567,7 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001626_c.pdf",
-          "published_at": "2026-07-10T22:46:32.465713+00:00",
+          "published_at": "2026-07-11T22:34:53.043972+00:00",
           "importance_score": 60
         }
       ]
@@ -720,407 +588,50 @@
         {
           "source": "港交所披露",
           "url": "/listedco/listconews/sehk/2026/0710/2026071001628_c.pdf",
-          "published_at": "2026-07-10T22:46:32.459691+00:00",
+          "published_at": "2026-07-11T22:34:53.026615+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "51bdc93d0cf5",
-      "title": "[301095 广立微] 关于公司实际控制人及其一致行动人权益变动触及1%整数倍公告",
-      "label": "other",
-      "label_zh": "综合",
+      "story_id": "f1ffce8dfb07",
+      "title": "Trump Accounts: Who is eligible, how $1,000 deposits work and how to open one",
+      "label": "product",
+      "label_zh": "产品业务",
       "importance_label": "medium",
-      "importance_score": 60,
+      "importance_score": 48,
       "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419991.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419991.PDF",
-          "published_at": "2026-07-10T11:50:10+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "d0dee47e1933",
-      "title": "[301555 惠柏新材] 关于5%以上股东减持期限届满暨实施情况的公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419922.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419922.PDF",
-          "published_at": "2026-07-10T11:50:09+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "2199819d9d69",
-      "title": "[300776 帝尔激光] 简式权益变动报告书",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 2,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419814.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419814.PDF",
-          "published_at": "2026-07-10T11:40:10+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419815.PDF",
-          "published_at": "2026-07-10T11:40:07+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "c69fe5bffe71",
-      "title": "[300131 英唐智控] 关于发行股份及支付现金购买资产并募集配套资金暨关联交易标的公司审计报告、备考审阅报告之更正公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 12,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419475.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419475.PDF",
-          "published_at": "2026-07-10T11:39:28+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419472.PDF",
-          "published_at": "2026-07-10T11:39:28+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419471.PDF",
-          "published_at": "2026-07-10T11:39:28+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419469.PDF",
-          "published_at": "2026-07-10T11:39:27+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419468.PDF",
-          "published_at": "2026-07-10T11:39:27+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "b362d6274026",
-      "title": "[301398 星源卓镁] 关于控股股东以大宗交易方式减持股份的预披露公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419992.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419992.PDF",
-          "published_at": "2026-07-10T11:26:09+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "145b8a7db12a",
-      "title": "[301489 思泉新材] 关于2025年度向特定对象发行股票发行情况报告书披露的提示性公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 2,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419563.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419563.PDF",
-          "published_at": "2026-07-10T11:20:10+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419564.PDF",
-          "published_at": "2026-07-10T11:20:09+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "f223e66f1f01",
-      "title": "[301439 泓淋电力] 关于首发前持股平台提前终止减持计划暨减持股份结果的公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419921.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419921.PDF",
-          "published_at": "2026-07-10T11:14:10+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "1d6f3e7832f0",
-      "title": "[301456 盘古智能] 关于合计持股5%以上股东减持计划期限届满的公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419874.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225419874.PDF",
-          "published_at": "2026-07-10T11:14:09+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "f788b21a3475",
-      "title": "[300852 四会富仕] 关于向特定对象发行股票申请文件的审核问询函回复的提示性公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 2,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225418728.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225418728.PDF",
-          "published_at": "2026-07-10T10:30:10+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225418729.PDF",
-          "published_at": "2026-07-10T10:30:09+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "214bab083a23",
-      "title": "[300588 熙菱信息] 关于控股股东股份协议转让的进展公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225418874.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225418874.PDF",
-          "published_at": "2026-07-10T10:28:10+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "16a3fa8ffb64",
-      "title": "[300443 金雷股份] 关于向特定对象发行股票提交募集说明书（注册稿）等申请文件的提示性公告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225418708.PDF",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "巨潮资讯",
-          "url": "http://static.cninfo.com.cn/finalpage/2026-07-10/1225418708.PDF",
-          "published_at": "2026-07-10T10:28:10+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "c1545067cb14",
-      "title": "OpenAI power consolidates under co-founder Greg Brockman ahead of prospective IPO",
-      "label": "capital",
-      "label_zh": "资本运作",
-      "importance_label": "medium",
-      "importance_score": 55,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/openai-power-consolidates-under-co-founder-greg-brockman-ahead-of-ipo.html",
+      "primary_url": "https://www.cnbc.com/guide/trump-accounts/",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/openai-power-consolidates-under-co-founder-greg-brockman-ahead-of-ipo.html",
-          "published_at": "2026-07-10T20:51:09+00:00",
-          "importance_score": 55
+          "url": "https://www.cnbc.com/guide/trump-accounts/",
+          "published_at": "2026-07-11T14:05:01+00:00",
+          "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "e9610eb3625d",
-      "title": "Delta expects higher airfare to last, bringing 2026 profit goal in reach, CEO says",
-      "label": "management",
-      "label_zh": "管理层",
+      "story_id": "e0e1611d2370",
+      "title": "Berkshire Hathaway gains ground, but still trails the S&P 500 as '26 enters second half",
+      "label": "market",
+      "label_zh": "大盘行情",
       "importance_label": "medium",
-      "importance_score": 55,
+      "importance_score": 48,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/delta-air-lines-dal-q2-2026-earnings.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/berkshire-hathaway-gains-ground-but-still-trails-the-sp-500-as-26-enters-second-half.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/delta-air-lines-dal-q2-2026-earnings.html",
-          "published_at": "2026-07-10T11:59:16+00:00",
-          "importance_score": 55
-        }
-      ]
-    },
-    {
-      "story_id": "2d0d8a27de6f",
-      "title": "Meta found to breach EU laws with 'addictive' Instagram, Facebook designs",
-      "label": "guidance",
-      "label_zh": "业绩指引",
-      "importance_label": "medium",
-      "importance_score": 55,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/meta-instagram-facebook-addictive-design-breach-eu-laws.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/meta-instagram-facebook-addictive-design-breach-eu-laws.html",
-          "published_at": "2026-07-10T11:48:12+00:00",
-          "importance_score": 55
-        }
-      ]
-    },
-    {
-      "story_id": "58a10b7a3e89",
-      "title": "Where to put cash right now: Should you lock in at 4% — or wait for the next Fed rate decision?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 50,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/should-you-lock-in-a-4-cd-rate-now-heres-how-to-decide-on-the-next-move-for-your-cash-41a7ef4c?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/should-you-lock-in-a-4-cd-rate-now-heres-how-to-decide-on-the-next-move-for-your-cash-41a7ef4c?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T19:30:00+00:00",
-          "importance_score": 50
-        }
-      ]
-    },
-    {
-      "story_id": "65d6ba6cf18a",
-      "title": "Prepare for the Fed to undo rate cuts that stabilized the economy, expert cautions",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 50,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/prepare-for-the-fed-to-undo-rate-cuts-that-stabilized-the-economy-expert-cautions-bc36ea76?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/prepare-for-the-fed-to-undo-rate-cuts-that-stabilized-the-economy-expert-cautions-bc36ea76?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T19:02:00+00:00",
-          "importance_score": 50
-        }
-      ]
-    },
-    {
-      "story_id": "cbad69c15b6d",
-      "title": "Air taxi company Beta wraps first test flights in U.S. government's pilot program",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 50,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/beta-evtol-air-taxi-trump-program.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/beta-evtol-air-taxi-trump-program.html",
-          "published_at": "2026-07-10T17:07:11+00:00",
-          "importance_score": 50
+          "url": "https://www.cnbc.com/2026/07/11/berkshire-hathaway-gains-ground-but-still-trails-the-sp-500-as-26-enters-second-half.html",
+          "published_at": "2026-07-11T13:07:41+00:00",
+          "importance_score": 48
         }
       ]
     },
@@ -1131,7 +642,7 @@
       "label_zh": "产品业务",
       "importance_label": "medium",
       "importance_score": 48,
-      "source_count": 2,
+      "source_count": 1,
       "primary_url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
       "markets": [
         "us"
@@ -1140,160 +651,28 @@
         {
           "source": "CNBC",
           "url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
-          "published_at": "2026-07-10T22:44:35+00:00",
-          "importance_score": 48
-        },
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/apple-sues-openai-for-institutional-misconduct-and-alleges-thats-just-the-tip-of-the-iceberg-6e803c4d?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T22:07:00+00:00",
+          "published_at": "2026-07-11T04:09:20+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "edc4e9266acb",
-      "title": "SK Hynix’s stock sees double-digit pop in Nasdaq debut",
-      "label": "market",
-      "label_zh": "大盘行情",
+      "story_id": "1e80bf69679c",
+      "title": "My insurance company said my roof lost a few tiles. Loss adjusters found $10,000 in storm damage. How could this happen?",
+      "label": "other",
+      "label_zh": "综合",
       "importance_label": "medium",
-      "importance_score": 48,
+      "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/sk-hynixs-stock-looks-primed-for-a-pop-in-its-nasdaq-debut-38054370?mod=mw_rss_topstories",
+      "primary_url": "https://www.marketwatch.com/story/my-insurance-company-said-my-roof-lost-a-few-tiles-loss-adjusters-found-10-000-in-storm-damage-how-could-this-happen-8e1cb8bf?mod=mw_rss_topstories",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/sk-hynixs-stock-looks-primed-for-a-pop-in-its-nasdaq-debut-38054370?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T22:18:00+00:00",
-          "importance_score": 48
-        }
-      ]
-    },
-    {
-      "story_id": "9d9ff48678ac",
-      "title": "SK Hynix rises 13% in Nasdaq debut. Chairman tells CNBC 'demand is enormous'",
-      "label": "market",
-      "label_zh": "大盘行情",
-      "importance_label": "medium",
-      "importance_score": 48,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html",
-          "published_at": "2026-07-10T20:34:32+00:00",
-          "importance_score": 48
-        }
-      ]
-    },
-    {
-      "story_id": "c932b07b5367",
-      "title": "Meta's stock has best week since early 2024 as optimism builds around AI strategy",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "medium",
-      "importance_score": 48,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/meta-shares-surge-6percent-as-optimism-grows-on-it.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/meta-shares-surge-6percent-as-optimism-grows-on-it.html",
-          "published_at": "2026-07-10T20:06:19+00:00",
-          "importance_score": 48
-        }
-      ]
-    },
-    {
-      "story_id": "ab1d499c6552",
-      "title": "Meta’s stock roars back to life as it notches its best week in years",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/metas-stock-roars-back-to-life-as-it-heads-for-its-best-week-in-years-0ff0fa7d?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/metas-stock-roars-back-to-life-as-it-heads-for-its-best-week-in-years-0ff0fa7d?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T22:24:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "f45a9c355c8d",
-      "title": "Trump admin eases export controls for UAE; Warren blasts 'corrupt' provision",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/trump-uae-mgx-crypto-export-commerce-warren.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/trump-uae-mgx-crypto-export-commerce-warren.html",
-          "published_at": "2026-07-10T22:02:04+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "66de44296047",
-      "title": "‘I’d hate to end up with an unexpected tax bill’: I’m 73 and still work full time. Can I avoid paying taxes on my Social Security benefits?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/im-73-and-still-work-full-time-can-i-avoid-paying-taxes-on-my-social-security-benefits-06ecc7c2?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/im-73-and-still-work-full-time-can-i-avoid-paying-taxes-on-my-social-security-benefits-06ecc7c2?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T21:30:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "b904f3d5e0a1",
-      "title": "The AI race is shifting from bigger models to cheaper, smarter systems",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/the-ai-race-is-shifting-from-bigger-models-to-cheaper-smarter-systems.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/the-ai-race-is-shifting-from-bigger-models-to-cheaper-smarter-systems.html",
-          "published_at": "2026-07-10T21:27:18+00:00",
+          "url": "https://www.marketwatch.com/story/my-insurance-company-said-my-roof-lost-a-few-tiles-loss-adjusters-found-10-000-in-storm-damage-how-could-this-happen-8e1cb8bf?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T21:45:00+00:00",
           "importance_score": 40
         }
       ]
@@ -1314,397 +693,406 @@
         {
           "source": "MarketWatch",
           "url": "https://www.marketwatch.com/story/i-get-1-460-in-social-security-my-millionaire-ex-husband-74-refuses-to-pay-alimony-what-can-i-do-c5e60824?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T21:12:00+00:00",
+          "published_at": "2026-07-11T19:00:00+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "1e80bf69679c",
-      "title": "My insurance company said my roof lost a few tiles. Loss adjusters found $10,000 in storm damage. How could this happen?",
+      "story_id": "ed9c96a491e4",
+      "title": "‘It’s heartbreaking’: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/my-insurance-company-said-my-roof-lost-a-few-tiles-loss-adjusters-found-10-000-in-storm-damage-how-could-this-happen-8e1cb8bf?mod=mw_rss_topstories",
+      "primary_url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/my-insurance-company-said-my-roof-lost-a-few-tiles-loss-adjusters-found-10-000-in-storm-damage-how-could-this-happen-8e1cb8bf?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T21:11:00+00:00",
+          "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T18:46:00+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "5254814c72f1",
-      "title": "How Apple stock rode the AI rollercoaster to record highs in 1 chart",
+      "story_id": "23363149996a",
+      "title": "Is it better to spend my savings now so I can delay taking Social Security? How do I choose?",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/how-apple-stock-rode-the-ai-rollercoaster-to-record-highs-in-1-chart.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/how-apple-stock-rode-the-ai-rollercoaster-to-record-highs-in-1-chart.html",
-          "published_at": "2026-07-10T20:25:11+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "792629055698",
-      "title": "Stablecoin issuer Circle just got the greenlight to operate as a bank. The shares are up 5%",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/circle-gets-an-occ-bank-charter-as-stablecoin-competition-heats-up-shares-surge-14percent.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/circle-gets-an-occ-bank-charter-as-stablecoin-competition-heats-up-shares-surge-14percent.html",
-          "published_at": "2026-07-10T20:01:29+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "a6768b69db0d",
-      "title": "Trump Accounts may help foster children build a financial safety net. What to know",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/trump-accounts-foster-children.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/trump-accounts-foster-children.html",
-          "published_at": "2026-07-10T19:57:23+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "231ba2356334",
-      "title": "Summer travel season is here: Make this vital purchase before your next vacation",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/8-things-i-learned-about-travel-expenses-after-a-family-tragedy-1bbb024f?mod=mw_rss_topstories",
+      "primary_url": "https://www.marketwatch.com/story/my-retirement-savings-will-suffer-if-i-delay-social-security-how-do-i-choose-between-the-two-a85273e3?mod=mw_rss_topstories",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/8-things-i-learned-about-travel-expenses-after-a-family-tragedy-1bbb024f?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T19:40:00+00:00",
+          "url": "https://www.marketwatch.com/story/my-retirement-savings-will-suffer-if-i-delay-social-security-how-do-i-choose-between-the-two-a85273e3?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T16:44:00+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "71ffaa442761",
-      "title": "I worked at a garden center for $17/hour after getting laid off—why it's 'one of the best jobs I've ever had'",
+      "story_id": "11a9f77621d9",
+      "title": "The volatile AI trade marched higher, but oil kept Wall Street on edge last week",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/48-year-old-worked-at-a-garden-center-to-make-ends-meet-one-of-best-jobs-ever-had.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/the-volatile-ai-rally-marched-higher-but-oil-kept-wall-street-on-edge-last-week.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/48-year-old-worked-at-a-garden-center-to-make-ends-meet-one-of-best-jobs-ever-had.html",
-          "published_at": "2026-07-10T19:17:48+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/the-volatile-ai-rally-marched-higher-but-oil-kept-wall-street-on-edge-last-week.html",
+          "published_at": "2026-07-11T16:25:58+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "3ab58eb669a3",
-      "title": "Trump says he won't sign housing bill, which would become law automatically",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 2,
-      "primary_url": "https://www.cnbc.com/2026/07/10/trump-housing-bill-save-act-law.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/trump-housing-bill-save-act-law.html",
-          "published_at": "2026-07-10T19:04:32+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/us-iran-war-strikes-strait-of-hormuz-technical-talks-progress-.html",
-          "published_at": "2026-07-10T16:24:28+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "a69f71104fb9",
-      "title": "A hedge-fund trade blamed for a massive market blowup in 2024 has made a big comeback, Goldman Sachs says",
+      "story_id": "4658974d8f32",
+      "title": "Your data built the AI boom — but Big Tech is pocketing 100% of the equity",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/a-hedge-fund-trade-blamed-for-a-massive-market-blowup-in-2024-has-made-a-big-comeback-goldman-sachs-says-f2308a78?mod=mw_rss_topstories",
+      "primary_url": "https://www.marketwatch.com/story/your-share-of-the-ai-wealth-is-a-right-not-a-handout-here-is-how-we-claw-back-our-money-7454b0e0?mod=mw_rss_topstories",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/a-hedge-fund-trade-blamed-for-a-massive-market-blowup-in-2024-has-made-a-big-comeback-goldman-sachs-says-f2308a78?mod=mw_rss_topstories",
-          "published_at": "2026-07-10T19:04:00+00:00",
+          "url": "https://www.marketwatch.com/story/your-share-of-the-ai-wealth-is-a-right-not-a-handout-here-is-how-we-claw-back-our-money-7454b0e0?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T16:01:00+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "2346753205bc",
-      "title": "Trump purges Election Assistance Commission members, months before midterms",
+      "story_id": "4ee4f0d6536e",
+      "title": "Only 5% of U.S. adults can ace this 8-question financial-literacy test. Can you?",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/trump-purges-election-assistance-commission.html",
+      "primary_url": "https://www.marketwatch.com/story/only-5-of-u-s-adults-can-ace-this-8-question-financial-literacy-test-can-you-93a57cc6?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/only-5-of-u-s-adults-can-ace-this-8-question-financial-literacy-test-can-you-93a57cc6?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T16:00:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "4f44aed5463e",
+      "title": "You want a portfolio that matches your morals. Your retirement plan might disagree.",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/you-want-a-portfolio-that-matches-your-morals-but-that-could-sink-your-retirement-plans-0b6fb5bf?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/you-want-a-portfolio-that-matches-your-morals-but-that-could-sink-your-retirement-plans-0b6fb5bf?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T16:00:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "7774735af40f",
+      "title": "The dot-com crash was a $5 trillion blip. Why the next financial crisis could hit 4 times harder.",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/the-dot-com-crash-was-a-5-trillion-blip-why-the-next-financial-crisis-could-hit-4-times-harder-29f4aa57?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/the-dot-com-crash-was-a-5-trillion-blip-why-the-next-financial-crisis-could-hit-4-times-harder-29f4aa57?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T16:00:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "d385e083ee02",
+      "title": "Stocks rally when Congress goes on summer break. Here’s why.",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/stocks-rally-when-congress-goes-on-summer-break-here-is-the-hidden-reason-e70a6be3?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/stocks-rally-when-congress-goes-on-summer-break-here-is-the-hidden-reason-e70a6be3?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T16:00:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "ae6ecc5d6f52",
+      "title": "Your investing expectations are more than double the reality. Here is the tough truth.",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/your-investing-expectations-are-more-than-double-the-reality-here-is-the-tough-truth-dea61820?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/your-investing-expectations-are-more-than-double-the-reality-here-is-the-tough-truth-dea61820?mod=mw_rss_topstories",
+          "published_at": "2026-07-11T16:00:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "6612fc73e2c9",
+      "title": "These underperforming trades could yield big returns over next six months",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/11/mag-7-and-software-could-boost-portfolio-in-second-half-etf-action.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/trump-purges-election-assistance-commission.html",
-          "published_at": "2026-07-10T18:05:24+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/mag-7-and-software-could-boost-portfolio-in-second-half-etf-action.html",
+          "published_at": "2026-07-11T15:00:01+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "314caf0536f2",
-      "title": "Senate Democrats want hearings on Trump’s crypto holdings and foreign investors",
+      "story_id": "c952f39a91e0",
+      "title": "While Musk's Neuralink drills into skulls, China's BrainCo bets the future of brain tech is wearable",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/trump-crypto-senate-democrats.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/chinas-brainco-bets-on-wearable-brain-tech.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/trump-crypto-senate-democrats.html",
-          "published_at": "2026-07-10T17:44:17+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/chinas-brainco-bets-on-wearable-brain-tech.html",
+          "published_at": "2026-07-11T13:47:01+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "c6fc90120c5e",
-      "title": "Traders fall back in love with Meta. Here's where bulls see it going",
+      "story_id": "a4161154a06d",
+      "title": "New housing law targets affordability — what it means for homebuyers and sellers",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/traders-fall-back-in-love-with-meta-heres-where-bulls-see-it-going.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/21st-century-road-to-housing-act-homebuyers-sellers.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/traders-fall-back-in-love-with-meta-heres-where-bulls-see-it-going.html",
-          "published_at": "2026-07-10T17:40:29+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/21st-century-road-to-housing-act-homebuyers-sellers.html",
+          "published_at": "2026-07-11T13:41:13+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "39397631e414",
-      "title": "How the U.S.-Iran deal set the stage for renewed fighting over the Strait of Hormuz",
+      "story_id": "5873066eb927",
+      "title": "From booksmaxxing to looksmaxxing: Why the viral trends concern some mental health experts",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/iran-strait-hormuz-oil-tanker-mou-trump.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/why-viral-maxxing-trends-concern-some-mental-health-experts.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/iran-strait-hormuz-oil-tanker-mou-trump.html",
-          "published_at": "2026-07-10T17:26:08+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/why-viral-maxxing-trends-concern-some-mental-health-experts.html",
+          "published_at": "2026-07-11T13:05:01+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "9697a2637569",
-      "title": "Kraken is rebuilding its app around agentic trading as crypto exchanges evolve beyond crypto",
+      "story_id": "ab7627ca90f2",
+      "title": "The best states to live in for 2026: No. 1 has a six-year winning streak",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/kraken-to-launch-agentic-trading-as-crypto-exchanges-evolve-beyond-crypto.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/best-states-to-live-in-america-2026.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/kraken-to-launch-agentic-trading-as-crypto-exchanges-evolve-beyond-crypto.html",
-          "published_at": "2026-07-10T16:01:26+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "648de72ca794",
-      "title": "AI, data center fears could be key in closely watched Michigan Democratic Senate primary",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/ai-data-center-fears-michigan-democratic-senate-primary.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/ai-data-center-fears-michigan-democratic-senate-primary.html",
-          "published_at": "2026-07-10T15:18:37+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "96e7ad993eb1",
-      "title": "Private chef salaries reach $300,000 as the rich seek their own Michelin stars",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/private-chef-salaries.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/private-chef-salaries.html",
-          "published_at": "2026-07-10T15:05:24+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/best-states-to-live-in-america-2026.html",
+          "published_at": "2026-07-11T13:00:01+00:00",
           "importance_score": 40
         }
       ]
     },
     {
       "story_id": "c21060e58f5a",
-      "title": "These are America's 10 cheapest states for 2026, where you can still beat inflation",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 2,
-      "primary_url": "https://www.cnbc.com/2026/07/10/americas-10-cheapest-places-to-live-top-states-for-business.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/americas-10-cheapest-places-to-live-top-states-for-business.html",
-          "published_at": "2026-07-10T14:50:03+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/10-most-expensive-places-to-live-america-top-states-for-business.html",
-          "published_at": "2026-07-10T13:56:43+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "4b1dba38566a",
-      "title": "Why the stock market and economy may seem out of sync",
+      "title": "These are America’s 10 worst states to live in for 2026",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/10/stock-market-and-economy-out-of-sync.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/worst-states-to-live-in-america-2026.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/10/stock-market-and-economy-out-of-sync.html",
-          "published_at": "2026-07-10T12:15:02+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/worst-states-to-live-in-america-2026.html",
+          "published_at": "2026-07-11T13:00:01+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "38ebaffb699d",
-      "title": "Inside NATO's extraordinary 48 hours that revealed Trump's grip on global diplomacy",
+      "story_id": "a4e4483631aa",
+      "title": "'Funflation' hits home: Why staying in isn't the cost-saver it used to be",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/09/nato-trump-rutte-ukraine-russia-us-iran.html",
+      "primary_url": "https://www.cnbc.com/2026/07/11/funflation-streaming-video-games-xbox-apple-disney-netflix.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/09/nato-trump-rutte-ukraine-russia-us-iran.html",
-          "published_at": "2026-07-09T23:00:52+00:00",
+          "url": "https://www.cnbc.com/2026/07/11/funflation-streaming-video-games-xbox-apple-disney-netflix.html",
+          "published_at": "2026-07-11T12:47:23+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "08a023465e5d",
+      "title": "Burnout, frustration and heartbreak: Amazon layoffs take their toll in saturated job market",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/11/burnout-frustration-and-heartbreak-amazon-layoffs-take-their-toll.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/11/burnout-frustration-and-heartbreak-amazon-layoffs-take-their-toll.html",
+          "published_at": "2026-07-11T12:00:01+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "cb178d408cd6",
+      "title": "A tiny GLP-1 implant is the latest bet to help patients maintain their weight loss",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/11/glp-1-implant-from-vivani-medical-aims-to-help-patients-stay-on-treatment.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/11/glp-1-implant-from-vivani-medical-aims-to-help-patients-stay-on-treatment.html",
+          "published_at": "2026-07-11T12:00:01+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "8982cab088c0",
+      "title": "AstraZeneca's trial flop raises a bigger question: Is its pipeline premium becoming more vulnerable?",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/11/astrazenecas-trial-pipeline-pharma-valutaion-stock.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/11/astrazenecas-trial-pipeline-pharma-valutaion-stock.html",
+          "published_at": "2026-07-11T05:00:01+00:00",
           "importance_score": 40
         }
       ]
