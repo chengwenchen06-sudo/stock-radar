@@ -1,421 +1,88 @@
 {
-  "generated_at": "2026-07-18T22:35:27.844263+00:00",
-  "total_stories": 54,
+  "generated_at": "2026-07-19T22:40:34.953196+00:00",
+  "total_stories": 36,
   "stories": [
     {
-      "story_id": "6e2206cd4bbe",
-      "title": "聯合公佈 - (1) 要約人根據開曼群島公司法第86條以計劃安排方式將結好控股有限公司私有化之建議；(2) 建議撤銷上市地位；(3) 建議特別股息；(4) 成立獨立董事委員會；及(5) 恢復股份買賣",
-      "label": "mna",
-      "label_zh": "并购重组",
+      "story_id": "49ad3888dd6a",
+      "title": "穩定價格行動、穩定價格期結束及超額配股權失效",
+      "label": "capital",
+      "label_zh": "资本运作",
       "importance_label": "high",
-      "importance_score": 95,
+      "importance_score": 75,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701604_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900002_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701604_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174775+00:00",
-          "importance_score": 95
-        }
-      ]
-    },
-    {
-      "story_id": "85937a07b09b",
-      "title": "The AI rotation stole the spotlight from a strong start to earnings season",
-      "label": "earnings",
-      "label_zh": "财报业绩",
-      "importance_label": "high",
-      "importance_score": 75,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/the-ai-rotation-stole-the-spotlight-from-a-strong-start-to-earnings-season-.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/the-ai-rotation-stole-the-spotlight-from-a-strong-start-to-earnings-season-.html",
-          "published_at": "2026-07-18T16:33:19+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900002_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444509+00:00",
           "importance_score": 75
         }
       ]
     },
     {
-      "story_id": "48d6a7d40ce5",
-      "title": "Trump rips Canada as wildfire smoke spreads, says U.S. will add pollution cost to tariffs",
-      "label": "policy",
-      "label_zh": "监管政策",
+      "story_id": "21180eda789e",
+      "title": "Oil prices surge, stock futures flat as fighting between U.S. and Iran intensifies",
+      "label": "earnings",
+      "label_zh": "财报业绩",
       "importance_label": "high",
       "importance_score": 75,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/17/trump-canada-wildfire-tariffs.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/17/trump-canada-wildfire-tariffs.html",
-          "published_at": "2026-07-17T23:08:24+00:00",
-          "importance_score": 75
-        }
-      ]
-    },
-    {
-      "story_id": "45ab379eb518",
-      "title": "公司秘書離任\n及\n不遵守上市規則",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "medium",
-      "importance_score": 68,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701576_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701576_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174864+00:00",
-          "importance_score": 68
-        }
-      ]
-    },
-    {
-      "story_id": "6063e02693be",
-      "title": "Americans say they need $1.2 million to retire. Most are too deep in debt to get there.",
-      "label": "earnings",
-      "label_zh": "财报业绩",
-      "importance_label": "medium",
-      "importance_score": 65,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/americans-say-they-need-1-2-million-to-retire-most-are-too-deep-in-debt-to-get-there-689c683b?mod=mw_rss_topstories",
+      "primary_url": "https://www.marketwatch.com/story/oil-prices-surge-stock-futures-dip-as-fighting-between-u-s-and-iran-intensifies-6fb37c79?mod=mw_rss_topstories",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/americans-say-they-need-1-2-million-to-retire-most-are-too-deep-in-debt-to-get-there-689c683b?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:15:00+00:00",
-          "importance_score": 65
+          "url": "https://www.marketwatch.com/story/oil-prices-surge-stock-futures-dip-as-fighting-between-u-s-and-iran-intensifies-6fb37c79?mod=mw_rss_topstories",
+          "published_at": "2026-07-19T22:32:00+00:00",
+          "importance_score": 75
         }
       ]
     },
     {
-      "story_id": "793cbd84a16a",
-      "title": "Two unexpected revelations in Warren Buffett's CNBC interview",
-      "label": "earnings",
-      "label_zh": "财报业绩",
-      "importance_label": "medium",
-      "importance_score": 65,
+      "story_id": "afc7747311cc",
+      "title": "The market for psychedelic drugs to treat mental health conditions gets a big buy signal",
+      "label": "mna",
+      "label_zh": "并购重组",
+      "importance_label": "high",
+      "importance_score": 75,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/two-unexpected-revelations-in-warren-buffetts-cnbc-interview.html",
+      "primary_url": "https://www.cnbc.com/2026/07/19/psychedelic-drugs-mental-health.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/two-unexpected-revelations-in-warren-buffetts-cnbc-interview.html",
-          "published_at": "2026-07-18T14:53:36+00:00",
-          "importance_score": 65
+          "url": "https://www.cnbc.com/2026/07/19/psychedelic-drugs-mental-health.html",
+          "published_at": "2026-07-19T14:45:37+00:00",
+          "importance_score": 75
         }
       ]
     },
     {
-      "story_id": "9af9ec15d60e",
-      "title": "I left the U.S. for Trinidad and Tobago: My family of 4 spends about $3,000 a month—and we've never been happier",
-      "label": "macro",
-      "label_zh": "宏观数据",
+      "story_id": "1a51e61f56b6",
+      "title": "自願公告及海外監管公告 - 根據向美國證券交易委員會提交的F-3表格登記聲明進行的建議按市價發售計劃及申請豁免遵守上市規則",
+      "label": "product",
+      "label_zh": "产品业务",
       "importance_label": "medium",
-      "importance_score": 65,
+      "importance_score": 68,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/i-left-the-us-for-trinidad-and-tobago-my-family-of-4-spends-3k-a-month-weve-never-been-happier.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/i-left-the-us-for-trinidad-and-tobago-my-family-of-4-spends-3k-a-month-weve-never-been-happier.html",
-          "published_at": "2026-07-18T13:00:01+00:00",
-          "importance_score": 65
-        }
-      ]
-    },
-    {
-      "story_id": "cc2f11175356",
-      "title": "How are prediction markets taxed? The IRS hasn’t provided guidance yet",
-      "label": "guidance",
-      "label_zh": "业绩指引",
-      "importance_label": "medium",
-      "importance_score": 65,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/how-are-prediction-markets-taxed-the-irs-hasnt-provided-guidance-yet.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/how-are-prediction-markets-taxed-the-irs-hasnt-provided-guidance-yet.html",
-          "published_at": "2026-07-18T11:24:54+00:00",
-          "importance_score": 65
-        }
-      ]
-    },
-    {
-      "story_id": "81ed90e3579b",
-      "title": "The White House is dictating access to frontier AI models, shifting power from tech giants, sources say",
-      "label": "earnings",
-      "label_zh": "财报业绩",
-      "importance_label": "medium",
-      "importance_score": 65,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
-          "published_at": "2026-07-17T23:10:07+00:00",
-          "importance_score": 65
-        }
-      ]
-    },
-    {
-      "story_id": "d15f43a79a28",
-      "title": "恒生國指備兌認購期權主動型ETF &lt;03519&gt; 資料",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701556_c.xlsx",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900106_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701556_c.xlsx",
-          "published_at": "2026-07-18T22:35:23.174911+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "7cd2f69c0064",
-      "title": "恒生科技備兌認購期權主動型ETF &lt;03589&gt; 資料",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701558_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701558_c.xlsx",
-          "published_at": "2026-07-18T22:35:23.174906+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "e2604b4021de",
-      "title": "進一步延遲寄發有關建議股本重組及建議供股的通函及經修訂時間表",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 2,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701560_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701560_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174902+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/gem/2026/0717/2026071701578_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174859+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "401d4f3d9dde",
-      "title": "(1) 建議重選及選舉董事；(2) 董事退任；(3) 變更註冊資本；及(4) 建議修訂章程",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 2,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701562_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701562_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174897+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701570_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174878+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "f48e65efd761",
-      "title": "3509 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701564_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701564_c.xlsx",
-          "published_at": "2026-07-18T22:35:23.174893+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "0107e1aa04bb",
-      "title": "授出購股權及受限制股份單位",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701566_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701566_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174888+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "4c6fd797c1d7",
-      "title": "3579 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701568_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701568_c.xlsx",
-          "published_at": "2026-07-18T22:35:23.174883+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "08a473e1404c",
-      "title": "3456 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701572_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701572_c.xlsx",
-          "published_at": "2026-07-18T22:35:23.174874+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "56a08de7143b",
-      "title": "2026年第三次臨時股東會通告",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 2,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701574_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701574_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174869+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701580_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174854+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "3747bc246c79",
-      "title": "章程",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701582_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701582_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174849+00:00",
-          "importance_score": 60
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900106_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444407+00:00",
+          "importance_score": 68
         }
       ]
     },
@@ -426,596 +93,398 @@
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
-      "source_count": 2,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701584_c.pdf",
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900004_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701584_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174843+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900004_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444504+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "da5c840dae9b",
+      "title": "自願公告 -  曼海欣藥品補充申請獲得受理",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900006_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900006_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444498+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "82e640cbdc43",
+      "title": "海外監管公告 - 第一大股東增持進展公告",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 2,
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900007_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900007_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444492+00:00",
           "importance_score": 60
         },
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701586_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174835+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900097_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444442+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "00531fa931cf",
-      "title": "澄清公佈",
+      "story_id": "0c91e5d3c11f",
+      "title": "延遲股息派發日",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701588_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900010_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701588_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174830+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900010_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444487+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "f7f001f9facd",
-      "title": "復牌之季度更新\n及\n繼續暫停買賣",
+      "story_id": "41a9e4d0bf46",
+      "title": "自願性公告\n場內股份購回",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701590_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900012_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701590_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174824+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900012_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444481+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "8d339a80389c",
-      "title": "公告 - 二零二六年第二季度運營情況及二零二六年第三季度展望",
+      "story_id": "e1f0a805880b",
+      "title": "自願性公告 - 與鑫宸科創訂立戰略合作",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701592_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900014_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701592_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174819+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900014_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444475+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "9a34850254a9",
-      "title": "建議按於記錄日期每持有一(1)股現有股份可獲發三(3)股供股股份的基準按非包銷基準進行供股",
+      "story_id": "e6f15d382d3e",
+      "title": "2025年12月31日止年度末期股息（修訂）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701594_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900016_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701594_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174814+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900016_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444469+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "9197281a4beb",
-      "title": "股東特別大會通告",
+      "story_id": "6a8dd0dea3e9",
+      "title": "2026 年 6 月份主要運營數據公告",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701596_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900018_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701596_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174808+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900018_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444464+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "763db1fe933e",
-      "title": "股東特別大會代表委任表格",
+      "story_id": "33bdd8b803d4",
+      "title": "自願公告\n針對本公司的仲裁裁決",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701598_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900094_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701598_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174802+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900094_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444458+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "5fab09fcdec4",
-      "title": "有關收購物業之主要交易",
+      "story_id": "5f93aec05e0c",
+      "title": "海外監管公告 - 2025年年度權益分派實施公告",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701600_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900095_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701600_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174793+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900095_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444451+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "fb5158f54acb",
-      "title": "委任聯席總經理",
+      "story_id": "8729e84eff01",
+      "title": "海外監管公告 - 關於2026 年第一次以集中競價交易方式回購公司股份的預案",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701602_c.pdf",
+      "source_count": 3,
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900099_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701602_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174783+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900099_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444432+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900101_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444423+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900109_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444373+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "d03bd465d990",
-      "title": "展示文件",
+      "story_id": "c2bee9026fa8",
+      "title": "海外監管公告",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701605_c.htm",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900103_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701605_c.htm",
-          "published_at": "2026-07-18T22:35:23.174768+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900103_c.pdf",
+          "published_at": "2026-07-19T22:38:55.444415+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "bb115839bfef",
-      "title": "致登記股東之通知信函及回條 - 有關股東特別大會的通函、通告及代表委任表格之發佈通知",
+      "story_id": "3899238e2a88",
+      "title": "股份代號 : 9102, 3102, 83102資料",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701634_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900108_c.xlsx",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701634_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174761+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900108_c.xlsx",
+          "published_at": "2026-07-19T22:38:55.444388+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "0a709078b974",
-      "title": "根據一般授權配售新股份",
+      "story_id": "e05473a3e186",
+      "title": "自願公告 戰略合作框架協議",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 60,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701636_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/0719/2026071900112_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701636_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174740+00:00",
+          "url": "/listedco/listconews/sehk/2026/0719/2026071900112_c.pdf",
+          "published_at": "2026-07-19T22:38:55.438678+00:00",
           "importance_score": 60
         }
       ]
     },
     {
-      "story_id": "44a56834a450",
-      "title": "致非登記股東之通知信函及回條 - 有關股東特別大會的通函及通告之發佈通知",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701638_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701638_c.pdf",
-          "published_at": "2026-07-18T22:35:23.174725+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "664c8c163d57",
-      "title": "(I)建議股本重組；\n及\n(II)建議按於記錄日期每持有一(1)股經調整股份獲發四(4)股供股股份之基準\n以非包銷基準進行供股",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/0717/2026071701640_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/0717/2026071701640_c.pdf",
-          "published_at": "2026-07-18T22:35:23.157070+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "aa99ad3fed6c",
-      "title": "Fanatics CEO Michael Rubin on two sports businesses his multibillion-dollar conglomerate won't enter",
-      "label": "management",
-      "label_zh": "管理层",
+      "story_id": "e9a0a2387c42",
+      "title": "Top Wall Street analysts suggest these 3 dividend stocks for steady income",
+      "label": "capital",
+      "label_zh": "资本运作",
       "importance_label": "medium",
       "importance_score": 55,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/fanatics-fanfest-michael-rubin.html",
+      "primary_url": "https://www.cnbc.com/2026/07/19/top-analysts-suggest-these-3-dividend-stocks-for-steady-income.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/fanatics-fanfest-michael-rubin.html",
-          "published_at": "2026-07-18T16:20:28+00:00",
+          "url": "https://www.cnbc.com/2026/07/19/top-analysts-suggest-these-3-dividend-stocks-for-steady-income.html",
+          "published_at": "2026-07-19T12:46:25+00:00",
           "importance_score": 55
         }
       ]
     },
     {
-      "story_id": "cf39bdf02298",
-      "title": "Leather jacket worn by Nvidia CEO goes for just under $1 million at Sotheby's auction",
+      "story_id": "bf41d569c150",
+      "title": "American Airlines CEO lays out his vision to close a more than $3 billion profit gap",
       "label": "management",
       "label_zh": "管理层",
       "importance_label": "medium",
       "importance_score": 55,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/17/leather-jacket-worn-by-nvidia-ceo-goes-for-just-under-1-million-at-sothebys-auction-.html",
+      "primary_url": "https://www.cnbc.com/2026/07/19/american-airlines-ceo.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/17/leather-jacket-worn-by-nvidia-ceo-goes-for-just-under-1-million-at-sothebys-auction-.html",
-          "published_at": "2026-07-17T23:18:35+00:00",
+          "url": "https://www.cnbc.com/2026/07/19/american-airlines-ceo.html",
+          "published_at": "2026-07-19T12:00:01+00:00",
           "importance_score": 55
         }
       ]
     },
     {
-      "story_id": "43b66e578eab",
-      "title": "'WarshGPT': How Wall Street is adapting to the Fed's new era of communication",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 50,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/warshgpt-federal-reserve-communications-task-force-warsh.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/warshgpt-federal-reserve-communications-task-force-warsh.html",
-          "published_at": "2026-07-18T18:16:42+00:00",
-          "importance_score": 50
-        }
-      ]
-    },
-    {
-      "story_id": "ee7dde6a0e95",
-      "title": "Why Dana White thinks much more of UFC's future will be Power Slap and boxing",
+      "story_id": "0f1dc256fc48",
+      "title": "Kalshi adds 3 million new users as prediction market capitalizes on the World Cup",
       "label": "product",
       "label_zh": "产品业务",
       "importance_label": "medium",
       "importance_score": 48,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/ufc-dana-white-power-slap-boxing.html",
+      "primary_url": "https://www.cnbc.com/2026/07/19/kalshi-adds-3-million-new-users-as-company-capitalizes-on-world-cup.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/ufc-dana-white-power-slap-boxing.html",
-          "published_at": "2026-07-18T14:41:49+00:00",
+          "url": "https://www.cnbc.com/2026/07/19/kalshi-adds-3-million-new-users-as-company-capitalizes-on-world-cup.html",
+          "published_at": "2026-07-19T12:42:30+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "9b5f49317fe5",
-      "title": "World Cup audience stayed bipartisan despite Trump's prominent role, CNBC survey finds",
+      "story_id": "fec3ab5103b3",
+      "title": "I racked up $35,000 in credit-card debt. Should I file for bankruptcy?",
       "label": "product",
       "label_zh": "产品业务",
       "importance_label": "medium",
       "importance_score": 48,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/world-cup-viewership-trump-democrats-republicans-poll.html",
+      "primary_url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories",
       "markets": [
         "us"
       ],
       "items": [
         {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/world-cup-viewership-trump-democrats-republicans-poll.html",
-          "published_at": "2026-07-18T12:00:02+00:00",
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories",
+          "published_at": "2026-07-19T12:30:00+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "58014f2cc507",
-      "title": "Two U.S. service members killed in Jordan, one missing; Iran threatens 'unforgettable lessons' after calling off interim peace deal",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/us-military-says-it-completed-latest-round-of-strikes-against-iran.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/us-military-says-it-completed-latest-round-of-strikes-against-iran.html",
-          "published_at": "2026-07-18T22:26:59+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "2826aee4ce00",
-      "title": "Taylor Farms recalls iceberg lettuce in 27 states due to cyclosporiasis outbreak",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/taylor-farms-recalls-iceberg-lettuce-in-27-states-due-to-cyclosporiasis-outbreak.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/taylor-farms-recalls-iceberg-lettuce-in-27-states-due-to-cyclosporiasis-outbreak.html",
-          "published_at": "2026-07-18T22:04:02+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "f04061e6f31b",
-      "title": "27-year-old locksmith spent $7,000 on tools, works around the clock in NYC: 'I'd never held a screwdriver in my life' before starting",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/how-27-year-old-left-her-job-to-start-locksmith-girl-of-nyc.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/how-27-year-old-left-her-job-to-start-locksmith-girl-of-nyc.html",
-          "published_at": "2026-07-18T20:12:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "46dee496f4ab",
-      "title": "‘Respect is important’: If my financial adviser said, ‘Hey,’ my wife and I would walk out. Where do you draw the line?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/respect-is-important-if-my-financial-adviser-said-hey-my-wife-and-i-would-walk-out-where-do-you-draw-the-line-5fbf5879?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/respect-is-important-if-my-financial-adviser-said-hey-my-wife-and-i-would-walk-out-where-do-you-draw-the-line-5fbf5879?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T19:16:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "e704479405bc",
-      "title": "Korean beauty products are becoming mainstream in the U.S. Why there may be even more growth ahead",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/korean-beauty-products-are-becoming-mainstream-in-the-us.html",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/korean-beauty-products-are-becoming-mainstream-in-the-us.html",
-          "published_at": "2026-07-18T19:11:33+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "762594635d30",
-      "title": "‘They are relentless’: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T19:00:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "2f6b59c82b50",
-      "title": "Netflix is spending big money on sports. Is the company making the right bets?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/netflix-is-paying-up-for-costly-sports-rights-is-the-company-making-the-right-bets-9ce54df7?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/netflix-is-paying-up-for-costly-sports-rights-is-the-company-making-the-right-bets-9ce54df7?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:54:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "28c477d4f28f",
-      "title": "Your Netflix bill is up 29% in just over a year. It’s time for Washington to step in.",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/your-monthly-netflix-bill-is-up-29-in-just-over-a-year-critics-say-washington-needs-to-fix-it-bcab6e5b?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/your-monthly-netflix-bill-is-up-29-in-just-over-a-year-critics-say-washington-needs-to-fix-it-bcab6e5b?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:49:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "c21060e58f5a",
-      "title": "These are the obstacles still keeping women from retirement security",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/these-are-the-obstacles-still-keeping-women-from-retirement-security-eea48a95?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/these-are-the-obstacles-still-keeping-women-from-retirement-security-eea48a95?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:48:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "98ff9ad85ea8",
-      "title": "The World Cup–winning side will make $50 million — and the IRS gets a cut",
+      "story_id": "9133d398c4d7",
+      "title": "World Cup-champion Spain just won $50 million — and the IRS gets a cut",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
@@ -1029,133 +498,280 @@
         {
           "source": "MarketWatch",
           "url": "https://www.marketwatch.com/story/the-world-cupwinning-side-will-make-50-million-and-the-irs-gets-a-cut-10f0780b?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:32:00+00:00",
+          "published_at": "2026-07-19T22:29:00+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "9c6a9d6cd9b7",
-      "title": "I’m 67, own two homes outright worth $2.8 million, but I have $19,000 in credit-card debt. Should I get a HELOC?",
+      "story_id": "92e627dd9264",
+      "title": "U.S. death toll rises again as Iran war escalates over the weekend",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/im-67-own-two-mortgage-free-homes-worth-2-8-million-but-i-have-19-000-in-credit-card-debt-should-i-get-a-heloc-7b6c5192?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/im-67-own-two-mortgage-free-homes-worth-2-8-million-but-i-have-19-000-in-credit-card-debt-should-i-get-a-heloc-7b6c5192?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:30:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "693b428a11d1",
-      "title": "My relative inherited money in her 80s. Will it affect her Social Security taxes or Medicare premiums?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/my-relative-inherited-money-in-her-80s-will-it-affect-her-social-security-taxes-or-medicare-premiums-0f09a210?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/my-relative-inherited-money-in-her-80s-will-it-affect-her-social-security-taxes-or-medicare-premiums-0f09a210?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:14:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "bc8357a67421",
-      "title": "Running out of money is not the saddest retirement mistake you can make. This is.",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/running-out-of-money-is-not-the-saddest-retirement-mistake-you-can-make-this-is-09040acf?mod=mw_rss_topstories",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/running-out-of-money-is-not-the-saddest-retirement-mistake-you-can-make-this-is-09040acf?mod=mw_rss_topstories",
-          "published_at": "2026-07-18T18:00:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "c79ad2eb30e1",
-      "title": "Scam victims can owe taxes on stolen money. A bill in Congress could offer relief",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/scam-victims-irs-tax-stolen-money.html",
+      "primary_url": "https://www.cnbc.com/2026/07/19/us-says-it-targeted-iran-forces-after-deaths-of-two-american-troops.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/scam-victims-irs-tax-stolen-money.html",
-          "published_at": "2026-07-18T13:30:01+00:00",
+          "url": "https://www.cnbc.com/2026/07/19/us-says-it-targeted-iran-forces-after-deaths-of-two-american-troops.html",
+          "published_at": "2026-07-19T20:25:15+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "25a93dc9365d",
-      "title": "Fat cat? Weight-loss drugs may be coming for your overweight pet",
+      "story_id": "7d24e30d5d3e",
+      "title": "FBI will no longer investigate ICE confrontations, The New York Times reports",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/18/cats-glp-1-ozempic-pets-weight-loss.html",
+      "primary_url": "https://www.cnbc.com/2026/07/19/ice-assault-claims-fbi.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/cats-glp-1-ozempic-pets-weight-loss.html",
-          "published_at": "2026-07-18T05:00:02+00:00",
+          "url": "https://www.cnbc.com/2026/07/19/ice-assault-claims-fbi.html",
+          "published_at": "2026-07-19T19:51:38+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "052ca45febf2",
-      "title": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
+      "story_id": "15a6165a3ca9",
+      "title": "Can the ‘Magnificent Seven’ save a stock market that might be doomed without them?",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
+      "primary_url": "https://www.marketwatch.com/story/can-the-magnificent-seven-save-a-stock-market-that-might-be-doomed-without-them-f88988f3?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/can-the-magnificent-seven-save-a-stock-market-that-might-be-doomed-without-them-f88988f3?mod=mw_rss_topstories",
+          "published_at": "2026-07-19T19:06:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "fcf8bce15d2d",
+      "title": "Universal and Christopher Nolan's 'The Odyssey' sails to $124.5 million opening",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/19/the-odyssey-box-office-christopher-nolan-and-universal-opening-weekend.html",
       "markets": [
         "us"
       ],
       "items": [
         {
           "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
-          "published_at": "2026-07-18T01:03:47+00:00",
+          "url": "https://www.cnbc.com/2026/07/19/the-odyssey-box-office-christopher-nolan-and-universal-opening-weekend.html",
+          "published_at": "2026-07-19T16:28:53+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "00e6af5c3b9a",
+      "title": "Is there a deadline to claim the $1,000 ‘Trump account’ contribution for my kid?",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/is-there-a-deadline-to-claim-the-1-000-trump-account-contribution-for-my-kid-1b70141c?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/is-there-a-deadline-to-claim-the-1-000-trump-account-contribution-for-my-kid-1b70141c?mod=mw_rss_topstories",
+          "published_at": "2026-07-19T15:43:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "ef914cd2e56a",
+      "title": "Can former employers withhold money from your 401(k) when you’re laid off?",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/can-former-employers-withhold-money-from-your-401-k-when-youre-laid-off-5ceb4d4e?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/can-former-employers-withhold-money-from-your-401-k-when-youre-laid-off-5ceb4d4e?mod=mw_rss_topstories",
+          "published_at": "2026-07-19T14:45:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "692adb17d88f",
+      "title": "26-year-old quit her corporate job to become a seamstress at Yellowstone National Park for $19.25/hour",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/19/26-year-old-quit-her-corporate-job-to-become-a-seamstress-at-yellowstone.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/19/26-year-old-quit-her-corporate-job-to-become-a-seamstress-at-yellowstone.html",
+          "published_at": "2026-07-19T14:30:01+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "4a2d00557bb3",
+      "title": "AI may make you 'boring' at work, Columbia Business School professor says: How it can hurt your career",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/19/how-using-ai-at-work-can-hurt-your-career.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/19/how-using-ai-at-work-can-hurt-your-career.html",
+          "published_at": "2026-07-19T13:30:01+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "9e7ffc771a8b",
+      "title": "Stop asking 'How was work today?' Successful, mentally strong couples ask these 7 questions instead",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/19/stop-asking-how-was-work-today-successful-mentally-strong-couples-ask-these-questions-instead.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/19/stop-asking-how-was-work-today-successful-mentally-strong-couples-ask-these-questions-instead.html",
+          "published_at": "2026-07-19T13:30:01+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "214d22be0461",
+      "title": "Housing costs is the top political issue for young voters, CNBC survey finds",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/19/housing-costs-election-young-voters-cnbc-survey-finds.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/19/housing-costs-election-young-voters-cnbc-survey-finds.html",
+          "published_at": "2026-07-19T12:00:01+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "adfa9a875772",
+      "title": "‘I am at a loss’: My brother is dying. We are not close. What responsibility do I have to help him?",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/i-am-at-a-loss-my-brother-is-dying-we-are-not-close-what-responsibility-do-i-have-to-help-him-08af705a?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/i-am-at-a-loss-my-brother-is-dying-we-are-not-close-what-responsibility-do-i-have-to-help-him-08af705a?mod=mw_rss_topstories",
+          "published_at": "2026-07-19T11:30:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "fc00637a95b6",
+      "title": "My husband and I are retired. Our financial adviser, who is in his 30s, called us ‘you guyses.’ Is that unprofessional?",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/my-husband-and-i-are-retired-our-financial-adviser-who-is-in-his-30s-called-us-you-guyses-is-that-unprofessional-ccddaa9f?mod=mw_rss_topstories",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/my-husband-and-i-are-retired-our-financial-adviser-who-is-in-his-30s-called-us-you-guyses-is-that-unprofessional-ccddaa9f?mod=mw_rss_topstories",
+          "published_at": "2026-07-19T09:20:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "497a3f8bdac6",
+      "title": "Cybersecurity risks posed by over-the-air tech in autos has analysts concerned",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/07/18/over-the-air-tech-in-vehicles-poses-cybersecurity-risks.html",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/18/over-the-air-tech-in-vehicles-poses-cybersecurity-risks.html",
+          "published_at": "2026-07-18T23:01:01+00:00",
           "importance_score": 40
         }
       ]
