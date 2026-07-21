@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-20T22:43:15.153802+00:00",
+  "generated_at": "2026-07-21T22:42:15.791463+00:00",
   "total_items": 20,
   "items": [
     {
-      "title": "[301087 可孚医疗] 回购A股股份报告书",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225434044.PDF",
-      "published_at": "2026-07-20T12:24:07+00:00",
+      "title": "[301248 杰创智能] 关于回购股份事项前十名股东及前十名无限售条件股东持股情况的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225436056.PDF",
+      "published_at": "2026-07-21T11:52:26+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "301087",
-        "sec_name": "可孚医疗"
+        "sec_code": "301248",
+        "sec_name": "杰创智能"
       },
-      "id": "41cc570467c8",
+      "id": "aafff05fa799",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -23,19 +23,19 @@
       "importance_score": 75
     },
     {
-      "title": "[301087 可孚医疗] 关于注销回购A股股份减少注册资本暨通知债权人的公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225434046.PDF",
-      "published_at": "2026-07-20T12:22:07+00:00",
+      "title": "[301248 杰创智能] 回购报告书",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225436054.PDF",
+      "published_at": "2026-07-21T11:52:26+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "301087",
-        "sec_name": "可孚医疗"
+        "sec_code": "301248",
+        "sec_name": "杰创智能"
       },
-      "id": "a861ee79e731",
+      "id": "cccc769adf48",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -43,19 +43,19 @@
       "importance_score": 75
     },
     {
-      "title": "[301265 华新科技] 关于董事长提议回购公司股份的公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433863.PDF",
-      "published_at": "2026-07-20T11:42:07+00:00",
+      "title": "[301248 杰创智能] 关于首次回购公司股份暨回购进展的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225436055.PDF",
+      "published_at": "2026-07-21T11:52:11+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "301265",
-        "sec_name": "华新科技"
+        "sec_code": "301248",
+        "sec_name": "杰创智能"
       },
-      "id": "a6038e186a9e",
+      "id": "df4ad1a17a95",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -63,19 +63,19 @@
       "importance_score": 75
     },
     {
-      "title": "[301265 华新科技] 关于以集中竞价交易方式回购公司股份方案的公告暨回购报告书",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433862.PDF",
-      "published_at": "2026-07-20T11:42:07+00:00",
+      "title": "[301086 鸿富瀚] 回购公司股份方案的公告暨回购报告书",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435976.PDF",
+      "published_at": "2026-07-21T11:32:26+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "301265",
-        "sec_name": "华新科技"
+        "sec_code": "301086",
+        "sec_name": "鸿富瀚"
       },
-      "id": "c0a31b0ff797",
+      "id": "e15a86a4151d",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -83,19 +83,19 @@
       "importance_score": 75
     },
     {
-      "title": "[300002 神州泰岳] 关于增加回购股份资金来源的公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433599.PDF",
-      "published_at": "2026-07-20T11:08:07+00:00",
+      "title": "[301086 鸿富瀚] 回购股份事项前十名股东及前十名无限售条件股东持股情况的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435978.PDF",
+      "published_at": "2026-07-21T11:30:29+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "300002",
-        "sec_name": "神州泰岳"
+        "sec_code": "301086",
+        "sec_name": "鸿富瀚"
       },
-      "id": "3fef8570fc35",
+      "id": "bcef43a58056",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -103,19 +103,19 @@
       "importance_score": 75
     },
     {
-      "title": "[300138 晨光生物] 关于回购股份予以注销并减少注册资本通知债权人的公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433484.PDF",
-      "published_at": "2026-07-20T10:52:07+00:00",
+      "title": "[301161 唯万密封] 关于以集中竞价交易方式回购公司股份方案的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435663.PDF",
+      "published_at": "2026-07-21T10:50:29+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "300138",
-        "sec_name": "晨光生物"
+        "sec_code": "301161",
+        "sec_name": "唯万密封"
       },
-      "id": "8457a5de3aac",
+      "id": "af2ede165b1e",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -123,19 +123,19 @@
       "importance_score": 75
     },
     {
-      "title": "[300138 晨光生物] 回购报告书",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433483.PDF",
-      "published_at": "2026-07-20T10:52:07+00:00",
+      "title": "[301161 唯万密封] 关于以集中竞价交易方式回购公司股份的回购报告书",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435662.PDF",
+      "published_at": "2026-07-21T10:50:28+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "300138",
-        "sec_name": "晨光生物"
+        "sec_code": "301161",
+        "sec_name": "唯万密封"
       },
-      "id": "619cf7f892b5",
+      "id": "4fb06ba4ab5f",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -143,19 +143,19 @@
       "importance_score": 75
     },
     {
-      "title": "[300802 矩子科技] 关于回购公司股份方案的公告暨回购报告书",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433427.PDF",
-      "published_at": "2026-07-20T10:46:07+00:00",
+      "title": "[300691 联合光电] 关于回购公司股份的进展公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435640.PDF",
+      "published_at": "2026-07-21T10:46:11+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "300802",
-        "sec_name": "矩子科技"
+        "sec_code": "300691",
+        "sec_name": "联合光电"
       },
-      "id": "35b5a4520107",
+      "id": "e3f1c4dd3e48",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -163,19 +163,19 @@
       "importance_score": 75
     },
     {
-      "title": "[300122 智飞生物] 关于以集中竞价方式回购公司A股股份方案的公告暨回购报告书",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433324.PDF",
-      "published_at": "2026-07-20T10:38:07+00:00",
+      "title": "[300095 华伍股份] 关于收到公司董事长、控股股东、实际控制人提议回购公司股份的提示性公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435174.PDF",
+      "published_at": "2026-07-21T10:39:33+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "300122",
-        "sec_name": "智飞生物"
+        "sec_code": "300095",
+        "sec_name": "华伍股份"
       },
-      "id": "6e77ba02bee8",
+      "id": "32af983e2da3",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -183,9 +183,49 @@
       "importance_score": 75
     },
     {
-      "title": "[300684 中石科技] 关于回购公司股份方案的公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225433326.PDF",
-      "published_at": "2026-07-20T10:31:24+00:00",
+      "title": "[301337 亚华电子] 回购报告书",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435601.PDF",
+      "published_at": "2026-07-21T10:32:26+00:00",
+      "source": "巨潮资讯",
+      "source_id": "cninfo",
+      "source_tier_rank": 0,
+      "market": "cn",
+      "summary": "",
+      "raw": {
+        "sec_code": "301337",
+        "sec_name": "亚华电子"
+      },
+      "id": "73742709d368",
+      "label": "capital",
+      "label_zh": "资本运作",
+      "market_zh": "A股",
+      "importance_label": "high",
+      "importance_score": 75
+    },
+    {
+      "title": "[301500 飞南资源] 关于部分限制性股票回购注销完成的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435434.PDF",
+      "published_at": "2026-07-21T10:08:26+00:00",
+      "source": "巨潮资讯",
+      "source_id": "cninfo",
+      "source_tier_rank": 0,
+      "market": "cn",
+      "summary": "",
+      "raw": {
+        "sec_code": "301500",
+        "sec_name": "飞南资源"
+      },
+      "id": "30055db99349",
+      "label": "capital",
+      "label_zh": "资本运作",
+      "market_zh": "A股",
+      "importance_label": "high",
+      "importance_score": 75
+    },
+    {
+      "title": "[300684 中石科技] 回购报告书",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435396.PDF",
+      "published_at": "2026-07-21T10:02:26+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
@@ -195,7 +235,7 @@
         "sec_code": "300684",
         "sec_name": "中石科技"
       },
-      "id": "13afdae2f068",
+      "id": "1159e2b44a48",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -203,19 +243,19 @@
       "importance_score": 75
     },
     {
-      "title": "[300573 兴齐眼药] 关于回购公司股份用于注销并减少注册资本的债权人通知公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225431918.PDF",
-      "published_at": "2026-07-20T10:22:07+00:00",
+      "title": "[300684 中石科技] 关于回购股份事项前十名股东和前十名无限售条件股东持股情况的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435397.PDF",
+      "published_at": "2026-07-21T10:00:28+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "300573",
-        "sec_name": "兴齐眼药"
+        "sec_code": "300684",
+        "sec_name": "中石科技"
       },
-      "id": "18ab8922a2d1",
+      "id": "413bbc542f40",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -223,19 +263,19 @@
       "importance_score": 75
     },
     {
-      "title": "[300043 星辉娱乐] 关于回购公司股份的进展公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225432977.PDF",
-      "published_at": "2026-07-20T10:08:08+00:00",
+      "title": "[300491 通合科技] 关于回购股份事项前十大股东和前十大无限售条件股东持股情况的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435176.PDF",
+      "published_at": "2026-07-21T09:32:26+00:00",
       "source": "巨潮资讯",
       "source_id": "cninfo",
       "source_tier_rank": 0,
       "market": "cn",
       "summary": "",
       "raw": {
-        "sec_code": "300043",
-        "sec_name": "星辉娱乐"
+        "sec_code": "300491",
+        "sec_name": "通合科技"
       },
-      "id": "eb2a4ecf4a95",
+      "id": "6014fddabff8",
       "label": "capital",
       "label_zh": "资本运作",
       "market_zh": "A股",
@@ -243,16 +283,56 @@
       "importance_score": 75
     },
     {
-      "title": "Trump imposing 50% tariffs on certain Canadian goods over alleged trade discrimination",
-      "url": "https://www.cnbc.com/2026/07/20/trump-tariffs-canada-trade.html",
-      "published_at": "2026-07-20T22:13:57+00:00",
+      "title": "[300491 通合科技] 回购报告书",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435175.PDF",
+      "published_at": "2026-07-21T09:32:11+00:00",
+      "source": "巨潮资讯",
+      "source_id": "cninfo",
+      "source_tier_rank": 0,
+      "market": "cn",
+      "summary": "",
+      "raw": {
+        "sec_code": "300491",
+        "sec_name": "通合科技"
+      },
+      "id": "405d209cd1f7",
+      "label": "capital",
+      "label_zh": "资本运作",
+      "market_zh": "A股",
+      "importance_label": "high",
+      "importance_score": 75
+    },
+    {
+      "title": "[300834 星辉环材] 关于第三期回购公司股份方案的公告",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-07-21/1225435172.PDF",
+      "published_at": "2026-07-21T09:28:28+00:00",
+      "source": "巨潮资讯",
+      "source_id": "cninfo",
+      "source_tier_rank": 0,
+      "market": "cn",
+      "summary": "",
+      "raw": {
+        "sec_code": "300834",
+        "sec_name": "星辉环材"
+      },
+      "id": "b687a5d85ccc",
+      "label": "capital",
+      "label_zh": "资本运作",
+      "market_zh": "A股",
+      "importance_label": "high",
+      "importance_score": 75
+    },
+    {
+      "title": "White House teases new trade action 'soon' as it works to re-create global tariff regime",
+      "url": "https://www.cnbc.com/2026/07/21/trump-trade-tariffs-greer-section-301.html",
+      "published_at": "2026-07-21T20:51:54+00:00",
       "source": "CNBC",
       "source_id": "CNBC",
       "source_tier_rank": 1,
       "market": "us",
-      "summary": "Canada's relationship with the U.S. has frayed amid Trump's tariff-heavy agenda and vocal displeasure with the nations' trilateral trade pact with Mexico.",
+      "summary": "U.S. Trade Representative Jamieson Greer telegraphed that the Trump administration could impose new tariffs just as other duties are set to expire.",
       "raw": {},
-      "id": "341d7d4ceec6",
+      "id": "954960ac8580",
       "label": "policy",
       "label_zh": "监管政策",
       "market_zh": "美股",
@@ -260,33 +340,33 @@
       "importance_score": 75
     },
     {
-      "title": "U.S. hits Canada with stiff new tariffs, escalating trade tensions",
-      "url": "https://www.marketwatch.com/story/u-s-hits-canada-with-stiff-new-tariffs-escalating-trade-tensions-4a97065f?mod=mw_rss_topstories",
-      "published_at": "2026-07-20T21:53:00+00:00",
+      "title": "GM beats on earnings, raises guidance amid 'resilient' consumer, pricing",
+      "url": "https://www.cnbc.com/2026/07/21/general-motors-gm-earnings-q2-2026.html",
+      "published_at": "2026-07-21T20:19:12+00:00",
+      "source": "CNBC",
+      "source_id": "CNBC",
+      "source_tier_rank": 1,
+      "market": "us",
+      "summary": "GM raised several key earnings forecasts after beating Wall Street's second-quarter expectations as its North American operations continue to drive results.",
+      "raw": {},
+      "id": "1185589daea7",
+      "label": "earnings",
+      "label_zh": "财报业绩",
+      "market_zh": "美股",
+      "importance_label": "high",
+      "importance_score": 75
+    },
+    {
+      "title": "Why Paramount could win if it loses the Warner Bros. Discovery deal",
+      "url": "https://www.marketwatch.com/story/why-paramount-could-win-if-it-loses-the-warner-bros-discovery-deal-5f174963?mod=mw_rss_topstories",
+      "published_at": "2026-07-21T19:49:00+00:00",
       "source": "MarketWatch",
       "source_id": "MarketWatch",
       "source_tier_rank": 1,
       "market": "us",
-      "summary": "The Trump administration on Monday said it would slap 50% tariffs on some goods imported from Canada, in an effort to end what it sees as discriminatory trade practices by Ottawa against the U.S. automobile, dairy and alcohol industries.",
+      "summary": "States are trying to block Paramount’s mega-merger. Shareholders should root for them.",
       "raw": {},
-      "id": "a9535325ee06",
-      "label": "policy",
-      "label_zh": "监管政策",
-      "market_zh": "美股",
-      "importance_label": "high",
-      "importance_score": 75
-    },
-    {
-      "title": "Paramount and Warner Bros. merger hit with temporary restraining order",
-      "url": "https://www.cnbc.com/2026/07/20/paramount-wbd-merger-delay.html",
-      "published_at": "2026-07-20T19:20:38+00:00",
-      "source": "CNBC",
-      "source_id": "CNBC",
-      "source_tier_rank": 1,
-      "market": "us",
-      "summary": "A California judge granted a temporary restraining order as part of the lawsuit brought by state attorneys general due to antitrust concerns.",
-      "raw": {},
-      "id": "055ebcae3498",
+      "id": "b34cdf6f944f",
       "label": "mna",
       "label_zh": "并购重组",
       "market_zh": "美股",
@@ -294,105 +374,21 @@
       "importance_score": 75
     },
     {
-      "title": "The bar for Tesla earnings is sky-high. Here's why and how options traders can capitalize",
-      "url": "https://www.cnbc.com/2026/07/20/the-bar-for-tesla-earnings-is-sky-high-heres-why-and-how-options-traders-can-capitalize.html",
-      "published_at": "2026-07-20T17:16:22+00:00",
+      "title": "Tesla shares poised for biggest earnings move in a year",
+      "url": "https://www.cnbc.com/2026/07/21/tesla-shares-poised-for-biggest-earnings-move-in-a-year.html",
+      "published_at": "2026-07-21T18:25:07+00:00",
       "source": "CNBC",
       "source_id": "CNBC",
       "source_tier_rank": 1,
       "market": "us",
-      "summary": "Michael Khouw breaks down how he's trading Tesla into earnings.",
+      "summary": "Shares of Elon Musk's electric vehicle company are expected to see a sharp swing after Tesla rolls out its quarterly report.",
       "raw": {},
-      "id": "fa46765e3969",
+      "id": "6bcf70ea2eb0",
       "label": "earnings",
       "label_zh": "财报业绩",
       "market_zh": "美股",
       "importance_label": "high",
       "importance_score": 75
-    },
-    {
-      "title": "Coinbase trading results may fall short of expectations, according to prediction markets",
-      "url": "https://www.cnbc.com/2026/07/20/kalshi-traders-think-coinbases-trading-volume-will-fall-again.html",
-      "published_at": "2026-07-20T12:41:50+00:00",
-      "source": "CNBC",
-      "source_id": "CNBC",
-      "source_tier_rank": 1,
-      "market": "us",
-      "summary": "Speculators think in the company's second quarter earnings report, it will show trading volume fell for a third consecutive quarter.",
-      "raw": {},
-      "id": "293abb4439a4",
-      "label": "earnings",
-      "label_zh": "财报业绩",
-      "market_zh": "美股",
-      "importance_label": "high",
-      "importance_score": 75
-    },
-    {
-      "title": "獨立非執行董事辭任遵守上市規則的狀況及繼續暫停買賣",
-      "url": "/listedco/listconews/sehk/2026/0720/2026072001486_c.pdf",
-      "published_at": "2026-07-20T22:43:09.659579+00:00",
-      "source": "港交所披露",
-      "source_id": "hkexnews",
-      "source_tier_rank": 0,
-      "market": "hk",
-      "summary": "",
-      "raw": {
-        "FILE_INFO": "160KB",
-        "NEWS_ID": "12250382",
-        "SHORT_TEXT": "公告及通告 - [更換董事或重要行政職能或職責的變更 &#x2f; 更換薪酬委員會成員 &#x2f; 更換提名委員會成員 &#x2f; 更換審核委員會成...<div class='fancy-note-tooltip-hover' data-tooltip-position='nextsibling'>  <a href='javascript:void(0)' class='fancy-note-label tooltip' >更多</a></div><div class='fancy-note-hover bottom mobile-hidden'>公告及通告 - [更換董事或重要行政職能或職責的變更 &#x2f; 更換薪酬委員會成員 &#x2f; 更換提名委員會成員 &#x2f; 更換審核委員會成員 &#x2f; 未能符合薪酬委員會的規定 &#x2f; 未能符合提名委員會的規定 &#x2f; 未能符合審核委員會的規定 &#x2f; 未能符合獨立非執行董事的規定或獨立非執行董事未能符合獨立性指引]</div>]<br/>",
-        "TOTAL_COUNT": "637",
-        "DOD_WEB_PATH": "",
-        "STOCK_NAME": "恒大汽車",
-        "TITLE": "獨立非執行董事辭任遵守上市規則的狀況及繼續暫停買賣",
-        "FILE_TYPE": "PDF",
-        "DATE_TIME": "20/07/2026 22:47",
-        "LONG_TEXT": "公告及通告 - [更換董事或重要行政職能或職責的變更 &#x2f; 更換薪酬委員會成員 &#x2f; 更換提名委員會成員 &#x2f; 更換審核委員會成員 &#x2f; 未能符合薪酬委員會的規定 &#x2f; 未能符合提名委員會的規定 &#x2f; 未能符合審核委員會的規定 &#x2f; 未能符合獨立非執行董事的規定或獨立非執行董事未能符合獨立性指引]",
-        "STOCK_CODE": "00708",
-        "FILE_LINK": "/listedco/listconews/sehk/2026/0720/2026072001486_c.pdf"
-      },
-      "id": "122c20b3272b",
-      "label": "product",
-      "label_zh": "产品业务",
-      "market_zh": "港股",
-      "importance_label": "medium",
-      "importance_score": 68
-    },
-    {
-      "title": "[300779 惠城环保] 关于向特定对象发行股票解除限售并上市流通的提示性公告",
-      "url": "http://static.cninfo.com.cn/finalpage/2026-07-20/1225432978.PDF",
-      "published_at": "2026-07-20T10:08:07+00:00",
-      "source": "巨潮资讯",
-      "source_id": "cninfo",
-      "source_tier_rank": 0,
-      "market": "cn",
-      "summary": "",
-      "raw": {
-        "sec_code": "300779",
-        "sec_name": "惠城环保"
-      },
-      "id": "39fc1c8041f1",
-      "label": "product",
-      "label_zh": "产品业务",
-      "market_zh": "A股",
-      "importance_label": "medium",
-      "importance_score": 68
-    },
-    {
-      "title": "Americans are skipping lettuce and salads as investigation into cyclospora outbreak continues",
-      "url": "https://www.marketwatch.com/story/americans-are-skipping-lettuce-and-salads-as-investigation-into-cyclospora-outbreak-continues-562499b6?mod=mw_rss_topstories",
-      "published_at": "2026-07-20T21:44:00+00:00",
-      "source": "MarketWatch",
-      "source_id": "MarketWatch",
-      "source_tier_rank": 1,
-      "market": "us",
-      "summary": "Shares of salad chains like Cava, Chipotle and Sweetgreen closed lower on Monday.",
-      "raw": {},
-      "id": "a060cc3e066b",
-      "label": "macro",
-      "label_zh": "宏观数据",
-      "market_zh": "美股",
-      "importance_label": "medium",
-      "importance_score": 65
     }
   ]
 }
