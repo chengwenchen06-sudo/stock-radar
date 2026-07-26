@@ -12,13 +12,19 @@ const REFRESH_API = "http://127.0.0.1:8766";  // refresh_server.py 端口
 
 // 内置默认关注股（用户清空 localStorage 或首次访问时使用）
 const DEFAULT_WATCHLIST = [
+  // A 股
   { code: "600519", name: "贵州茅台" },
-  { code: "000001", name: "平安银行" },
-  { code: "000002", name: "万科A" },
-  { code: "600036", name: "招商银行" },
-  { code: "601318", name: "中国平安" },
   { code: "300750", name: "宁德时代" },
+  { code: "002594", name: "比亚迪" },
+  { code: "601318", name: "中国平安" },
   { code: "688981", name: "中芯国际" },
+  // 港股
+  { code: "00700", name: "腾讯控股" },
+  { code: "09988", name: "阿里巴巴" },
+  // 美股
+  { code: "NVDA", name: "英伟达" },
+  { code: "AAPL", name: "苹果" },
+  { code: "TSLA", name: "特斯拉" },
 ];
 
 const state = {
@@ -56,6 +62,145 @@ function relTime(iso) {
   return `${Math.floor(diff / 86400)}天前`;
 }
 
+function fmtPrice(p) {
+  if (p == null) return "—";
+  return Number(p).toLocaleString("zh-CN", { maximumFractionDigits: 2 });
+}
+
+function fmtPct(p) {
+  if (p == null) return "—";
+  const sign = p >= 0 ? "+" : "";
+  return `${sign}${Number(p).toFixed(2)}%`;
+}
+
+async function loadMarketOverview() {
+  const section = el("#market-overview");
+  if (!section) return;
+  let data;
+  try {
+    data = await fetchJSON("market-overview.json");
+  } catch (_) {
+    section.hidden = true;
+    return;
+  }
+  if (!data || data.status === "failed") {
+    section.hidden = true;
+    return;
+  }
+  renderMarketOverview(data);
+  section.hidden = false;
+}
+
+function renderMarketOverview(data) {
+  el("#mo-time").textContent = data.generated_at
+    ? new Date(data.generated_at).toLocaleString("zh-CN", { hour12: false })
+    : "";
+
+  const idxEl = el("#mo-indices");
+  idxEl.innerHTML = "";
+  for (const idx of data.indices || []) {
+    const dir = (idx.change_pct ?? 0) >= 0 ? "up" : "down";
+    const arrow = dir === "up" ? "▲" : "▼";
+    idxEl.insertAdjacentHTML("beforeend", `
+      <div class="mo-index ${dir}">
+        <div class="mo-index-name">${escapeHTML(idx.name)}</div>
+        <div class="mo-index-price">${fmtPrice(idx.price)}</div>
+        <div class="mo-index-pct">${arrow} ${fmtPct(idx.change_pct)}</div>
+      </div>
+    `);
+  }
+
+  const b = data.breadth || {};
+  const breadthEl = el("#mo-breadth");
+  if (b.total) {
+    breadthEl.innerHTML = `
+      <span class="mo-stat up">📈 涨 <strong>${b.up ?? 0}</strong></span>
+      <span class="mo-stat down">📉 跌 <strong>${b.down ?? 0}</strong></span>
+      <span class="mo-stat">平 <strong>${b.flat ?? 0}</strong></span>
+      <span class="mo-stat up">🚀 涨停 <strong>${b.limit_up ?? 0}</strong></span>
+      <span class="mo-stat down">💥 跌停 <strong>${b.limit_down ?? 0}</strong></span>
+    `;
+  } else {
+    breadthEl.innerHTML = `<span class="mo-empty">数据暂不可用</span>`;
+  }
+
+  const sectorsEl = el("#mo-sectors");
+  const top = data.sectors_top || [];
+  const bot = data.sectors_bottom || [];
+  if (top.length || bot.length) {
+    const item = (s) =>
+      `<span class="mo-sector-item ${s.change_pct >= 0 ? "up" : "down"}">${escapeHTML(s.name)} <strong>${fmtPct(s.change_pct)}</strong></span>`;
+    sectorsEl.innerHTML = `
+      <div>
+        <div class="mo-sector-list-title">🔥 领涨</div>
+        ${top.length ? top.map(item).join("") : `<span class="mo-empty">暂无</span>`}
+      </div>
+      <div>
+        <div class="mo-sector-list-title">💧 领跌</div>
+        ${bot.length ? bot.map(item).join("") : `<span class="mo-empty">暂无</span>`}
+      </div>
+    `;
+  } else {
+    sectorsEl.innerHTML = `<span class="mo-empty">板块数据暂不可用</span>`;
+  }
+}
+
+function renderStockCard(q) {
+  const card = el("#stock-info-card");
+  if (!card) return;
+  if (!/^[0-9]{5,6}$|^[A-Za-z]{1,5}(\.[A-Za-z])?$/.test(q.trim())) {
+    card.hidden = true;
+    return;
+  }
+  const code = q.trim().toUpperCase();
+  const quote = (state.quotes || {})[code];
+  const name = (quote && quote.name) || lookupStockName(code) || "";
+  // Bug fix: 之前这里会把没匹配到名称/也没行情的代码卡藏起来,
+  // 导致用户搜冷门代码(300144、002415 等)时卡"消失"。
+  // 搜股票代码 = 用户意图明确,卡必须显示(哪怕只是"未识别股票 [code] + 加入关注")。
+  const displayName = (quote && quote.name) || name || code;
+  const inWl = state.watchlist.some((w) => w.code === code);
+
+  let quoteHtml = "";
+  if (quote && quote.price != null) {
+    const dir = (quote.change_pct ?? 0) > 0 ? "up" : (quote.change_pct < 0 ? "down" : "flat");
+    const arrow = dir === "up" ? "▲" : dir === "down" ? "▼" : "—";
+    quoteHtml = `
+      <div class="sc-quote ${dir}">
+        <span class="sc-price">${fmtPrice(quote.price)}</span>
+        <span class="sc-pct">${arrow} ${fmtPct(quote.change_pct)}</span>
+      </div>
+    `;
+  }
+
+  const actionHtml = inWl
+    ? `<span class="sc-in-wl">✓ 已在关注列表</span>`
+    : `<button class="primary-btn sc-add" data-code="${escapeHTML(code)}" data-name="${escapeHTML(displayName)}">+ 加入「我的关注」</button>`;
+
+  const hasQuote = !!(quote && quote.price != null);
+  card.innerHTML = `
+    <div class="sc-info">
+      <span class="sc-name">📊 ${escapeHTML(displayName)}</span>
+      <span class="sc-code">${escapeHTML(code)}</span>
+      ${quoteHtml}
+    </div>
+    <div class="sc-actions">${actionHtml}</div>
+    <span class="sc-error"></span>
+    ${hasQuote ? "" : `<span class="sc-hint">${escapeHTML(displayName)} 最近没有 48h 内的公告、新闻或异动信号。加入关注后,有相关信号时会立即显示。</span>`}
+  `;
+
+  const addBtn = card.querySelector(".sc-add");
+  if (addBtn) {
+    addBtn.addEventListener("click", () => {
+      const r = addStock(addBtn.dataset.code, addBtn.dataset.name);
+      const errEl = card.querySelector(".sc-error");
+      if (errEl) errEl.textContent = r.ok ? "" : (r.error || "加入失败");
+      renderStockCard(state.search);
+    });
+  }
+  card.hidden = false;
+}
+
 function tierLabel(t) {
   return ["官方一手", "主流财经", "二线财经", "RSS/OPML", "", "社交聚合"][t] || `tier${t}`;
 }
@@ -70,12 +215,66 @@ function escapeHTML(s) {
   }[c]));
 }
 
+/* ---------- 共享过滤逻辑 ---------- */
+
+function itemSearchBlob(it) {
+  return [
+    it.title || "",
+    it.summary || "",
+    it.source || "",
+    (it.raw && it.raw.code) || "",
+    (it.raw && it.raw.sec_code) || "",
+    (it.raw && it.raw.stock_code) || "",
+    (it.raw && it.raw.short_name) || "",
+    (it.raw && it.raw.sec_name) || "",
+    (it.raw && it.raw.name) || "",
+    (it.raw && it.raw.industry) || "",
+    (it.raw && it.raw.sector) || "",
+  ].join(" ").toLowerCase();
+}
+
+function itemMatchesSearch(it, rawQuery) {
+  if (!rawQuery || !rawQuery.trim()) return true;
+  const q = rawQuery.toLowerCase().trim();
+  const blob = itemSearchBlob(it);
+  const rawTokens = q.split(/\s+/).filter(Boolean);
+  return rawTokens.every((origTok) => {
+    const cands = [origTok];
+    if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(origTok.toUpperCase())) {
+      const aliases = lookupAliases(origTok.toUpperCase());
+      for (const a of aliases) cands.push(a.toLowerCase());
+    }
+    return cands.some((c) => blob.includes(c));
+  });
+}
+
+function itemMatchesFilters(it) {
+  if (state.market !== "all" && it.market !== state.market) return false;
+  if (state.label !== "all" && it.label !== state.label) return false;
+  if (state.importance !== "all" && it.importance_label !== state.importance) return false;
+  if (state.stock) {
+    const code = extractStockCode(it.title);
+    const rawCode = (it.raw && (it.raw.code || it.raw.sec_code || it.raw.stock_code)) || "";
+    if (code !== state.stock && rawCode !== state.stock) return false;
+  }
+  return true;
+}
+
+function filterItems(items) {
+  return items.filter((it) => {
+    if (!itemMatchesFilters(it)) return false;
+    if (!itemMatchesSearch(it, state.search)) return false;
+    return true;
+  });
+}
+
 /* ---------- 行情显示 ---------- */
 
 function quoteTag(code) {
-  if (!state.quotes) return "";
+  // 没行情数据时显示占位 — 让卡片头部不会因为缺数据而"消失"
+  if (!state.quotes) return `<span class="tag price empty" title="行情数据未加载(file:// 下 localStorage/origin 可能受限,请用 HTTP server)">—</span>`;
   const q = state.quotes[code];
-  if (!q || q.price == null) return "";
+  if (!q || q.price == null) return `<span class="tag price empty" title="该股票暂无实时行情报价">—</span>`;
   const price = q.market === "hk" ? `HK$${q.price.toFixed(3)}`
                : q.market === "us" ? `$${q.price.toFixed(2)}`
                : `¥${q.price.toFixed(2)}`;
@@ -111,8 +310,9 @@ function addStock(code, name) {
   code = (code || "").trim();
   name = (name || "").trim();
   if (!code) return { ok: false, error: "代码不能为空" };
-  if (!/^[0-9]{6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(code)) {
-    return { ok: false, error: "代码格式：6 位数字（A 股 / 港股）或 1-5 位字母（美股）" };
+  // 跟前端 renderStockCard 的代码识别正则保持一致:5-6 位数字 + 1-5 字母 + 可选 .X
+  if (!/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(code)) {
+    return { ok: false, error: "代码格式:5-6 位数字(A 股 / 港股)或 1-5 位字母(美股)" };
   }
   if (state.watchlist.some((w) => w.code === code)) {
     return { ok: false, error: "已在关注列表中" };
@@ -121,7 +321,28 @@ function addStock(code, name) {
   saveWatchlist(state.watchlist);
   rebuildWatchlistChips();
   rerender();
+  fetchQuoteFor(code);
   return { ok: true };
+}
+
+// 加股后顺手通过本地 /api/quote 拉一次实时行情,不用等下一个全量刷新周期。
+// fetch-and-forget,失败就静默 —— quoteTag 会继续显示 "—",用户重试或下个周期再补。
+async function fetchQuoteFor(code) {
+  const ctrl = new AbortController();
+  const tid = setTimeout(() => ctrl.abort(), 9000);
+  try {
+    const r = await fetch(`/api/quote?code=${encodeURIComponent(code)}`, { signal: ctrl.signal });
+    if (!r.ok) return;
+    const data = await r.json();
+    if (!data || data.code !== code) return;
+    const q = data.quote || {};
+    if (data.has_quote && q.price != null) {
+      state.quotes = state.quotes || {};
+      state.quotes[code] = q;
+      rerender();
+    }
+  } catch (_) { /* 网络/超时/服务器不可达 —— "—" 占位就让它占着 */ }
+  finally { clearTimeout(tid); }
 }
 
 function removeStock(code) {
@@ -207,56 +428,7 @@ function storyHTML(s) {
 }
 
 function applyFilters(items) {
-  return items.filter((it) => {
-    if (state.market !== "all" && it.market !== state.market) return false;
-    if (state.label !== "all" && it.label !== state.label) return false;
-    if (state.importance !== "all" && it.importance_label !== state.importance) return false;
-    if (state.stock) {
-      const code = extractStockCode(it.title);
-      const rawCode = (it.raw && (it.raw.code || it.raw.sec_code || it.raw.stock_code)) || "";
-      if (code !== state.stock && rawCode !== state.stock) return false;
-    }
-    if (state.search) {
-      const q = state.search.toLowerCase().trim();
-      if (q) {
-        const blob = [
-          it.title || "",
-          it.summary || "",
-          it.source || "",
-          (it.raw && it.raw.code) || "",
-          (it.raw && it.raw.sec_code) || "",
-          (it.raw && it.raw.stock_code) || "",
-          (it.raw && it.raw.short_name) || "",
-          (it.raw && it.raw.sec_name) || "",
-          (it.raw && it.raw.name) || "",
-          (it.raw && it.raw.industry) || "",
-          (it.raw && it.raw.sector) || "",
-        ].join(" ").toLowerCase();
-        // 多 token AND；每个 token 可展开为自身 + 代码别名
-        const rawTokens = q.split(/\s+/).filter(Boolean);
-        const expandedTokens = rawTokens.flatMap((t) => {
-          const out = [t];
-          // 如果 token 看起来像股票代码，自动加入名称别名（如 "300750" → ["300750","宁德时代","时代"]）
-          if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(t.toUpperCase())) {
-            const aliases = lookupAliases(t.toUpperCase());
-            for (const a of aliases) out.push(a.toLowerCase());
-          }
-          return out;
-        });
-        // 一个 token 命中它自己 OR 任意别名即可
-        const ok = rawTokens.every((origTok) => {
-          const cands = [origTok];
-          if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(origTok.toUpperCase())) {
-            const aliases = lookupAliases(origTok.toUpperCase());
-            for (const a of aliases) cands.push(a.toLowerCase());
-          }
-          return cands.some((c) => blob.includes(c));
-        });
-        if (!ok) return false;
-      }
-    }
-    return true;
-  });
+  return filterItems(items);
 }
 
 function renderInChunks(container, items, buildHTML, chunkSize = RENDER_CHUNK) {
@@ -317,6 +489,7 @@ function renderAll(reset = true) {
 function updateSearchStatus() {
   const box = el("#search-status");
   if (!box) return;
+  renderStockCard(state.search);
   const q = state.search.trim();
   if (!q) {
     box.className = "search-status";
@@ -324,43 +497,15 @@ function updateSearchStatus() {
     return;
   }
   if (!state.data) return;
-  const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
-  const matched = state.data.items.filter((it) => {
-    const blob = [
-      it.title || "", it.summary || "", it.source || "",
-      (it.raw && it.raw.code) || "",
-      (it.raw && it.raw.sec_code) || "",
-      (it.raw && it.raw.stock_code) || "",
-      (it.raw && it.raw.short_name) || "",
-      (it.raw && it.raw.sec_name) || "",
-      (it.raw && it.raw.name) || "",
-      (it.raw && it.raw.industry) || "",
-      (it.raw && it.raw.sector) || "",
-    ].join(" ").toLowerCase();
-    return tokens.every((tok) => {
-      const cands = [tok];
-      if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(tok.toUpperCase())) {
-        for (const a of lookupAliases(tok.toUpperCase())) cands.push(a.toLowerCase());
-      }
-      return cands.some((c) => blob.includes(c));
-    });
-  });
-  // 按来源统计
+  const matched = state.data.items.filter((it) => itemMatchesSearch(it, state.search));
   const bySrc = {};
   for (const it of matched) bySrc[it.source] = (bySrc[it.source] || 0) + 1;
   if (matched.length === 0) {
     box.className = "search-status empty";
-    // 判断是否像股票代码（纯数字 5-6 位，或 1-5 位字母）
     const isCode = /^[0-9]{5,6}$/.test(q) || /^[A-Za-z]{1,5}(\.[A-Za-z])?$/.test(q);
-    const name = isCode ? lookupStockName(q.toUpperCase()) : "";
-    let hint = `未找到与「<span class="code-chip">${escapeHTML(q)}</span>」相关的条目`;
-    if (isCode) {
-      const c = q.toUpperCase();
-      hint += `。当前 48 小时数据窗口内${name ? `「${escapeHTML(name)}」` : "该股"}没有公告、新闻或异动。`;
-      hint += `<br>💡 点击 <button class="chip add-watchlist-hint" data-code="${escapeHTML(c)}" data-name="${escapeHTML(name || c)}">+ 加入「我的关注」</button> 以便在有相关信号时第一时间看到。`;
-    } else {
-      hint += `。换个关键词试试，或使用股票代码（如 600519 / 00700 / NVDA）搜索。`;
-    }
+    const hint = isCode
+      ? `48 小时数据窗口内「<span class="code-chip">${escapeHTML(q)}</span>」没有公告/新闻/异动,以上是股票最新信息。`
+      : `未找到与「<span class="code-chip">${escapeHTML(q)}</span>」相关的条目。换个关键词试试,或使用股票代码(如 600519 / 00700 / NVDA)搜索。`;
     box.innerHTML = hint;
     return;
   }
@@ -373,41 +518,13 @@ function updateSearchStatus() {
 }
 
 function renderWatchlist() {
-  if (!state.data) return;
   const groups = {};
   for (const w of state.watchlist) groups[w.code] = [];
-  for (const it of state.data.items) {
+  const filtered = filterItems((state.data && state.data.items) || []);
+  for (const it of filtered) {
     const code = extractStockCode(it.title) ||
                  (it.raw && (it.raw.code || it.raw.sec_code || it.raw.stock_code)) || "";
-    if (groups[code]) {
-      if (state.market !== "all" && it.market !== state.market) continue;
-      if (state.label !== "all" && it.label !== state.label) continue;
-      if (state.importance !== "all" && it.importance_label !== state.importance) continue;
-      if (state.search) {
-        const q = state.search.toLowerCase().trim();
-        if (q) {
-          const blob = [
-            it.title || "", it.summary || "", it.source || "",
-            (it.raw && it.raw.code) || "",
-            (it.raw && it.raw.sec_code) || "",
-            (it.raw && it.raw.short_name) || "",
-            (it.raw && it.raw.sec_name) || "",
-            (it.raw && it.raw.industry) || "",
-          ].join(" ").toLowerCase();
-          const rawTokens = q.split(/\s+/).filter(Boolean);
-          const ok = rawTokens.every((origTok) => {
-            const cands = [origTok];
-            if (/^[0-9]{5,6}$|^[A-Z]{1,5}(\.[A-Z])?$/.test(origTok.toUpperCase())) {
-              const aliases = lookupAliases(origTok.toUpperCase());
-              for (const a of aliases) cands.push(a.toLowerCase());
-            }
-            return cands.some((c) => blob.includes(c));
-          });
-          if (!ok) continue;
-        }
-      }
-      groups[code].push(it);
-    }
+    if (groups[code]) groups[code].push(it);
   }
 
   const cards = el("#watchlist-cards");
@@ -482,6 +599,44 @@ function renderStatus() {
   `).join("");
 }
 
+let _lastGeneratedAt = "";
+
+function updateStaleWarning(elapsedSec) {
+  let banner = el("#stale-banner");
+  if (elapsedSec < 6 * 3600) {
+    if (banner) banner.remove();
+    return;
+  }
+  if (!banner) {
+    banner = document.createElement("div");
+    banner.id = "stale-banner";
+    banner.style.cssText = "padding:10px 20px;font-size:13px;text-align:center;border-bottom:1px solid";
+    const topbar = el(".topbar");
+    if (topbar) topbar.after(banner);
+    else document.body.prepend(banner);
+  }
+  if (elapsedSec < 24 * 3600) {
+    banner.style.background = "rgba(210,153,34,0.12)";
+    banner.style.color = "#d29922";
+    banner.style.borderColor = "rgba(210,153,34,0.3)";
+    banner.textContent = `⚠️ 数据已 ${Math.floor(elapsedSec / 3600)} 小时未更新，下次更新约在 ${nextCIRun()}`;
+  } else {
+    banner.style.background = "rgba(248,81,73,0.12)";
+    banner.style.color = "#f85149";
+    banner.style.borderColor = "rgba(248,81,73,0.3)";
+    banner.textContent = `🚨 数据已超过 24 小时未更新（${Math.floor(elapsedSec / 3600)} 小时前），请检查 CI 状态`;
+  }
+}
+
+function nextCIRun() {
+  const now = new Date();
+  const next = new Date(now);
+  next.setUTCHours(22, 0, 0, 0);
+  if (now > next) next.setUTCDate(next.getUTCDate() + 1);
+  const diff = Math.round((next - now) / 3600000);
+  return diff > 1 ? `${diff} 小时后` : "即将";
+}
+
 function updateMeta() {
   if (!state.data) return;
   const d = state.data;
@@ -492,6 +647,7 @@ function updateMeta() {
     : `${Math.floor(elapsed / 3600)}小时前`;
   el("#data-meta").textContent =
     `更新于 ${timeStr} · ${d.total_items} 条 · ${d.source_count} 个信源`;
+  updateStaleWarning(elapsed);
 }
 
 /* ---------- 自动刷新 ---------- */
@@ -500,22 +656,21 @@ let autoRefreshInterval = null;
 let metaTimer = null;
 
 function startAutoRefresh() {
-  // 每秒更新 meta 显示
   metaTimer = setInterval(updateMeta, 1000);
 
-  // 每 2 分钟重新拉取数据
   autoRefreshInterval = setInterval(async () => {
     try {
+      const oldGen = _lastGeneratedAt;
       await loadAllData();
-      // 闪烁一下提示用户数据已刷新
-      const elm = el("#data-meta");
-      elm.style.transition = "color 0.3s";
-      elm.style.color = "var(--accent)";
-      setTimeout(() => { elm.style.color = ""; }, 800);
+      if (_lastGeneratedAt && _lastGeneratedAt !== oldGen) {
+        const elm = el("#data-meta");
+        elm.style.transition = "color 0.3s";
+        elm.style.color = "var(--accent)";
+        setTimeout(() => { elm.style.color = ""; }, 800);
+      }
     } catch (_) {
-      // 静默失败，下次自动刷新继续
     }
-  }, 120_000);
+  }, 600_000);
 }
 
 function stopAutoRefresh() {
@@ -797,6 +952,7 @@ async function loadAllData() {
     fetchJSON("source-status.json"),
     fetchJSON("daily-brief.json"),
   ]);
+  _lastGeneratedAt = state.data ? state.data.generated_at : "";
   state.data = data;
   state.stories = stories;
   state.status = status;
@@ -847,11 +1003,29 @@ async function init() {
       state.quotes = null;
     }
 
+    // 大盘复盘卡（可选，失败静默）
+    loadMarketOverview().catch(() => {});
+
     updateMeta();
     startAutoRefresh();
     setView("signal");
   } catch (e) {
-    document.body.innerHTML = `<div style="padding:40px;text-align:center;color:#f85149">数据加载失败：${e.message}<br><br>本地预览请运行 <code>python3 -m http.server 8080</code> 后访问 <a href="http://localhost:8080">localhost:8080</a></div>`;
+    // 之前这里会把整个 body 清掉,等于告诉用户"不用 UI 了"——体验太差。
+    // 改成:顶部塞一个红色 banner + 让 state 用空结构 fallback,UI 框架照旧
+    // (搜索框、watchlist 编辑器、hot-chip 都能用)。
+    // 这样 file:// 也能开,用户至少能看到明确提示。
+    document.body.insertAdjacentHTML("afterbegin", `
+      <div class="init-banner" role="alert">
+        <strong>数据加载失败</strong>:${escapeHTML(e.message || "无法加载本地数据")}<br>
+        本地预览请运行 <code>python3 scripts/serve.sh</code> 后访问
+        <a href="http://127.0.0.1:8765/">http://127.0.0.1:8765/</a>
+        (系统浏览器打开,Codex 内嵌拦 localhost)。当前页面已降级展示,搜索/加关注/编辑依然可用。
+      </div>`);
+    state.data = state.data || { items: [], window_hours: 48, total_items: 0, source_count: 0 };
+    state.stories = state.stories || { stories: [] };
+    state.status = state.status || { sites: [] };
+    state.daily = state.daily || { items: [] };
+    try { startAutoRefresh(); setView("signal"); } catch (_) {}
   }
 }
 

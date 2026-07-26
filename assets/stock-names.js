@@ -38,26 +38,44 @@ function lookupStockName(code) {
   return STOCK_NAMES[code] || "";
 }
 
+// 繁体中文别名映射（港股常用繁体名）
+const TRADITIONAL_ALIASES = {
+  "00700": ["騰訊控股", "騰訊"],
+  "09988": ["阿里巴巴", "阿里"],
+  "03690": ["美團", "美團-W"],
+  "01810": ["小米集團", "小米"],
+  "02318": ["中國平安"],
+  "00388": ["香港交易所", "港交所"],
+  "00939": ["建設銀行"],
+  "01398": ["工商銀行"],
+  "03968": ["招商銀行"],
+};
+
 /**
- * 根据股票代码反查所有别名（名称 + 名称里的关键词）。
+ * 根据股票代码反查所有别名（名称 + 名称里的关键词 + 繁体名）。
  * 例如 lookupAliases("600519") 返回 ["贵州茅台", "茅台"]。
  * 用于搜索时代码 → 名称扩展。
  */
 function lookupAliases(code) {
   const name = STOCK_NAMES[code];
-  if (!name) return [];
-  const aliases = [name];
-  // 取中文部分
-  const cn = name.match(/[\u4e00-\u9fa5]+/g);
-  if (cn) {
-    const full = cn.join("");
-    if (full !== name) aliases.push(full);
-    // ≥ 3 个汉字时取最后 2 个作为常用简称（"贵州茅台" → "茅台"）
-    if (cn.join("").length >= 3) {
-      // 把所有汉字片段拼起来再取末尾 2 字
-      const joined = cn.join("");
-      const short = joined.slice(-2);
-      if (!aliases.includes(short)) aliases.push(short);
+  const aliases = [];
+  if (name) {
+    aliases.push(name);
+    const cn = name.match(/[\u4e00-\u9fa5]+/g);
+    if (cn) {
+      const full = cn.join("");
+      if (full !== name) aliases.push(full);
+      if (cn.join("").length >= 3) {
+        const joined = cn.join("");
+        const short = joined.slice(-2);
+        if (!aliases.includes(short)) aliases.push(short);
+      }
+    }
+  }
+  const trad = TRADITIONAL_ALIASES[code];
+  if (trad) {
+    for (const t of trad) {
+      if (!aliases.includes(t)) aliases.push(t);
     }
   }
   return aliases;

@@ -52,8 +52,6 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
             tasks.append((sid, src, fetchers.fetch_wallstcn_live))
         elif sid == "wallstcn_art":
             tasks.append((sid, src, fetchers.fetch_wallstcn_articles))
-        elif sid == "cls_telegraph":
-            tasks.append((sid, src, fetchers.fetch_cls_telegraph))
         elif sid == "hkexnews":
             tasks.append((sid, src, fetchers.fetch_hkexnews))
         elif sid == "sec_edgar_8k":
@@ -62,8 +60,6 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
             tasks.append((sid, src, fetchers.fetch_akshare_zt))
         elif sid == "akshare_zbgc":
             tasks.append((sid, src, fetchers.fetch_akshare_zbgc))
-        elif sid == "akshare_sector_flow":
-            tasks.append((sid, src, fetchers.fetch_akshare_sector_flow))
         elif sid == "akshare_lhb":
             tasks.append((sid, src, fetchers.fetch_akshare_lhb))
         elif sid == "akshare_eco":
@@ -133,27 +129,59 @@ def collect_all(session: requests.Session, opml_path: str | None, window_hours: 
     return filtered, status
 
 
+def _title_tokens(t: str) -> set[str]:
+    """提取标题中的有效 token 用于相似度比较。去掉股票代码前缀和常见停用词。"""
+    import re
+    cleaned = re.sub(r"\[[^\]]*\]", "", t)
+    cleaned = re.sub(r"[^\w\s]", " ", cleaned)
+    tokens = set(cleaned.lower().split())
+    stopwords = {"的", "了", "在", "是", "和", "与", "或", "及", "有", "为",
+                 "及", "the", "a", "an", "of", "in", "on", "to", "for", "and"}
+    return tokens - stopwords
+
+
+def _jaccard(a: set[str], b: set[str]) -> float:
+    union = a | b
+    if not union:
+        return 0.0
+    return len(a & b) / len(union)
+
+
 def merge_stories(items: list[dict]) -> list[dict]:
-    """把同一事件（标题相似）合并成故事线。简易实现：按 label + 前 6 个汉字做 key。"""
-    from collections import defaultdict
-    buckets: dict[tuple, list[dict]] = defaultdict(list)
-    for it in items:
-        # 去掉股票代码前缀：[000001 XXX]
-        t = it["title"]
-        t = t.replace("[", "").replace("]", "")
-        # 取 label + 头 8 个有效字符（去标点）
-        import re
-        head = re.sub(r"\s+", "", t)[:8]
-        key = (it["label"], head)
-        buckets[key].append(it)
+    """把同一事件（标题相似）合并成故事线。
+
+    使用 Jaccard 相似度 + label 一致性做聚类，阈值 0.35。
+    比之前的按前 N 字符 key 更准确，避免不同事件撞 key。
+    """
+    SIMILARITY_THRESHOLD = 0.35
+
+    remaining = list(items)
+    remaining.sort(key=lambda i: -i["importance_score"])
+    clusters: list[list[dict]] = []
+
+    for it in remaining:
+        tokens = _title_tokens(it["title"])
+        matched = False
+        for cluster in clusters:
+            # 检查 label 一致性 + Jaccard 相似度
+            if cluster[0]["label"] != it["label"]:
+                continue
+            ref_tokens = _title_tokens(cluster[0]["title"])
+            if _jaccard(tokens, ref_tokens) >= SIMILARITY_THRESHOLD:
+                cluster.append(it)
+                matched = True
+                break
+        if not matched:
+            clusters.append([it])
+
     stories = []
-    for (label, head), group in buckets.items():
+    for group in clusters:
         group.sort(key=lambda i: i["importance_score"], reverse=True)
         top = group[0]
         stories.append({
-            "story_id": _hash_id(f"{label}-{head}"),
+            "story_id": _hash_id(f"{top['label']}-{_hash_id(top['title'])}"),
             "title": top["title"],
-            "label": label,
+            "label": top["label"],
             "label_zh": top["label_zh"],
             "importance_label": top["importance_label"],
             "importance_score": max(i["importance_score"] for i in group),

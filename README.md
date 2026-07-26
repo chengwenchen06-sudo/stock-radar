@@ -8,17 +8,18 @@
 
 ### 本地预览
 
+终端一行起服务，自动绑 `127.0.0.1:8765` 并打开浏览器：
+
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install feedparser requests
-
-# 跑一次（用 demo 数据，无网络请求）
-python scripts/update_news.py --skip-network --output-dir data
-
-# 启动本地预览
-python -m http.server 8080
-# 打开 http://localhost:8080
+bash scripts/serve.sh
 ```
+
+可选参数：
+
+- `bash scripts/serve.sh --port 9000` — 换端口（避开占用）
+- `bash scripts/serve.sh --no-open` — 不自动开浏览器
+
+按 `Ctrl+C` 停服务。首次跑没数据时 `serve.py` 会自动生成 demo，不需要额外操作。
 
 ### 真实抓取
 

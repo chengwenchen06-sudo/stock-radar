@@ -45,10 +45,6 @@ BUILTIN_SOURCES = [
      "url": "https://api-one.wallstcn.com/apiv1/content/lives"},
     {"id": "wallstcn_art",   "name": "华尔街见闻文章",   "market": "cn",     "tier": 1, "kind": "json",
      "url": "https://api-one.wallstcn.com/apiv1/content/articles"},
-    # 注释掉的源（接口下线/被代理挡，保留代码作 fallback）：
-    # - cls_telegraph: 财联社 nodeapi 接口下线（404）
-    # {"id": "cls_telegraph",  "name": "财联社电报",     "market": "cn",     "tier": 1, "kind": "json",
-    #  "url": "https://www.cls.cn/nodeapi/updateTelegraphList"},
     # 港股（一手）
     {"id": "hkexnews",       "name": "港交所披露",     "market": "hk",     "tier": 0, "kind": "json",
      "url": "https://www1.hkexnews.hk/search/titleSearchServlet.do"},
@@ -58,8 +54,6 @@ BUILTIN_SOURCES = [
     # AkShare 异动层（A 股实时）
     {"id": "akshare_zt",     "name": "AkShare 涨停池",   "market": "cn", "tier": 1, "kind": "akshare", "url": "zt"},
     {"id": "akshare_zbgc",   "name": "AkShare 炸板池",   "market": "cn", "tier": 1, "kind": "akshare", "url": "zbgc"},
-    # - akshare_sector_flow: push2.eastmoney.com 被代理挡（ProxyError），HTML 入口 404
-    # {"id": "akshare_sector_flow", "name": "AkShare 板块资金流", "market": "cn", "tier": 1, "kind": "akshare", "url": "sector_flow"},
     {"id": "akshare_lhb",    "name": "AkShare 龙虎榜",   "market": "cn", "tier": 2, "kind": "akshare", "url": "lhb"},
     {"id": "akshare_eco",    "name": "AkShare 财经日历", "market": "global", "tier": 1, "kind": "akshare", "url": "eco"},
     {"id": "akshare_news",   "name": "AkShare 个股新闻", "market": "cn", "tier": 2, "kind": "akshare", "url": "news"},
@@ -325,49 +319,6 @@ def fetch_wallstcn_articles(session: requests.Session, src: dict, limit: int = 2
         time.sleep(0.15)
     return out
 
-# ---------- 财联社电报 (A股 7x24 快讯) ----------
-
-def fetch_cls_telegraph(session: requests.Session, src: dict, limit: int = 30) -> list[dict]:
-    """财联社 7x24 实时电报，作为 wallstcn_live 的独立备份。"""
-    out = []
-    headers = {"User-Agent": BROWSER_UA, "Referer": "https://www.cls.cn/"}
-    # last_time 是 24h 前的 unix 秒，CLS 用它做增量返回
-    last_time = int((datetime.now(timezone.utc) - timedelta(hours=24)).timestamp())
-    payload = {
-        "last_time": last_time,
-        "rn": limit,
-        "os": "web",
-        "sv": "7.7.5",
-    }
-    try:
-        r = session.post(src["url"], data=payload, headers=headers, timeout=15)
-        r.raise_for_status()
-        data = r.json()
-    except Exception as e:
-        log.debug("cls telegraph unavailable: %s", e)
-        return out
-    roll = ((data.get("data") or {})).get("roll_data") or []
-    for tg in roll:
-        title = (tg.get("title") or tg.get("brief") or "").strip()
-        if not title:
-            continue
-        ctime = tg.get("ctime") or 0
-        try:
-            ts = datetime.fromtimestamp(int(ctime), tz=timezone.utc)
-        except Exception:
-            continue
-        if ts < datetime.now(timezone.utc) - timedelta(hours=24):
-            continue
-        tg_id = tg.get("id", "")
-        url = f"https://www.cls.cn/detail/{tg_id}" if tg_id else src["url"]
-        subject = tg.get("subject") or ""
-        out.append(_mk_item(
-            title[:200], url, ts, src,
-            summary=f"财联社电报 · {subject}" if subject else "财联社电报",
-            raw={"id": tg_id, "subject": subject},
-        ))
-    return out
-
 # ---------- 港交所披露 ----------
 
 def fetch_hkexnews(session: requests.Session, src: dict) -> list[dict]:
@@ -622,36 +573,6 @@ def fetch_akshare_zbgc(session, src) -> list[dict]:
             title, url, ts, src, summary=summary,
             raw={"code": code, "name": name, "change": float(change),
                  "zb_n": int(zb_n), "industry": industry},
-        ))
-    return out
-
-def fetch_akshare_sector_flow(session, src) -> list[dict]:
-    """板块资金流排名（今日）。给盘中异动加一个「资金面」维度。"""
-    out = []
-    try:
-        import akshare as ak
-        df = ak.stock_sector_fund_flow_rank(indicator="今日")
-    except Exception as e:
-        log.debug("akshare sector flow unavailable: %s", e)
-        return out
-    if df is None or len(df) == 0:
-        return out
-    for _, row in df.iterrows():
-        name = str(row.get("名称", "")).strip()
-        if not name:
-            continue
-        try:
-            change = float(row.get("今日涨跌幅", 0) or 0)
-            net = float(row.get("今日主力净流入-净额", 0) or 0)
-        except Exception:
-            continue
-        ts = _ak_dt_now()
-        title = f"[{name}] 板块涨{change:+.2f}% 主力净流入{net/1e8:+.2f}亿"
-        summary = f"涨跌幅 {change:+.2f}% · 主力净额 {net/1e8:+.2f}亿"
-        url = "https://data.eastmoney.com/bkzj/hy.html"
-        out.append(_mk_item(
-            title, url, ts, src, summary=summary,
-            raw={"sector": name, "change": change, "net_inflow": net},
         ))
     return out
 

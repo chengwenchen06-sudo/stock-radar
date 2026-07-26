@@ -23,6 +23,24 @@
     </div>
   </header>
 
+  <section id="market-overview" class="market-overview" hidden>
+    <div class="mo-head">
+      <h3>📊 今日大盘</h3>
+      <span class="mo-time" id="mo-time"></span>
+    </div>
+    <div id="mo-indices" class="mo-indices"></div>
+    <div class="mo-grid">
+      <div class="mo-card">
+        <h4>市场广度</h4>
+        <div id="mo-breadth" class="mo-stats"></div>
+      </div>
+      <div class="mo-card">
+        <h4>板块涨跌</h4>
+        <div id="mo-sectors" class="mo-sectors"></div>
+      </div>
+    </div>
+  </section>
+
   <nav class="tabs container">
     <button class="tab active" data-view="signal">🎯 信号</button>
     <button class="tab" data-view="watchlist">⭐ 我的关注</button>
@@ -95,6 +113,9 @@
         <div id="search-status" class="search-status"></div>
       </div>
     </section>
+
+    <!-- 股票信息卡：搜索代码时显示 -->
+    <aside id="stock-info-card" class="stock-card" hidden></aside>
 
     <!-- Signal 视图 -->
     <section id="view-signal" class="view active">

@@ -30,6 +30,14 @@ jobs:
           python-version: "3.11"
           cache: "pip"
 
+      - name: Cache AkShare data
+        uses: actions/cache@v4
+        with:
+          path: ~/.akshare
+          key: akshare-${{ runner.os }}-${{ hashFiles('scripts/fetchers.py') }}
+          restore-keys: |
+            akshare-${{ runner.os }}-
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -57,6 +65,10 @@ jobs:
       - name: Fetch stock quotes
         run: |
           python scripts/fetch_quotes.py --output-dir data
+
+      - name: Fetch market overview (大盘复盘)
+        run: |
+          python scripts/fetch_market_overview.py --output-dir data
 
       - name: Clean up private OPML
         if: always()
