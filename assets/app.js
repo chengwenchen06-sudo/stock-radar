@@ -9,6 +9,7 @@ const PAGE_SIZE = 50;
 const RENDER_CHUNK = 30;
 const WATCHLIST_KEY = "stock-radar:watchlist:v1";
 const REFRESH_API = "http://127.0.0.1:8766";  // refresh_server.py 端口
+let _refreshAvailable = false;
 
 // 内置默认关注股（用户清空 localStorage 或首次访问时使用）
 const DEFAULT_WATCHLIST = [
@@ -869,9 +870,27 @@ function hideRefreshToast() {
   if (toast) toast.classList.remove("show");
 }
 
+async function checkRefreshServer() {
+  try {
+    const r = await fetch(REFRESH_API, { method: "HEAD", signal: AbortSignal.timeout(2000) });
+    _refreshAvailable = r.ok;
+  } catch {
+    _refreshAvailable = false;
+  }
+}
+
 async function triggerRefresh() {
   const btn = el("#refresh-btn");
-  if (btn && btn.classList.contains("spinning")) return;  // 防重复点击
+  if (btn && btn.classList.contains("spinning")) return;
+
+  if (!_refreshAvailable) {
+    showRefreshToast(
+      "🚀 触发远程更新",
+      "本地刷新服务未运行。将在下次 CI 定时任务（每日 UTC 22:00）自动更新，或去 GitHub 手动触发：https://github.com/chengwenchen06-sudo/stock-radar/actions",
+      ""
+    );
+    return;
+  }
 
   if (btn) {
     btn.classList.add("spinning");
@@ -1006,6 +1025,7 @@ async function init() {
     // 大盘复盘卡（可选，失败静默）
     loadMarketOverview().catch(() => {});
 
+    checkRefreshServer();
     updateMeta();
     startAutoRefresh();
     setView("signal");
