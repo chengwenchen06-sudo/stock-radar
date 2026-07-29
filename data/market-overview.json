@@ -1,80 +1,8 @@
 {
-  "generated_at": "2026-07-29T05:02:12.627419+00:00",
-  "indices": [
-    {
-      "code": "000001",
-      "name": "上证指数",
-      "price": 3793.6,
-      "change_pct": -0.52,
-      "market": "cn"
-    },
-    {
-      "code": "000300",
-      "name": "沪深300",
-      "price": 4555.86,
-      "change_pct": -0.3,
-      "market": "cn"
-    },
-    {
-      "code": "000688",
-      "name": "科创50",
-      "price": 1622.98,
-      "change_pct": -4.16,
-      "market": "cn"
-    }
-  ],
-  "breadth": {
-    "total": 5000,
-    "up": 1500,
-    "down": 2750,
-    "flat": 750,
-    "limit_up": 59,
-    "limit_down": 24,
-    "note": "estimated breadth from index direction; limit up/down from AkShare"
-  },
-  "sectors_top": [
-    {
-      "name": "教育运营及其他",
-      "change_pct": 6.92
-    },
-    {
-      "name": "乳品",
-      "change_pct": 6.74
-    },
-    {
-      "name": "饮料乳品",
-      "change_pct": 6.44
-    },
-    {
-      "name": "软饮料",
-      "change_pct": 5.73
-    },
-    {
-      "name": "电动乘用车",
-      "change_pct": 5.09
-    }
-  ],
-  "sectors_bottom": [
-    {
-      "name": "半导体设备",
-      "change_pct": -8.12
-    },
-    {
-      "name": "半导体材料",
-      "change_pct": -7.56
-    },
-    {
-      "name": "集成电路封测",
-      "change_pct": -6.97
-    },
-    {
-      "name": "光学元件",
-      "change_pct": -6.08
-    },
-    {
-      "name": "电子化学品Ⅱ",
-      "change_pct": -6.07
-    }
-  ],
-  "status": "ok"
+  "generated_at": "2026-07-29T22:47:18.074127+00:00",
+  "indices": [],
+  "breadth": {},
+  "sectors_top": [],
+  "sectors_bottom": [],
+  "status": "failed"
 }
