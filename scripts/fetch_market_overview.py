@@ -15,6 +15,7 @@ import argparse
 import json
 import logging
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -41,6 +42,14 @@ YAHOO_INDICES = [
 ]
 
 
+def _col_name(cols: list[str], *candidates: str) -> str | None:
+    """从 DataFrame columns 中找出第一个匹配的列名。"""
+    for c in candidates:
+        if c in cols:
+            return c
+    return None
+
+
 def fetch_akshare_indices() -> list[dict]:
     """通过 AkShare 获取 A 股主要指数实时行情。"""
     try:
@@ -50,21 +59,30 @@ def fetch_akshare_indices() -> list[dict]:
         log.warning("akshare indices failed: %s", e)
         return []
 
-    name_map = {row["index_name"]: row for _, row in df.iterrows()}
+    cols = list(df.columns)
+    name_col = _col_name(cols, "index_name", "名称")
+    code_col = _col_name(cols, "index_code", "代码")
+    price_col = _col_name(cols, "最新价", "最新价")
+    change_col = _col_name(cols, "涨跌幅", "涨跌幅")
+    if not name_col or not price_col or not change_col:
+        log.warning("akshare indices: unknown columns %s", cols)
+        return []
+
+    name_map = {row[name_col]: row for _, row in df.iterrows()}
     results = []
     for name, display, market in INDICES:
         row = name_map.get(name)
         if row is None:
             continue
         try:
-            price = float(row.get("最新价", 0))
-            change_pct = float(row.get("涨跌幅", 0))
+            price = float(row.get(price_col, 0))
+            change_pct = float(row.get(change_col, 0))
         except (ValueError, TypeError):
             continue
         if price <= 0:
             continue
         results.append({
-            "code": row.get("index_code", name),
+            "code": row.get(code_col, name) if code_col else name,
             "name": display,
             "price": price,
             "change_pct": round(change_pct, 2),
@@ -75,19 +93,33 @@ def fetch_akshare_indices() -> list[dict]:
 
 
 def fetch_yahoo_indices() -> list[dict]:
-    """通过 Yahoo Finance v7 quote API 获取港股/美股指数。"""
+    """通过 Yahoo Finance v7 quote API 获取港股/美股指数（含重试）。"""
     symbols = [s[0] for s in YAHOO_INDICES]
     url = f"https://query1.finance.yahoo.com/v7/finance/quote?symbols={','.join(symbols)}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
-    try:
-        r = requests.get(url, headers=headers, timeout=15)
-        r.raise_for_status()
-        data = r.json()
-    except Exception as e:
-        log.warning("yahoo indices failed: %s", e)
+    data = None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, headers=headers, timeout=15)
+            if r.status_code == 429:
+                wait = 2 ** attempt * 5
+                log.warning("yahoo 429, retrying in %ds (attempt %d/3)", wait, attempt + 1)
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            data = r.json()
+            break
+        except Exception as e:
+            log.warning("yahoo indices attempt %d failed: %s", attempt + 1, e)
+            if attempt < 2:
+                time.sleep(3)
+                continue
+            return []
+
+    if data is None:
         return []
 
     quote_map = {}
@@ -126,11 +158,18 @@ def fetch_akshare_sectors(top_n: int = 5) -> tuple[list[dict], list[dict]]:
         log.warning("akshare sectors failed: %s", e)
         return [], []
 
+    cols = list(df.columns)
+    name_col = _col_name(cols, "板块名称", "名称")
+    change_col = _col_name(cols, "涨跌幅", "涨跌幅")
+    if not name_col or not change_col:
+        log.warning("akshare sectors: unknown columns %s", cols)
+        return [], []
+
     sectors = []
     for _, row in df.iterrows():
         try:
-            change = float(row.get("涨跌幅", 0))
-            name = str(row.get("板块名称", "")).strip()
+            change = float(row.get(change_col, 0))
+            name = str(row.get(name_col, "")).strip()
         except (ValueError, TypeError):
             continue
         if not name:
