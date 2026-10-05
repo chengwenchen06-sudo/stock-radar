@@ -1,66 +1,66 @@
 {
-  "generated_at": "2026-10-04T00:11:15.106492+00:00",
-  "total_stories": 288,
+  "generated_at": "2026-10-05T00:17:07.239602+00:00",
+  "total_stories": 321,
   "stories": [
     {
-      "story_id": "ad6a17b82bb5",
-      "title": "須予披露交易\n收購上市證券",
+      "story_id": "c3059d0d6287",
+      "title": "境外債務重組之重大進展",
       "label": "mna",
       "label_zh": "并购重组",
       "importance_label": "high",
       "importance_score": 85,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203458_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500002_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203458_c.pdf",
-          "published_at": "2026-10-04T00:10:24.292644+00:00",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500002_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393137+00:00",
           "importance_score": 85
         }
       ]
     },
     {
-      "story_id": "9f15264c2054",
-      "title": "(1)季度更新；\n(2) 延遲刊發二零二五至二六年中期業績及\n寄發二零二五至二六年中報；\n(3)延遲刊發二零二五至二六年全年業績及\n寄發二零二五至二六年年報；\n及\n(4)繼續暫停買賣",
-      "label": "earnings",
-      "label_zh": "财报业绩",
+      "story_id": "28d40901ac68",
+      "title": "內幕消息 - 境外重組之重大進展及清盤呈請之最新情況",
+      "label": "mna",
+      "label_zh": "并购重组",
       "importance_label": "high",
       "importance_score": 85,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203472_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500080_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203472_c.pdf",
-          "published_at": "2026-10-04T00:10:24.292614+00:00",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500080_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393128+00:00",
           "importance_score": 85
         }
       ]
     },
     {
-      "story_id": "f2dd9bf4be45",
-      "title": "有關實施股東回報規劃之更新",
+      "story_id": "479841f3446e",
+      "title": "穩定價格行動、穩定價格期結束及超額配股權失效",
       "label": "capital",
       "label_zh": "资本运作",
       "importance_label": "high",
       "importance_score": 75,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203502_c.pdf",
+      "primary_url": "/listedco/listconews/sehk/2026/1004/2026100400014_c.pdf",
       "markets": [
         "hk"
       ],
       "items": [
         {
           "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203502_c.pdf",
-          "published_at": "2026-10-04T00:10:24.292532+00:00",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400014_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393180+00:00",
           "importance_score": 75
         }
       ]
@@ -87,71 +87,86 @@
       ]
     },
     {
-      "story_id": "6ca24deb62b8",
-      "title": "恒生科技指數上市基金 &lt;03032&gt; 資料",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "medium",
-      "importance_score": 68,
-      "source_count": 2,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203450_c.xlsx",
+      "story_id": "30eeeed5a149",
+      "title": "上周五科技股力挺美股走高，纳指涨超1%创盘中新高，特斯拉收涨近5%；美债收益率走V；G7释放油储计划重创原油，美油盘中跌超5%，全周金银大跌。  美国9月新增非农就业2.9万人，远低于华尔街预期9万，失业率小幅升至4.2%。机构高呼9月非农“杀死”10月加息预期、市场预计加息概率降至20%。  G7决定释放1亿桶紧急油储，立即行动、持续四个月，前20天先大规模投放柴油。特朗普称不会实施柴油出口禁令",
+      "label": "macro",
+      "label_zh": "宏观数据",
+      "importance_label": "high",
+      "importance_score": 75,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3174001",
       "markets": [
-        "hk"
+        "global"
       ],
       "items": [
         {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203450_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292659+00:00",
-          "importance_score": 68
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203456_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292649+00:00",
-          "importance_score": 68
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3174001",
+          "published_at": "2026-10-04T23:10:22+00:00",
+          "importance_score": 75
         }
       ]
     },
     {
-      "story_id": "b82a944af90e",
-      "title": "恒指ESG增強精選指數ETF&lt;03136&gt; 資料",
-      "label": "market",
-      "label_zh": "大盘行情",
-      "importance_label": "medium",
-      "importance_score": 68,
+      "story_id": "30e7c83cfda2",
+      "title": "施耐德电气洽谈按大约200亿美元收购美国上市的工程软件开发公司PTC Inc.。  预计最快将于周一宣布这笔交易。（英国金融时报）",
+      "label": "mna",
+      "label_zh": "并购重组",
+      "importance_label": "high",
+      "importance_score": 75,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203462_c.xlsx",
+      "primary_url": "https://wallstreetcn.com/livenews/3173988",
       "markets": [
-        "hk"
+        "global"
       ],
       "items": [
         {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203462_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292634+00:00",
-          "importance_score": 68
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173988",
+          "published_at": "2026-10-04T19:37:25+00:00",
+          "importance_score": 75
         }
       ]
     },
     {
-      "story_id": "f0c7c1e30c3b",
-      "title": "發行人剛在本網站英文版面發布一項公告，相應中文版本或會／或不會在本版面發布。",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "medium",
-      "importance_score": 68,
+      "story_id": "70b81d9e1ebb",
+      "title": "白宫国家经济委员会主任凯文·哈塞特在福克斯新闻Sunday Morning Futures节目中被问及鲍威尔是否应该辞职时表示：“我认为他是时候离开了，也是时候尊重美联储独立性了。”“正如你所看到的，沃什主席与其他人一道投票支持加息，”哈塞特表示，“我不同意这一决定，但我们尊重他是出于正确的理由作出这一决定的。”",
+      "label": "policy",
+      "label_zh": "监管政策",
+      "importance_label": "high",
+      "importance_score": 75,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203586_c.htm",
+      "primary_url": "https://wallstreetcn.com/livenews/3173973",
       "markets": [
-        "hk"
+        "global"
       ],
       "items": [
         {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203586_c.htm",
-          "published_at": "2026-10-04T00:10:24.292192+00:00",
-          "importance_score": 68
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173973",
+          "published_at": "2026-10-04T14:20:17+00:00",
+          "importance_score": 75
+        }
+      ]
+    },
+    {
+      "story_id": "7cd1280f800a",
+      "title": "付鹏：一场跨越十余年的宏观交易——从新西兰看小型开放经济体【付鹏说5】",
+      "label": "policy",
+      "label_zh": "监管政策",
+      "importance_label": "high",
+      "importance_score": 75,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/premium/articles/3782435?layout=wscn-layout",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻文章",
+          "url": "https://wallstreetcn.com/premium/articles/3782435?layout=wscn-layout",
+          "published_at": "2026-10-04T10:00:48+00:00",
+          "importance_score": 75
         }
       ]
     },
@@ -618,467 +633,554 @@
       ]
     },
     {
-      "story_id": "70c2858a7b81",
-      "title": "DeepSeek扩招！弹性计算团队大量HC，尤其需要资深工程师",
-      "label": "earnings",
-      "label_zh": "财报业绩",
-      "importance_label": "medium",
-      "importance_score": 65,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/articles/3782963",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/articles/3782963",
-          "published_at": "2026-10-03T06:32:24+00:00",
-          "importance_score": 65
-        }
-      ]
-    },
-    {
-      "story_id": "5be550b0faf8",
-      "title": "越南三季度GDP同比 9.95%，前值 8.39%。",
+      "story_id": "b584822fbe13",
+      "title": "① 08:00 澳大利亚9月道明证券通胀指数；  ② 08:30 日本9月服务业PMI终值；  ③ 15:00 欧洲央行管委科赫尔发表讲话；  ④ 15:45 欧洲央行管委内格尔发表讲话；  ⑤ 15:50 法国9月服务业PMI终值；  ⑥ 15:55 德国9月服务业PMI终值；  ⑦ 16:00 欧元区9月服务业PMI终值，欧洲央行首席经济学家连恩发表讲话；  ⑧ 16:30 英国9月服务业PM",
       "label": "macro",
       "label_zh": "宏观数据",
       "importance_label": "medium",
       "importance_score": 65,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173841",
+      "primary_url": "https://wallstreetcn.com/livenews/3173999",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173841",
-          "published_at": "2026-10-03T00:58:39+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173999",
+          "published_at": "2026-10-04T22:30:58+00:00",
           "importance_score": 65
         }
       ]
     },
     {
-      "story_id": "3dd929e53e7b",
-      "title": "3004 NEWS",
-      "label": "other",
-      "label_zh": "综合",
+      "story_id": "169e1051b755",
+      "title": "在一轮抛售潮勾起人们对十五年前欧元区债务危机的记忆后，交易员正对欧洲政府债券市场的传染迹象保持高度警惕。当某一主权债券市场的金融压力蔓延至其他市场——即使这种蔓延看似缺乏充分理由——就会引发令央行担忧的混乱价格波动，并迫使它们在极端情况下出手干预。这正是2011-12年欧元区债务危机的典型特征。  摩根士丹利投资管理公司固定收益联席主管Jeff Mueller表示：“我们开始看到传染的初步迹象。如",
+      "label": "policy",
+      "label_zh": "监管政策",
       "importance_label": "medium",
-      "importance_score": 60,
+      "importance_score": 65,
       "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203448_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203448_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292663+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "6e0122134e2e",
-      "title": "進一步延長根據特別授權配售新股份之最後截止日期",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203452_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203452_c.pdf",
-          "published_at": "2026-10-04T00:10:24.292654+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "a7d5d6c0644e",
-      "title": "3109 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203460_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203460_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292639+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "78ec5a45a073",
-      "title": "進一步延遲寄發有關主要交易之通函",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/gem/2026/1002/2026100203464_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/gem/2026/1002/2026100203464_c.pdf",
-          "published_at": "2026-10-04T00:10:24.292630+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "b55d5d9cff57",
-      "title": "恒生日本東証100指數ETF &lt;03410&gt; 資料",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 7,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203466_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203466_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292625+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203470_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292620+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203480_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292597+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203482_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292592+00:00",
-          "importance_score": 60
-        },
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203484_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292586+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "06e85844dc0a",
-      "title": "3053 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203476_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203476_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292609+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "f16db48a94e6",
-      "title": "於二零二六年十月二日舉行之\n股東週年大會之投票表決結果",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203478_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203478_c.pdf",
-          "published_at": "2026-10-04T00:10:24.292602+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "a4c424f5c9d8",
-      "title": "3096 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203486_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203486_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292581+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "fa544dffdb43",
-      "title": "3122 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203488_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203488_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292577+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "411293793e79",
-      "title": "3199 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203490_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203490_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292571+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "b6ac21b76d2a",
-      "title": "3509 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203494_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203494_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292561+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "4c1b5d6c752d",
-      "title": "3579 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203496_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203496_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292555+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "efdd842bfae8",
-      "title": "截至二零二六年九月三十日止月報表",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203498_c.pdf",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203498_c.pdf",
-          "published_at": "2026-10-04T00:10:24.292548+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "097e641beb26",
-      "title": "3456 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203500_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203500_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292540+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "54f72e136592",
-      "title": "2822, 3147, 3005, 3033, 3153, 3432, 3193 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203506_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203506_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292521+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "8d4b7e127097",
-      "title": "3443, 3447,3101,3030 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203582_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203582_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292514+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "ad2c70fc9fd2",
-      "title": "2802, 3431, 3473, 3469, 3133,3121,3537, 3499,3149 NEWS",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 60,
-      "source_count": 1,
-      "primary_url": "/listedco/listconews/sehk/2026/1002/2026100203584_c.xlsx",
-      "markets": [
-        "hk"
-      ],
-      "items": [
-        {
-          "source": "港交所披露",
-          "url": "/listedco/listconews/sehk/2026/1002/2026100203584_c.xlsx",
-          "published_at": "2026-10-04T00:10:24.292503+00:00",
-          "importance_score": 60
-        }
-      ]
-    },
-    {
-      "story_id": "9f81860e1303",
-      "title": "据Business Insider，OpenAI安全系统团队负责人大卫·罗宾逊（David Robinson）已辞职。",
-      "label": "management",
-      "label_zh": "管理层",
-      "importance_label": "medium",
-      "importance_score": 55,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173886",
+      "primary_url": "https://wallstreetcn.com/livenews/3173978",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173886",
-          "published_at": "2026-10-03T11:28:59+00:00",
-          "importance_score": 55
+          "url": "https://wallstreetcn.com/livenews/3173978",
+          "published_at": "2026-10-04T18:35:08+00:00",
+          "importance_score": 65
         }
       ]
     },
     {
-      "story_id": "77d5477e7d93",
-      "title": "美股四季度“逼空”信号浮现：CTA仓位大撤退，1.3万亿美元回购蓄势待发",
-      "label": "capital",
-      "label_zh": "资本运作",
+      "story_id": "286b56a56a49",
+      "title": "周一悉尼盘初，美元兑G10货币报价持稳。  当前，日元、欧元、英镑、瑞郎、澳元、纽元、加元大致持平。  上周五发布了美国非农就业报告。",
+      "label": "macro",
+      "label_zh": "宏观数据",
       "importance_label": "medium",
-      "importance_score": 55,
+      "importance_score": 65,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/articles/3782965",
+      "primary_url": "https://wallstreetcn.com/livenews/3173977",
       "markets": [
         "global"
       ],
       "items": [
         {
-          "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/articles/3782965",
-          "published_at": "2026-10-03T08:41:40+00:00",
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173977",
+          "published_at": "2026-10-04T18:28:24+00:00",
+          "importance_score": 65
+        }
+      ]
+    },
+    {
+      "story_id": "efda15be8e74",
+      "title": "股份代號 : 9102, 3102, 83102資料",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 2,
+      "primary_url": "/listedco/listconews/sehk/2026/1004/2026100400010_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400010_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.393188+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400012_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393184+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "3fffc12cdf59",
+      "title": "股份代號 : 3587, 83587, 41587 月報表",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1004/2026100400016_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400016_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393176+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "3a9872cd319a",
+      "title": "翌日披露報表 - 股份購回",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 7,
+      "primary_url": "/listedco/listconews/sehk/2026/1004/2026100400018_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400018_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393171+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400020_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393167+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400030_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393146+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500088_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393111+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500090_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393107+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "973e705771d4",
+      "title": "內幕消息",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1004/2026100400022_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400022_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393163+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "be21fd062c7c",
+      "title": "截至2026年9月30日之股份發行人的證券變動月報表",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 3,
+      "primary_url": "/listedco/listconews/gem/2026/1004/2026100400024_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/gem/2026/1004/2026100400024_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393159+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/gem/2026/1004/2026100400026_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393154+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/gem/2026/1004/2026100400028_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393151+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "5b1b5220cfd8",
+      "title": "截至二零二六年九月三十日止股份發行人的證券變動月報表",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 2,
+      "primary_url": "/listedco/listconews/sehk/2026/1004/2026100400032_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1004/2026100400032_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393142+00:00",
+          "importance_score": 60
+        },
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/gem/2026/1005/2026100500078_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393133+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "5403d2e54905",
+      "title": "有關出售附帶租約的飛機的須予披露及關連交易及股東特別大會通告",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500082_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500082_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393124+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "3dda47070c9f",
+      "title": "股東特別大會通告",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500084_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500084_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393120+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "eaf70f89b2a5",
+      "title": "股東特別大會委託書",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500086_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500086_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393116+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "cc9853442134",
+      "title": "公告 - 每日目標槓桿倍數",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500092_c.pdf",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500092_c.pdf",
+          "published_at": "2026-10-05T00:16:20.393102+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "4c3f5735c9d2",
+      "title": "2846, 9846, 82846, 3115, 9115, 83115 NEWS",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500094_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500094_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.393097+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "31ac741491f6",
+      "title": "2823, 82823 NEWS",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500098_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500098_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.393084+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "6ef8525a62fe",
+      "title": "3010, 9010, 83010 NEWS",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500100_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500100_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.393080+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "c54a276383f8",
+      "title": "9074, 3074, 9834, 2834, 2836, 9836 NEWS",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500102_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500102_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.393075+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "7e39d50970db",
+      "title": "沛富基金(股份代號 : 2821) 的資料",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500106_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500106_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.393065+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "25660ebad0c5",
+      "title": "3067, 9067, 2801, 9801 NEWS",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500108_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500108_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.393055+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "d9994b179ea3",
+      "title": "82829, 9829, 2829 NEWS",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 60,
+      "source_count": 1,
+      "primary_url": "/listedco/listconews/sehk/2026/1005/2026100500112_c.xlsx",
+      "markets": [
+        "hk"
+      ],
+      "items": [
+        {
+          "source": "港交所披露",
+          "url": "/listedco/listconews/sehk/2026/1005/2026100500112_c.xlsx",
+          "published_at": "2026-10-05T00:16:20.392775+00:00",
+          "importance_score": 60
+        }
+      ]
+    },
+    {
+      "story_id": "fb31795dacda",
+      "title": "OpenAI的CEO Altman在AI风险问题上与Anthropic PBC的立场发生分歧。  Altman认为，AI技术的益处有助于证明值得承担风险。（Politico）",
+      "label": "management",
+      "label_zh": "管理层",
+      "importance_label": "medium",
+      "importance_score": 55,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173994",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173994",
+          "published_at": "2026-10-04T21:26:58+00:00",
           "importance_score": 55
+        }
+      ]
+    },
+    {
+      "story_id": "99fc1b853c3e",
+      "title": "当地时间4日，伊朗总统办公室官员表示，在接受石油部长帕克内贾德的辞呈后，伊朗总统佩泽希齐扬已任命伊朗国家石油公司首席执行官哈米德·博尔德为伊朗石油部代理部长。（央视）",
+      "label": "management",
+      "label_zh": "管理层",
+      "importance_label": "medium",
+      "importance_score": 55,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173983",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173983",
+          "published_at": "2026-10-04T18:50:14+00:00",
+          "importance_score": 55
+        }
+      ]
+    },
+    {
+      "story_id": "52d77d3bd8a2",
+      "title": "据美国方面3日消息，美国总统特朗普已任命国家情报总监杰伊·克莱顿为白宫人工智能事务主管。  据悉，克莱顿将领导“超级智能工作组”，在120天内提交一份有关人工智能风险和机遇的报告。根据特朗普9月29日签署的一项行政令，联邦行政部门和机构将把“人工智能”改称为“超级智能”。（央视新闻）",
+      "label": "management",
+      "label_zh": "管理层",
+      "importance_label": "medium",
+      "importance_score": 55,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173931",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173931",
+          "published_at": "2026-10-04T07:06:22+00:00",
+          "importance_score": 55
+        }
+      ]
+    },
+    {
+      "story_id": "55890b63db35",
+      "title": "Corporate America has never been this upbeat about future profits",
+      "label": "earnings",
+      "label_zh": "财报业绩",
+      "importance_label": "medium",
+      "importance_score": 50,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/corporate-america-has-never-been-this-upbeat-about-future-profits-fbaf8cd9?mod=mw_rss_topstories",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch Real-time",
+          "url": "https://www.marketwatch.com/story/corporate-america-has-never-been-this-upbeat-about-future-profits-fbaf8cd9?mod=mw_rss_topstories",
+          "published_at": "2026-10-04T14:00:00+00:00",
+          "importance_score": 50
         }
       ]
     },
@@ -1119,7 +1221,7 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sz000668.html",
-          "published_at": "2026-10-04T14:50:00+00:00",
+          "published_at": "2026-10-05T14:50:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1140,31 +1242,31 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh600131.html",
-          "published_at": "2026-10-04T14:08:00+00:00",
+          "published_at": "2026-10-05T14:08:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh603185.html",
-          "published_at": "2026-10-04T13:38:00+00:00",
+          "published_at": "2026-10-05T13:38:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz002041.html",
-          "published_at": "2026-10-04T13:28:00+00:00",
+          "published_at": "2026-10-05T13:28:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz001318.html",
-          "published_at": "2026-10-04T13:20:00+00:00",
+          "published_at": "2026-10-05T13:20:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh600663.html",
-          "published_at": "2026-10-04T11:13:00+00:00",
+          "published_at": "2026-10-05T11:13:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1185,31 +1287,31 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz001266.html",
-          "published_at": "2026-10-04T13:59:00+00:00",
+          "published_at": "2026-10-05T13:59:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh603919.html",
-          "published_at": "2026-10-04T13:38:00+00:00",
+          "published_at": "2026-10-05T13:38:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz002419.html",
-          "published_at": "2026-10-04T13:08:00+00:00",
+          "published_at": "2026-10-05T13:08:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz002188.html",
-          "published_at": "2026-10-04T11:09:00+00:00",
+          "published_at": "2026-10-05T11:09:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz002755.html",
-          "published_at": "2026-10-04T10:23:00+00:00",
+          "published_at": "2026-10-05T10:23:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1230,13 +1332,13 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sz002043.html",
-          "published_at": "2026-10-04T13:38:00+00:00",
+          "published_at": "2026-10-05T13:38:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sz002262.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1257,7 +1359,7 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sh688265.html",
-          "published_at": "2026-10-04T10:45:00+00:00",
+          "published_at": "2026-10-05T10:45:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1278,13 +1380,13 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz300893.html",
-          "published_at": "2026-10-04T10:14:00+00:00",
+          "published_at": "2026-10-05T10:14:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz000678.html",
-          "published_at": "2026-10-04T10:03:00+00:00",
+          "published_at": "2026-10-05T10:03:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1305,7 +1407,7 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sh600418.html",
-          "published_at": "2026-10-04T10:11:00+00:00",
+          "published_at": "2026-10-05T10:11:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1326,7 +1428,7 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sh603982.html",
-          "published_at": "2026-10-04T10:08:00+00:00",
+          "published_at": "2026-10-05T10:08:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1347,19 +1449,19 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sh603396.html",
-          "published_at": "2026-10-04T09:53:00+00:00",
+          "published_at": "2026-10-05T09:53:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sz002799.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sh603400.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1380,7 +1482,7 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sz002273.html",
-          "published_at": "2026-10-04T09:51:00+00:00",
+          "published_at": "2026-10-05T09:51:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1401,7 +1503,7 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sz002513.html",
-          "published_at": "2026-10-04T09:43:00+00:00",
+          "published_at": "2026-10-05T09:43:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1422,7 +1524,7 @@
         {
           "source": "AkShare 炸板池",
           "url": "https://quote.eastmoney.com/concept/sh600719.html",
-          "published_at": "2026-10-04T09:39:00+00:00",
+          "published_at": "2026-10-05T09:39:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1443,7 +1545,7 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh688185.html",
-          "published_at": "2026-10-04T09:38:00+00:00",
+          "published_at": "2026-10-05T09:38:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1464,13 +1566,13 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh603188.html",
-          "published_at": "2026-10-04T09:32:00+00:00",
+          "published_at": "2026-10-05T09:32:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh605388.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1491,7 +1593,7 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz301190.html",
-          "published_at": "2026-10-04T09:31:00+00:00",
+          "published_at": "2026-10-05T09:31:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1512,13 +1614,13 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz000011.html",
-          "published_at": "2026-10-04T09:31:00+00:00",
+          "published_at": "2026-10-05T09:31:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh600241.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1539,19 +1641,19 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz002866.html",
-          "published_at": "2026-10-04T09:30:00+00:00",
+          "published_at": "2026-10-05T09:30:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz002058.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         },
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sh605303.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         }
       ]
@@ -1572,83 +1674,125 @@
         {
           "source": "AkShare 涨停池",
           "url": "https://quote.eastmoney.com/concept/sz002242.html",
-          "published_at": "2026-10-04T09:25:00+00:00",
+          "published_at": "2026-10-05T09:25:00+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "02d7f075d5b5",
-      "title": "国际能源署日前发布公告显示，该机构今年3月宣布计划释放的4亿桶战略石油储备中，目前已释放约3.25亿桶。国际能源署署长法提赫·比罗尔2日参加了法国总统马克龙召集的七国集团领导人视频会议，讨论全球能源市场形势。比罗尔在会上表示，已释放的战略石油储备，占承诺释放总量的80%以上。在当前情况下，上述举措在填补供应缺口、稳定市场信心方面发挥了重要作用。（央视新闻）",
+      "story_id": "a22e69881c32",
+      "title": "10月4日，英国海上贸易行动办公室（UKMTO）发布通报称，一艘油轮在也门西南部塔伊兹省的红海港口城市穆哈以南约60海里海域航行时，发现船只附近发生多次爆炸。UKMTO称，目前船员安全，尚未报告环境影响。有关部门正在对事件展开调查。UKMTO同时提醒过往船只谨慎航行，并报告任何可疑活动。（央视）",
       "label": "product",
       "label_zh": "产品业务",
       "importance_label": "medium",
       "importance_score": 48,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173901",
+      "primary_url": "https://wallstreetcn.com/livenews/3173992",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173901",
-          "published_at": "2026-10-03T14:26:40+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173992",
+          "published_at": "2026-10-04T21:18:12+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "52bd4611a5bf",
-      "title": "以色列机场管理局网站3日发布的信息显示，在阿联酋迪拜航空公司暂停所有往返以色列的航班后，首架搭载以色列滞留旅客的以民航客机当天凌晨从迪拜飞抵特拉维夫。根据抵达航班信息，这趟航班由阿基亚以色列航空公司运营，2日从迪拜起飞，3日凌晨1时许降落在特拉维夫附近的本-古里安机场。（新华社）",
+      "story_id": "bb15a490b913",
+      "title": "德新社4日发布的一项民意调查结果显示，48%的调查对象认为，在应对德国当前面临的问题方面，前总理默克尔会比现任总理默茨表现得更好。  该项民调由德新社委托英国舆观调查公司展开，调查对象为2072名德国成年人，他们被问及在解决德国当前问题方面更倾向于默克尔还是默茨。民调结果显示，48%的调查对象认为默克尔更胜一筹，29%的人认为两人能力相当，8%更认可默茨，另有15%未作答或表示不知道。",
       "label": "product",
       "label_zh": "产品业务",
       "importance_label": "medium",
       "importance_score": 48,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173897",
+      "primary_url": "https://wallstreetcn.com/livenews/3173982",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173897",
-          "published_at": "2026-10-03T13:42:41+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173982",
+          "published_at": "2026-10-04T18:48:51+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "aae8350a5823",
-      "title": "根据马来西亚财政部10月2日发布的文件，马来西亚将从11月1日起取消部分黄金产品10%的进口关税。",
+      "story_id": "9456f058a756",
+      "title": "10月4日，乌克兰总统泽连斯基与德国总理默茨在乌首都基辅召开联合新闻发布会，公布多项防务合作成果，并介绍了乌美俄三方会谈的相关进展。  泽连斯基表示，乌克兰与德国将联合生产2000架“巴尔斯”远程拦截无人机。与此同时，乌克兰正加快推进本土防空体系建设，“炮塔”防御计划已进入系统化实施阶段，后续将部署数十套防御炮塔。此外，乌克兰多款小型导弹正在研发中，预计本月下半月开展测试验收。",
       "label": "product",
       "label_zh": "产品业务",
       "importance_label": "medium",
       "importance_score": 48,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173880",
+      "primary_url": "https://wallstreetcn.com/livenews/3173984",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173880",
-          "published_at": "2026-10-03T09:45:46+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173984",
+          "published_at": "2026-10-04T15:50:44+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "e25841b8aa41",
-      "title": "工业和信息化部日前发布的数据显示，今年前8个月，我国电信业务总量稳步增长，5G等网络建设和应用不断推进。其中，截至8月末，5G基站总数达519.5万个，占移动基站总数的39.7%。",
+      "story_id": "e3032b09535f",
+      "title": "伊朗外交部发言人巴加埃当地时间4日说，伊朗愿推动也门胡塞武装与沙特阿拉伯通过对话解决冲突。据伊朗方面消息，巴加埃在当天举行的新闻发布会上作上述表态。巴加埃表示，解决也门问题的办法不是加剧经济封锁，也不是轰炸。伊朗方面认为，胡塞武装和沙特应以先前达成的和平路线图为基础开展对话，伊朗“愿提供一切帮助，推动这一进程”。（央视新闻）",
+      "label": "product",
+      "label_zh": "产品业务",
+      "importance_label": "medium",
+      "importance_score": 48,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173970",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173970",
+          "published_at": "2026-10-04T13:30:44+00:00",
+          "importance_score": 48
+        }
+      ]
+    },
+    {
+      "story_id": "e8dcd98a7575",
+      "title": "香港天文台发布黄色暴雨警告。",
+      "label": "product",
+      "label_zh": "产品业务",
+      "importance_label": "medium",
+      "importance_score": 48,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173962",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173962",
+          "published_at": "2026-10-04T12:25:39+00:00",
+          "importance_score": 48
+        }
+      ]
+    },
+    {
+      "story_id": "32530f6d9669",
+      "title": "近日，中信建投（国际）金融控股有限公司发布消息称，正式获得迪拜国际金融中心（DIFC）颁发的牌照，并获迪拜金融服务管理局（DFSA）授权，在DIFC设立迪拜代表处。 国泰海通的国际化业务布局也于近日取得新进展：子公司国泰君安国际与哈萨克斯坦阿拉木图市政府正式签署合作备忘录，将在跨境融资等领域建立长期合作关系，助力哈萨克斯坦优质主体对接中国香港国际资本市场，拓宽离岸人民币融资渠道。（券商中国）",
       "label": "product",
       "label_zh": "产品业务",
       "importance_label": "medium",
       "importance_score": 48,
       "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173867",
+      "primary_url": "https://wallstreetcn.com/livenews/3173953",
       "markets": [
         "cn",
         "global"
@@ -1656,99 +1800,388 @@
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173867",
-          "published_at": "2026-10-03T08:01:25+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173953",
+          "published_at": "2026-10-04T11:27:03+00:00",
           "importance_score": 48
         },
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173866",
-          "published_at": "2026-10-03T08:01:25+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173952",
+          "published_at": "2026-10-04T11:27:03+00:00",
           "importance_score": 48
         }
       ]
     },
     {
-      "story_id": "0d0113f1a6ba",
-      "title": "美国谷歌公司一颗搭载谷歌张量处理单元（TPU）芯片的原型卫星日前发射升空，以测试该芯片在太空环境中的运行性能，研究未来能否在太空部署人工智能（AI）基础设施。（央视新闻）",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "medium",
-      "importance_score": 48,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173863",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173863",
-          "published_at": "2026-10-03T05:42:34+00:00",
-          "importance_score": 48
-        }
-      ]
-    },
-    {
-      "story_id": "a69ec3711ae8",
-      "title": "当地时间10月2日，巴西联邦警察发布公报称，警方当天在巴西利亚和圣保罗两地分别执行搜查令，就一起涉嫌策划袭击美国驻巴西大使馆和领事馆的事件展开调查。公报称，该调查目前仍处于保密状态。巴西警员针对2名嫌疑人采取行动，缴获其电脑和手机并进行鉴定分析。美国驻巴西使领馆2日因“安全问题”暂停线下领事服务。澳大利亚驻巴西大使馆同日因“安全问题”关闭。（央视新闻）",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "medium",
-      "importance_score": 48,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173854",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173854",
-          "published_at": "2026-10-03T02:57:38+00:00",
-          "importance_score": 48
-        }
-      ]
-    },
-    {
-      "story_id": "a26cd45911cb",
-      "title": "10月3日，商务部发布公告，公布对原产于欧盟的进口对硝基甲苯发起反倾销立案调查。自公告发布之日起，商务部对原产于欧盟的进口对硝基甲苯进行反倾销立案调查，本次调查确定的倾销调查期为2025年7月1日至2026年6月30日，产业损害调查期为2022年1月1日至2026年6月30日。调查范围：原产于欧盟的进口对硝基甲苯。",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "medium",
-      "importance_score": 48,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173853",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173853",
-          "published_at": "2026-10-03T02:13:59+00:00",
-          "importance_score": 48
-        }
-      ]
-    },
-    {
-      "story_id": "097a7ecca5d5",
-      "title": "9月30日至10月1日，二十国集团（G20）贸易部长会议在美国密尔沃基举行。G20成员及嘉宾国（波兰）贸易部长或代表与会。各方就美方设置的反对粮食武器化、应对产能过剩、消除强迫劳动、调整最惠国待遇原则等议题交换意见。会议就粮食议题达成联合声明，未就其他议题形成成果文件。中华人民共和国国际贸易谈判代表（正部长级）兼商务部副部长李成钢出席会议并发言。  李成钢表示，习近平主席深刻指出，G20应秉持人类",
+      "story_id": "0cefeb3dec6e",
+      "title": "油价逼近100美元，OPEC+仍按兵不动：11月产量配额维持不变",
       "label": "industry",
       "label_zh": "行业动态",
       "importance_label": "medium",
       "importance_score": 48,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173849",
+      "primary_url": "https://wallstreetcn.com/articles/3782986",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻文章",
+          "url": "https://wallstreetcn.com/articles/3782986",
+          "published_at": "2026-10-04T11:25:16+00:00",
+          "importance_score": 48
+        }
+      ]
+    },
+    {
+      "story_id": "1c9f00dddf3b",
+      "title": "英国海上贸易行动办公室4日发布通报说，一艘油轮在霍尔木兹海峡遭袭。通报说，该油轮被“不明发射物”击中，机舱受损，但船上人员安全，目前暂未收到关于环境影响的报告。通报未提及事件发生的具体时间。相关调查正在进行。（新华社）",
+      "label": "product",
+      "label_zh": "产品业务",
+      "importance_label": "medium",
+      "importance_score": 48,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173941",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173849",
-          "published_at": "2026-10-03T01:45:46+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173941",
+          "published_at": "2026-10-04T08:36:28+00:00",
           "importance_score": 48
+        }
+      ]
+    },
+    {
+      "story_id": "ab97e0f05069",
+      "title": "英国布里斯托尔大学近日发布消息说，该校研究人员在阿尔茨海默病基因疗法开发上获得重要进展，有望为预防或延缓这种疾病提供新思路。（央视新闻）",
+      "label": "product",
+      "label_zh": "产品业务",
+      "importance_label": "medium",
+      "importance_score": 48,
+      "source_count": 2,
+      "primary_url": "https://wallstreetcn.com/livenews/3173939",
+      "markets": [
+        "cn",
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173939",
+          "published_at": "2026-10-04T08:11:31+00:00",
+          "importance_score": 48
+        },
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173938",
+          "published_at": "2026-10-04T08:11:31+00:00",
+          "importance_score": 48
+        }
+      ]
+    },
+    {
+      "story_id": "b11cd83ea5da",
+      "title": "问：9月30日至10月1日，G20贸易部长会议在美国威斯康星州密尔沃基举行。据了解，会议就反对粮食武器化议题达成联合声明，未就应对产能过剩、消除强迫劳动、调整最惠国待遇原则议题形成成果文件。请问中方如何评价本次会议？中方发挥了怎样的作用？  答：本次G20贸易部长会议，成员围绕主席国美方设置的反对粮食武器化、应对产能过剩、消除强迫劳动、调整最惠国待遇原则等议题交换意见，并就粮食议题达成联合声明，其",
+      "label": "industry",
+      "label_zh": "行业动态",
+      "importance_label": "medium",
+      "importance_score": 48,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173923",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173923",
+          "published_at": "2026-10-04T04:04:17+00:00",
+          "importance_score": 48
+        }
+      ]
+    },
+    {
+      "story_id": "983a1c89ec6e",
+      "title": "也门胡塞武装当地时间3日晚发表声明说，为回应沙特方面对萨那及也门其他地区的空袭，胡塞武装当天使用多枚弹道导弹和无人机，对位于沙特首都利雅得的阿美石油公司目标实施打击。  声明称，此次行动“成功实现目标”，“命中目标并引发火灾”。  沙特方面暂未就此发布消息。（央视新闻）",
+      "label": "product",
+      "label_zh": "产品业务",
+      "importance_label": "medium",
+      "importance_score": 48,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173906",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173906",
+          "published_at": "2026-10-04T00:40:28+00:00",
+          "importance_score": 48
+        }
+      ]
+    },
+    {
+      "story_id": "fef1580c6d04",
+      "title": "[美国] 美国10月12日6个月期国债竞拍-投标倍数(亿美元)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 5,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T23:30:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T23:30:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-07T01:00:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-05T23:30:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-05T23:30:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "fa5e6a82e1f3",
+      "title": "[美国] 美国10月12日6个月期国债竞拍-中标利率(%)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T23:30:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "0ebf4b698f9e",
+      "title": "[美国] 美国10月12日6个月期国债竞拍-高配置百分比(%)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "us"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T23:30:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "957e09ff1ae4",
+      "title": "[中国] 中国9月M1货币供应年率(%)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "cn"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T16:00:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "5de1228c7dd2",
+      "title": "[中国] 中国9月M0货币供应年率(%)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "cn"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T16:00:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "429123c1d6c9",
+      "title": "[中国] 中国10月12日上期所每日仓单变动-燃料油(吨)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 4,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "cn"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-09T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-08T15:10:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "d68056cab01f",
+      "title": "[中国] 中国10月12日上期所每日仓单变动-黄金(千克)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 4,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "cn"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-09T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-08T15:10:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "38d39711f909",
+      "title": "[中国] 中国10月12日上期所每日仓单变动-原油(桶)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 3,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "cn"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-09T15:10:00+00:00",
+          "importance_score": 40
+        },
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-08T15:10:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "51ca0ed8f4c4",
+      "title": "[中国] 中国9月实际外商直接投资年率CNY-年初至今(%)",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cls.cn/telegraph",
+      "markets": [
+        "cn"
+      ],
+      "items": [
+        {
+          "source": "AkShare 财经日历",
+          "url": "https://www.cls.cn/telegraph",
+          "published_at": "2026-10-12T08:58:00+00:00",
+          "importance_score": 40
         }
       ]
     },
@@ -2107,39 +2540,6 @@
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
-      "source_count": 3,
-      "primary_url": "https://www.cls.cn/telegraph",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-09T15:10:00+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-09T15:10:00+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-08T15:10:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "9d099bb7bb54",
-      "title": "[中国] 中国10月9日上期所每日仓单变动-原油(桶)",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
       "source_count": 2,
       "primary_url": "https://www.cls.cn/telegraph",
       "markets": [
@@ -2167,18 +2567,12 @@
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
-      "source_count": 3,
+      "source_count": 2,
       "primary_url": "https://www.cls.cn/telegraph",
       "markets": [
         "cn"
       ],
       "items": [
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-09T15:10:00+00:00",
-          "importance_score": 40
-        },
         {
           "source": "AkShare 财经日历",
           "url": "https://www.cls.cn/telegraph",
@@ -2609,48 +3003,6 @@
           "source": "AkShare 财经日历",
           "url": "https://www.cls.cn/telegraph",
           "published_at": "2026-10-08T16:00:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "251725f7cd44",
-      "title": "[中国] 中国10月8日上期所每日仓单变动-黄金(千克)",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cls.cn/telegraph",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-08T15:10:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "55fe5c82f093",
-      "title": "[中国] 中国10月8日上期所每日仓单变动-燃料油(吨)",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cls.cn/telegraph",
-      "markets": [
-        "cn"
-      ],
-      "items": [
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-08T15:10:00+00:00",
           "importance_score": 40
         }
       ]
@@ -3751,39 +4103,6 @@
       ]
     },
     {
-      "story_id": "38032fe3b683",
-      "title": "[美国] 美国10月6日3年期国债竞拍-投标倍数(亿美元)",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 3,
-      "primary_url": "https://www.cls.cn/telegraph",
-      "markets": [
-        "us"
-      ],
-      "items": [
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-07T01:00:00+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-05T23:30:00+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "AkShare 财经日历",
-          "url": "https://www.cls.cn/telegraph",
-          "published_at": "2026-10-05T23:30:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
       "story_id": "21c42d72c9f7",
       "title": "[美国] 美国10月6日3年期国债竞拍-高配置百分比(%)",
       "label": "other",
@@ -4402,609 +4721,1043 @@
       ]
     },
     {
-      "story_id": "26bbfcd4e403",
-      "title": "据也门胡塞武装控制的马西拉电视台3日报道，当天，也门首都萨那遭到沙特空袭，报道没有提供关于遭袭目标或伤亡的细节。沙特方面暂无回应。（央视）",
+      "story_id": "b6a685cb6bb1",
+      "title": "日经225指数日内涨幅扩大至2%。  日本东证指数涨幅扩大至1%。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173903",
+      "primary_url": "https://wallstreetcn.com/livenews/3174009",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173903",
-          "published_at": "2026-10-03T17:15:08+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174009",
+          "published_at": "2026-10-05T00:09:29+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "f94a02521228",
-      "title": "苹果公司表示，计划为Mac用户推出新的隐私控制措施，并警告称，向包括AI智能体在内的第三方软件授予广泛的数据访问权限所带来的风险正在上升。  这家iPhone制造商周五在一份声明中表示，将推出更多控制措施，以确保希望向某款应用授予“完全磁盘访问权限”——也就是允许其完全访问系统文件、邮件、信息和浏览历史——的用户只能通过“非常明确的用户操作”来完成授权。",
+      "story_id": "ddf7db7a97b9",
+      "title": "当地时间10月4日，巴西联邦警察局长安德烈·罗德里格斯表示，巴西联邦警察对美国可能干预巴西大选一事展开调查。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173902",
+      "primary_url": "https://wallstreetcn.com/livenews/3174008",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173902",
-          "published_at": "2026-10-03T17:08:24+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174008",
+          "published_at": "2026-10-05T00:08:50+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "a569250cd609",
-      "title": "此前负责OpenAI安全团队透明度工作的David Robinson在为《大西洋月刊》撰写的一篇文章中称，这家ChatGPT开发商“一直通过反复试错发展壮大”。但是，这种方式不可避免会有失败的时候，随着AI技术的能力不断提升，这些失败造成的风险也在加大，他还以OpenAI未能阻止其人工智能在测试过程中失控作为例证。Robinson表示，人工智能公司应该更像核电站那样运营，“设置多层冗余机制，并进行",
+      "story_id": "508b78d4d0df",
+      "title": "根据2026年巴西总统选举首轮投票的最新统计进度，12名候选人中无人得票超过半数，得票最多的两名候选人弗拉维奥·博索纳罗和卢拉将于10月25日进入第二轮角逐。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173900",
+      "primary_url": "https://wallstreetcn.com/livenews/3174007",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173900",
-          "published_at": "2026-10-03T13:59:08+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174007",
+          "published_at": "2026-10-05T00:04:44+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "76fdda2c04b5",
-      "title": "当地时间10月3日，美国海岸警卫队表示，一架载有6人的私人飞机在百慕大飞往波士顿途中失联。美国海岸警卫队发言人表示，美国联邦航空管理局当天早些时候通知海岸警卫队，该飞机与地面失去联系。这架飞机为一架用于医疗转运的“湾流”公务机。美国海岸警卫队已派出空中和海上搜救力量，在马萨诸塞州南部楠塔基特岛附近海域展开搜寻。据了解，楠塔基特岛是马萨诸塞州大陆以南的一座岛屿。（央视新闻）",
+      "story_id": "8496565f6f55",
+      "title": "日经225指数高开1.2%。韩国股市今日休市。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173899",
+      "primary_url": "https://wallstreetcn.com/livenews/3174006",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173899",
-          "published_at": "2026-10-03T13:52:27+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174006",
+          "published_at": "2026-10-05T00:02:51+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "5138d2e37aef",
-      "title": "据伊朗媒体，伊朗格什姆岛附近传出爆炸声。",
+      "story_id": "3bc98da9e9d4",
+      "title": "文章指出，对一些大城市而言，一套房子的总价动辄数百万元甚至更高，难以达到享受政策条件。这是否意味着政策效能打折扣？答案是否定的。居民购房贷款贴息政策的本意并非普惠式“大水漫灌”，而是通过对房屋总价、房屋面积、贷款类别等作出界定，把政策红利定向输送到刚需自住群体，实现“精准滴灌”的政策目标。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173898",
+      "primary_url": "https://wallstreetcn.com/livenews/3174005",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173898",
-          "published_at": "2026-10-03T13:44:42+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174005",
+          "published_at": "2026-10-04T23:51:12+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "9539042f82d4",
-      "title": "美国总统特朗普在Truth Social上发帖称：共和党必须赢得2026年中期选举，我们必须使用一切适当的方式——无论你是提前投票、不在场投票、邮寄投票，还是现场投票，我们都必须以庞大的投票人数“淹没”激进左翼的蠢主党！这太重要了——请务必出来投票。",
+      "story_id": "1fa36d3f2517",
+      "title": "日经期货在早盘交易中上涨1.9%。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173895",
+      "primary_url": "https://wallstreetcn.com/livenews/3174004",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173895",
-          "published_at": "2026-10-03T13:25:09+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174004",
+          "published_at": "2026-10-04T23:49:08+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "d4d91b12da8f",
-      "title": "据最新爆料，台积电正在探索与SpaceX、特斯拉共同投资发起的Terafab项目展开合作的可能性，并考虑将Terafab作为台积电未来得克萨斯州晶圆厂的重要客户。针对相关消息，马斯克在社交媒体上回应称，仅处于讨论阶段，但“可能会有所进展”。",
+      "story_id": "6f8b2acdf678",
+      "title": "以色列方面消息称，鉴于近期发生的阿曼籍副驾驶袭击迪拜航空客机机长事件，以色列交通部日前向外国航空运营商发出通知，严禁拥有伊朗、伊拉克、黎巴嫩、阿曼、巴基斯坦、卡塔尔和沙特等27国单一或双重国籍的机组人员执飞或搭乘赴以航班。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173894",
+      "primary_url": "https://wallstreetcn.com/livenews/3174003",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173894",
-          "published_at": "2026-10-03T13:06:32+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174003",
+          "published_at": "2026-10-04T23:41:33+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "2b570236ddb6",
-      "title": "10月3日晚间，九寨沟景区官微消息，景区迎来2026年度“第500万名游客”，九寨沟今年持续高位运行的客流态势，国庆假期门票持续火爆。",
+      "story_id": "c310bd5ae16b",
+      "title": "巴西大选已计票88.2%，目前为止博索纳罗得票率为48.2%，卢拉为43.8%。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173893",
+      "primary_url": "https://wallstreetcn.com/livenews/3174002",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173893",
-          "published_at": "2026-10-03T13:00:26+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174002",
+          "published_at": "2026-10-04T23:13:02+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "c3a09a25996e",
-      "title": "据深视新闻，10月3日，国庆假期第三天深圳各大口岸通关客流量持续高位运行，据初步统计，假期以来多口岸同比增长超10%，据深圳边检部门预测，今年国庆假期深圳口岸日均出入境客流量将达97万人次。",
+      "story_id": "8bc16c1d1a67",
+      "title": "华尔街见闻早餐FM-Radio | 2026年10月5日",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173892",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173892",
-          "published_at": "2026-10-03T13:00:13+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "854b639434ec",
-      "title": "第二十届亚运会中国队共收获169枚金牌、89枚银牌、83枚铜牌，共计341枚奖牌收官，位居金牌榜、奖牌榜首位，创境外参加亚运会最佳战绩！",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173891",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173891",
-          "published_at": "2026-10-03T12:17:31+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "dc3905031429",
-      "title": "美国财长贝森特：本周伊朗海上在途石油将归零。",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173890",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173890",
-          "published_at": "2026-10-03T12:05:33+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "b14748066bf5",
-      "title": "10月3日，外交部发言人郭嘉昆答记者问。记者提问称，美国国会众院“中国特设委”指责星巴克将在中国新疆开设门店的决定“道德沦丧”，称中国政府对维吾尔族实施“种族灭绝”。外交部有何评论？  郭嘉昆表示，所谓新疆存在“种族灭绝”是赤裸裸的谎言。美方有关机构惯于出于政治目的无中生有、攻击抹黑中国，毫无信誉可言。当前新疆社会稳定、经济发展、民族团结、宗教和睦。中国将继续扩大高水平对外开放，为外国企业在华投资",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173889",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173889",
-          "published_at": "2026-10-03T11:56:12+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "42af48da6ed0",
-      "title": "10月3日，外交部发言人郭嘉昆答记者问。有记者提问，据俄罗斯媒体报道，普京总统表示下个月在亚太经合组织（APEC）领导人非正式会议期间与习近平主席的会晤将取得积极成果。请问中方能否确认两位领导人将举行会晤？将在会晤中向俄方提出哪些议题？  郭嘉昆表示，元首外交的战略引领是中俄关系行稳致远的最重要政治保障。中方欢迎普京总统出席今年11月将在深圳举行的APEC领导人非正式会议，愿同俄方一道，共同推动A",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173888",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173888",
-          "published_at": "2026-10-03T11:50:07+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "9dab3ad81c53",
-      "title": "10月3日，俄罗斯外交部发表声明，再次警告外国公民和外交官不要留在基辅及乌克兰军事设施附近。声明说，针对乌军对俄平民和民用基础设施的“恐怖行动”，俄军将继续系统、持续地打击基辅和其他乌克兰城市的军事目标。俄方此前已呼吁在基辅的外国公民和外交官离开该市，放弃访问乌克兰，并呼吁乌克兰居民不要靠近军事和行政基础设施目标。",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173887",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173887",
-          "published_at": "2026-10-03T11:38:46+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "ffa6bf7f9ec1",
-      "title": "付鹏：近期欧元、日元与澳元观察【数据图表】",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/premium/articles/3782968?layout=wscn-layout",
+      "primary_url": "https://wallstreetcn.com/articles/3782961",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/premium/articles/3782968?layout=wscn-layout",
-          "published_at": "2026-10-03T11:18:31+00:00",
+          "url": "https://wallstreetcn.com/articles/3782961",
+          "published_at": "2026-10-04T23:00:11+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "faabd83fe008",
-      "title": "据朝中社3日援引朝鲜劳动党中央委员会部长金与正的话报道，朝鲜当天凌晨进行了中程战略导弹发射训练。报道说，朝鲜各类导弹的特殊飞行模式优越性在现实中得到验证。（央视新闻）",
+      "story_id": "d0452b3b564f",
+      "title": "美股期货小幅走高，纳斯达克100指数期货上涨0.3%。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173885",
+      "primary_url": "https://wallstreetcn.com/livenews/3174000",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173885",
-          "published_at": "2026-10-03T11:01:18+00:00",
+          "url": "https://wallstreetcn.com/livenews/3174000",
+          "published_at": "2026-10-04T22:51:12+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "930c3cd21992",
-      "title": "当地时间10月3日中午，在也门胡塞武装控制的首都萨那传出多次巨大爆炸声，疑似再次遭遇空袭。（央视新闻）",
+      "story_id": "92366840f3b7",
+      "title": "德国联邦政府4日称，德国总理默茨当天访问乌克兰首都基辅，承诺对乌追加约10亿欧元军事援助。新一批军援重在提升乌克兰防空能力，包括联合生产远程武器和用于防御喷气式无人机的拦截系统。此外，德国将在冬季来临前向乌方提供约3.5亿欧元，用于修复乌克兰的能源基础设施。（新华社）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173884",
+      "primary_url": "https://wallstreetcn.com/livenews/3173998",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173884",
-          "published_at": "2026-10-03T10:18:35+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173998",
+          "published_at": "2026-10-04T22:17:47+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "eb6de2f39faf",
-      "title": "据马来西亚《星报》、美国彭博社等媒体10月3日报道，马来西亚国防部长哈立德表示，马来西亚正考虑花费7亿至10亿多林吉特（约2.45亿美元），采购新的地对地导弹系统，以替代原计划从挪威采购的系统。哈立德说，目前有三个国家在采购考虑范围内。（环球网）",
+      "story_id": "499f9c8937dd",
+      "title": "民调机构Datafolha预测，巴西现任总统卢拉与参议员弗拉维奥·博索纳罗将挺进第二轮决选。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173883",
+      "primary_url": "https://wallstreetcn.com/livenews/3173997",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173883",
-          "published_at": "2026-10-03T09:52:13+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173997",
+          "published_at": "2026-10-04T22:15:39+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "e5477ef2423e",
-      "title": "据塔斯社10月3日报道，俄罗斯二十国集团（G20）事务协调人、俄总统办公厅专家局局长丹尼斯·阿加福诺夫表示，俄罗斯总统普京是否出席今年12月在美国迈阿密举行的G20峰会，将取决于一系列因素，包括峰会的实质性筹备情况和整体地缘政治背景。（环球网）",
+      "story_id": "da8fe6147fc0",
+      "title": "当地时间10月4日，沙特阿拉伯主导的多国联军司令部发表声明称，联军将继续向也门政府及其武装部队提供全面作战支持，以“恢复国家”。多国联军发言人图尔基·马利基指责胡塞武装蓄意、系统性地袭击沙特利雅得等多个城市的平民和民用设施，还企图袭击麦加、麦地那两座城市，并试图袭击红海南部和曼德海峡的沙特船只。他表示，联军将继续采取必要措施，遏制胡塞武装的敌对行动，维护沙特的安全与主权。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173882",
+      "primary_url": "https://wallstreetcn.com/livenews/3173996",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173882",
-          "published_at": "2026-10-03T09:51:31+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173996",
+          "published_at": "2026-10-04T22:08:13+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "a5d661a7b3db",
-      "title": "据灯塔专业版，截至10月3日17时01分，2026年国庆档（10月1日-10月7日）档期总票房（含预售）突破5亿元，《神探之痕迹》《什么意思夫妇》《欢迎来龙餐馆》《小猪佩奇·完美假期》《复仇者联盟4：终局之战（加码臻享版）》暂列档期票房前五。",
+      "story_id": "da6a48a76890",
+      "title": "沙特阿美：将11月销往亚洲的阿拉伯轻质原油官方售价定为较阿曼/迪拜原油均价贴水5美元/桶。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173881",
+      "primary_url": "https://wallstreetcn.com/livenews/3173995",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173881",
-          "published_at": "2026-10-03T09:46:29+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173995",
+          "published_at": "2026-10-04T21:27:14+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "4ac925ee3454",
-      "title": "据中国南方电网有限责任公司，假期首日，南方电网统一充电服务平台“顺易充”单日充电量首次突破千万千瓦时，达到1044.31万千瓦时，同比增长24.51%。",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173879",
-      "markets": [
-        "cn",
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173879",
-          "published_at": "2026-10-03T09:45:08+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173878",
-          "published_at": "2026-10-03T09:45:08+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "0e73748d2f4e",
-      "title": "AI大神Karpathy最新洞察：未来我们更该“理解”大模型输出，而不是被它淹没",
+      "story_id": "ab6e8cb9b800",
+      "title": "巴西已统计32%的选票，总统候选人博索纳罗得票率50.7%，现任总统卢拉41.1%。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/articles/3782967",
+      "primary_url": "https://wallstreetcn.com/livenews/3173993",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173993",
+          "published_at": "2026-10-04T21:23:53+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "16bb455a686e",
+      "title": "美国已将部署在英国皇家空军费尔福德基地的全部B-1轰炸机撤回美国。美方作出这一决定，是出于对针对该基地疑似恐怖袭击阴谋的安全担忧。消息称，美国此前将位于伦敦西北部的费尔福德基地作为对伊朗发动轰炸行动的枢纽。在近期撤离前，共有12架B-1轰炸机部署在该基地。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173991",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173991",
+          "published_at": "2026-10-04T21:17:36+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "ca686e86a11d",
+      "title": "据多家以色列媒体4日报道，迪拜航空公司客机驾驶舱冲突事件中的阿曼籍副驾驶哈马姆·哈马米接受审讯时称，他原本计划驾机撞向以色列特拉维夫本-古里安机场航站楼。据以色列第12频道报道，哈马米选择在客机飞至约旦上空时袭击机长，原计划让飞机正常飞行至快要抵达本-古里安机场、以军机来不及实施拦截时，驾机撞向机场航站楼。受伤机长不惜一切代价打开驾驶舱门，挫败了哈马米的企图。（新华社）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173989",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173989",
+          "published_at": "2026-10-04T19:50:18+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "19cbbd66e620",
+      "title": "美国最高法院大法官塞缪尔·阿利托（Samuel Alito）表示，他在最高法院上一任期结束后曾“考虑过”退休，但认为自己仍能作出“有价值的贡献”，因此决定继续留任。  阿利托说：“我对这些退休猜测感到有些好笑；抬头看见秃鹫盘旋，这种感觉并不愉快。”他表示自己不会对此做政治算计，“我认为，算计自己还要再干几年是鲁莽的。”",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173987",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173987",
+          "published_at": "2026-10-04T19:31:04+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "eb5f5acbcce2",
+      "title": "上周六晚间，西班牙警方在马德里逮捕了三名极右翼团体成员，并在使用橡皮子弹驱散人群。此前，西班牙各地数万人举行游行，要求政府采取行动应对住房危机。早些时候，一些示威者挥舞着呼吁举行总罢工的标语牌。此前，议会于上周五否决了为应对马德里一名87岁老妇被驱逐及其他住房问题引发的广泛民愤而拟定的措施。据媒体报道，在相关立法未能通过后，西班牙首相佩德罗·桑切斯可能会在11月提前举行大选，他将在决定前观察近期抗",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173986",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173986",
+          "published_at": "2026-10-04T19:22:55+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "e34993c5adef",
+      "title": "英国保守党领袖Kemi Badenoch正借本党年度大会之机，呼吁取消遗产税，并将育儿支持扩大至更高收入群体。巴德诺赫呼吁取消遗产税，称其“不道德”且“不公平”，因为“最富有的人并不缴纳”，真正受影响的只是中产阶级。承诺将育儿支持扩大至更高收入群体，誓言结束那种父母年收入超过10万英镑就失去国家提供育儿福利的“荒谬断崖效应”。在没有明确资金安排的情况下，她不会宣布取消遗产税的计划，并称“在我能证明",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173979",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173979",
+          "published_at": "2026-10-04T18:42:55+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "0df62f06a336",
+      "title": "据NTV报道，土耳其检察官已申请对土耳其资本市场委员会（SPK）前主席Ibrahim Omer Gonul展开调查，这是其针对投资基金调查的一部分。  伊斯坦布尔首席检察官办公室已向财政和财政部请求获得许可。  NTV称，Gonul被指控在监管投资基金方面未能履行职责，而这些基金从事的活动被司法部长称为“类庞氏骗局”。  另据自由报（Hurriyet）报道，检察官已于10月1日就基金调查一事对Go",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173976",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173976",
+          "published_at": "2026-10-04T18:21:45+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "fc5e47ac97f2",
+      "title": "软银集团领导人孙正义是人工智能（AI）最坚定的信奉者之一，但即便是他也表示，随着机器正迅速获得更多能力，他对安全风险感到担忧。  孙正义上周日在京都举行的“科技与社会”论坛期间的一场活动上表示，人工智能的能力呈指数级增长，这就要求各国必须建立互信，才能共同驾驭这项技术。  孙正义说：“我们已经没有让人类彼此争斗的奢侈选项了，” 各国需要携手合作来控制强大人工智能模型所带来的更大威胁。如果超级智能落",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173975",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173975",
+          "published_at": "2026-10-04T18:10:15+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "1d306107344c",
+      "title": "据日经新闻报道，沙特与阿联酋价格帮助亚洲推高石油储备。  “亚洲零排放委员会”（AZEC）周四将在菲律宾举行一场部长级会议。  沙特与阿联酋的高级官员们将参与特别咨询，预计将表达在石油储备方面合作的意图。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173974",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173974",
+          "published_at": "2026-10-04T18:04:29+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "ebe47524d5b3",
+      "title": "据伊朗法尔斯通讯社4日报道，伊朗军方发言人阿克拉米尼亚说，伊朗军方已决定着手提升其导弹射程。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173972",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173972",
+          "published_at": "2026-10-04T13:59:18+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "5e0b9523d3b3",
+      "title": "沙特阿拉伯资本市场管理局（CMA）主席Mazen Al-Sudair在接受阿拉比亚电视台采访时表示，部门目前正与相关机构就修改当地股票的外资持股上限进行谈判。“我们已经采取行动，正在全力推进这项工作，”其表示。“我们不想先抛出一个具体比例，随后又推翻它。我们正与政府其他机构以及各行业监管部门的同事展开协商，以达成一致的比例界限。”",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173971",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173971",
+          "published_at": "2026-10-04T13:46:52+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "cdabb93305dd",
+      "title": "当地时间10月4日，美国总统特朗普在社交媒体平台“真实社交”发文宣布，提名约翰·科尔（John Coale）担任美国总统人质事务特使。特朗普同时表示，现任美国总统人质事务特使亚当·伯勒尔此前已促成196名人质获释，今后将继续担任高级顾问，协助处理其他事务。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173968",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173968",
+          "published_at": "2026-10-04T13:25:47+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "e8310f6bb5ad",
+      "title": "也门胡塞武装军事发言人叶海亚·萨雷亚4日发表声明说，该组织向沙特阿美公司位于利雅得和胡赖斯地区的两处设施发动了导弹和无人机袭击。（新华社）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173967",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173967",
+          "published_at": "2026-10-04T13:24:28+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "bd0937722885",
+      "title": "白宫国家经济委员会主任凯文·哈塞特：“确凿无疑”，抵押贷款利率必须降下来。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173966",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173966",
+          "published_at": "2026-10-04T13:13:27+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "d0701fd10071",
+      "title": "伊拉克纳杰夫国际机场3日宣布，4日起恢复与伊朗之间的航班往来。此前，受美国制裁影响，伊拉克多个机场暂停所有往返伊朗的航班。纳杰夫机场官网公布的航班时刻表显示，4日共有4组往返伊朗的航班，分别为伊朗首都德黑兰和伊朗东北部城市马什哈德。机场管理部门在声明中说，预计未来数日内，往返伊朗的航班数量将逐步增加。（新华社）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173965",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173965",
+          "published_at": "2026-10-04T13:03:12+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "18afab5f99ed",
+      "title": "俄罗斯副总理诺瓦克：全球石油市场形势依然剧烈波动。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173964",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173964",
+          "published_at": "2026-10-04T12:41:37+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "d5d048378728",
+      "title": "当地时间10月4日，美国总统特朗普宣布成立“超级智能特别工作组”（Super Intelligence Force，SIF），负责协调美国联邦政府在超级智能领域的相关工作。特朗普表示，该工作组将协调联邦政府与消费者、公共利益团体、宗教组织、关键基础设施提供商以及超级智能企业之间的沟通与合作。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173963",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173963",
+          "published_at": "2026-10-04T12:31:00+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "89e6e6f2debd",
+      "title": "当地时间10月4日，土耳其灾害与应急管理局通报，奥斯曼尼耶省发生5.2级地震，震中位于苏巴斯区，震源深度为7公里。稍早前，据土耳其灾害与应急管理局消息，邻近省份阿达纳省接连发生4.9级和4.8级地震。目前暂无人员伤亡或财产损失消息传出。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173961",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173961",
+          "published_at": "2026-10-04T12:23:37+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "61cc93525126",
+      "title": "商务部商务大数据显示，国庆假期前三天（10月1至3日），商务部重点监测的78个步行街（商圈）客流量、营业额同比分别增长3.4%、5.3%。消费品以旧换新带动销售额196.3亿元，惠及348.3万人次。其中，汽车以旧换新4.6万辆，带动新车销售额74.5亿元；家电以旧换新151.1万台，带动销售额65.0亿元；数码和智能产品购新170.9万件，带动销售额49.0亿元。（新华社）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173960",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173960",
+          "published_at": "2026-10-04T12:22:50+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "a1933655c040",
+      "title": "当地时间10月4日，也门总统领导委员会主席、武装部队最高统帅拉沙德·穆罕默德·阿里米宣布启动军事行动，“以收复也门剩余地区，在全国范围内恢复国家及政府机构的管辖”。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173959",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173959",
+          "published_at": "2026-10-04T12:20:48+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "d53df768c9c8",
+      "title": "也门总统：将发起收复胡塞武装控制区的军事行动。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173958",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173958",
+          "published_at": "2026-10-04T12:10:49+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "8f316b304b4a",
+      "title": "随着新房推盘节奏重新加快，9月香港楼市显著回暖。中原地产研究部数据显示，9月，香港整体楼宇买卖合约登记(包括住宅、车位及工商铺物业)录6440宗，较8月上升11.7%。其中，受长沙湾新盘热销带动，9月一手私人住宅成交重回千宗以上水平，成交宗数与金额双双创下今年6月以来的三个月高位。据中原地产研究部数据，9月，香港一手私人住宅合约登记录得1500宗、总值208.8亿港元，环比分别上涨61.6%及73",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173957",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173957",
+          "published_at": "2026-10-04T11:59:22+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "610121ef053c",
+      "title": "据湖南日报，国庆假期第四天，根据手机信令大数据建模统计，湖南省当日接待游客1428.87万人次。其中外省游客352.26万人次，占比为24.65%；本省游客1076.61万人次，占比为75.35%。纳入监测的1004家文旅单位当日接待游客量166.04万人次，其中12家5A级景区当日客流56.85万人次，205家4A级景区当日接待游客49.14万人次。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173956",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173956",
+          "published_at": "2026-10-04T11:53:14+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "0e23f7112dfd",
+      "title": "据网络平台数据，2026年国庆档（10月1日—10月7日）档期总票房（含预售）突破7亿！《神探之痕迹》《什么意思夫妇》《欢迎来龙餐馆》暂列国庆档票房榜前三。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173954",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173954",
+          "published_at": "2026-10-04T11:34:20+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "2cf47d01c8df",
+      "title": "一向力挺AI的孙正义突然警告：超级智能可能“极其危险”",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/articles/3782987",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/articles/3782967",
-          "published_at": "2026-10-03T09:28:37+00:00",
+          "url": "https://wallstreetcn.com/articles/3782987",
+          "published_at": "2026-10-04T11:32:45+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "6de385ff633f",
-      "title": "据纽约时报，美俄关于乌克兰问题的谈判包括石油协议。",
+      "story_id": "476aab911a11",
+      "title": "声明显示，OPEC+在周日会议上决定维持11月份的石油产量配额不变；下一次会议将于11月1日举行。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173877",
+      "primary_url": "https://wallstreetcn.com/livenews/3173951",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173877",
-          "published_at": "2026-10-03T09:20:45+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173951",
+          "published_at": "2026-10-04T11:16:19+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "8e9b41873242",
-      "title": "随着中东紧张局势的持续，全球成品油价格不断攀升。据英国道路救援与车辆拖运公司10月2日统计，英国柴油平均零售价格为每升2英镑（约合人民币17.75元），突破了此前于2022年6月创下的记录，且该价格未来或将继续攀升。（CCTV国际时讯）",
+      "story_id": "2284be4c633d",
+      "title": "美军航空母舰“乔治·H·W·布什”号于今天（10月4日）抵达泰国普吉岛，舰上约有4800名人员。美国海军表示，在过去的六个月，该航母及其打击群为“史诗狂怒”行动以及海上封锁行动提供支持，这也是其自3月以来首次停靠港口。当地媒体报道称，该航母停泊在外海，官兵将于10月4日至9日在这座旅游岛屿进行休整。（CCTV国际时讯）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173876",
+      "primary_url": "https://wallstreetcn.com/livenews/3173950",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173876",
-          "published_at": "2026-10-03T09:06:16+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173950",
+          "published_at": "2026-10-04T11:13:26+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "6333c6512b3e",
-      "title": "AI正在让美债崩溃 即便最后成功也将被征收重税",
+      "story_id": "014a196b88f4",
+      "title": "巴西2026年总统选举首轮投票于巴西利亚时间4日8时（北京时间19时）开始。（新华社）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/premium/articles/3782772?layout=wscn-layout",
+      "primary_url": "https://wallstreetcn.com/livenews/3173949",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173949",
+          "published_at": "2026-10-04T11:01:32+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "ab6f9c890d83",
+      "title": "针对美国对伊朗所提出计划的回应，伊朗外交部发言人巴加埃4日表示，伊朗曾在短暂访问卡塔尔期间向调解方卡塔尔阐述了伊朗的立场。他称，美方提出的方案与之前的立场基本一致，主要涉及伊朗核问题，伊朗已明确表示，现阶段的重点是霍尔木兹海峡问题。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173948",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173948",
+          "published_at": "2026-10-04T10:31:36+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "794589bcf8ff",
+      "title": "据伊朗迈赫尔通讯社报道，伊朗外交部发言人巴加埃4日在记者会上提及有关“伊朗外交官被从纽约‘驱逐’”的消息时表示，美国公开宣扬自身违背承诺的行为，这不是什么光彩的事。这只能说明美国不配担任联合国的东道国。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173947",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173947",
+          "published_at": "2026-10-04T10:18:52+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "f2428f5a6d11",
+      "title": "纳入6280亿美元表外承诺后，Meta股票“贵了”35%？",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/articles/3782985",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/premium/articles/3782772?layout=wscn-layout",
-          "published_at": "2026-10-03T09:00:38+00:00",
+          "url": "https://wallstreetcn.com/articles/3782985",
+          "published_at": "2026-10-04T10:18:33+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "a117630d4943",
-      "title": "10月3日，巴基斯坦外交部发表声明称，巴基斯坦外交部已经传召印度临时代办，就印度边境安全部队人员于2026年10月2日在印巴边境开枪打死两名巴基斯坦平民一事，向印方提出强烈抗议。巴方要求印度方面立即对这一事件展开透明、可信的调查，对查明负有责任的人员采取适当的纪律和法律行动，并正式向巴基斯坦政府通报调查结果及所采取的措施。（央视新闻）",
+      "story_id": "d5e0875290fd",
+      "title": "马斯克：SpaceX 是一家超级智能（SI）公司，我们将把SpaceXAI改名为SpaceXSI。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173875",
+      "primary_url": "https://wallstreetcn.com/livenews/3173946",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173875",
-          "published_at": "2026-10-03T08:46:17+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173946",
+          "published_at": "2026-10-04T09:47:49+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "b80659b3a3a8",
-      "title": "供平过租的重要信号",
+      "story_id": "8c542e214ea0",
+      "title": "OpenAI员工长文：AI 时代的文明岔路",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/articles/3782966",
+      "primary_url": "https://wallstreetcn.com/articles/3782983",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/articles/3782966",
-          "published_at": "2026-10-03T08:35:37+00:00",
+          "url": "https://wallstreetcn.com/articles/3782983",
+          "published_at": "2026-10-04T09:24:35+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "3016cad296fe",
-      "title": "美国CCC级利差升破1000bp！危险信号已现，信贷警报离股市还有多远？",
+      "story_id": "df6fd83c5768",
+      "title": "据也门胡塞武装消息，当地时间4日，沙特对也门焦夫省展开了系列空袭行动。目前，沙特方面对此暂无回应。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/premium/articles/3782730?layout=wscn-layout",
+      "primary_url": "https://wallstreetcn.com/livenews/3173945",
       "markets": [
         "global"
       ],
       "items": [
         {
-          "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/premium/articles/3782730?layout=wscn-layout",
-          "published_at": "2026-10-03T08:34:44+00:00",
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173945",
+          "published_at": "2026-10-04T09:24:31+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "ab89e83c95e0",
-      "title": "从国家能源局了解到，10月1日0时至10月2日24时，全国高速公路累计充电次数206.04万次，累计充电量5010.99万千瓦时，同比增长51.34%。其中10月1日充电量是平时的3.24倍；10月2日充电需求维持高位，充电量是平时的2.55倍。（央视新闻）",
+      "story_id": "72a458415753",
+      "title": "据韩联社、韩国《朝鲜日报》等媒体报道，针对近期韩国金融和公共机构发生的一系列个人信息泄露事件，韩国总统李在明当地时间4日指示有关部门“高度重视此事，进行彻底调查，并全力制定应对措施”。（环球网）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173944",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173944",
+          "published_at": "2026-10-04T08:45:54+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "a32d8ca85bee",
+      "title": "据工商银行广东省分行消息，国庆假期前三天，工行广东省分行已受理符合贴息条件的房贷申请逾百户，贷款金额超亿元，涵盖新建商品住房和二手住房。（界面）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173874",
+      "primary_url": "https://wallstreetcn.com/livenews/3173943",
       "markets": [
         "cn",
         "global"
@@ -5012,27 +5765,279 @@
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173874",
-          "published_at": "2026-10-03T08:34:39+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173943",
+          "published_at": "2026-10-04T08:44:41+00:00",
           "importance_score": 40
         },
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173873",
-          "published_at": "2026-10-03T08:34:39+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173942",
+          "published_at": "2026-10-04T08:44:41+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "0a01415938f7",
-      "title": "10月1日，国际学术期刊《自然・合成》（Nature Synthesis）刊发了中国科学院金属研究所沈阳材料科学国家研究中心团队的最新成果。研究团队提出一种基于物理化学描述符的多元微量元素设计策略，制备了镁、钙、钛和锆多元微量元素协同无钴高镍正极材料（MD-LNMO），实现3分钟快充至近80%电量。 这是该科研团队在无钴高镍层状氧化物正极材料研究方面取得的重要进展，更重要的是推动正极材料设计从“经",
+      "story_id": "cc0e6ea7d758",
+      "title": "10月3日，发生安全事件的迪拜航空客机机长与以色列总理内塔尼亚胡通电话。机长斯米特·马奇切尔讲述了自己遭袭时的细节。马奇切尔表示，他的后脑勺遭到了重击，但第一反应只觉得是飞机出了故障。当他意识到是副驾驶在袭击他，并试图反抗时，他的“视线变得模糊不清，几乎什么都看不见”，并感觉飞机正在急速下降。他曾尝试打开驾驶室的舱门，但副驾驶又将舱门关上。内塔尼亚胡称赞马奇切尔“在绝境中保持冷静判断的能力”，并邀",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173940",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173940",
+          "published_at": "2026-10-04T08:35:57+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "8ee633f26953",
+      "title": "据以色列方面10月3日消息，以色列总理内塔尼亚胡已下令主管部门，对所有飞往以色列的航班，无论运营方是以色列航司还是外国航司，一律提升安保等级。  以色列总理办公室发言人表示，所有执飞以色列航线的飞行员，都要掌握身份信息，查清背景，并开展相应安全审查。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173937",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173937",
+          "published_at": "2026-10-04T08:09:35+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "c1438c8e0529",
+      "title": "当地时间10月4日，俄罗斯联邦安全会议副主席、统一俄罗斯党主席梅德韦杰夫在个人社交账号上发文警告美方，不要应乌方要求“封锁”俄“黎明”低轨卫星通信系统。  梅德韦杰夫称，“此举将导致全面太空战争。美方的低轨‘星链’卫星将纷纷坠落。”（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173936",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173936",
+          "published_at": "2026-10-04T08:09:13+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "e69b76484882",
+      "title": "2026年10月3日（国庆假期第3日），全社会跨区域人员流动量30356.8万人次，环比下降0.6%，比2025年同期（10月3日，中秋国庆假期第3日，下同）下降0.4%。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173935",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173935",
+          "published_at": "2026-10-04T08:08:40+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "16bccd94cdb4",
+      "title": "国庆黄金周期间，香港市面节庆气氛浓厚。财政司司长陈茂波表示，黄金周的首三天已有超过73.2万内地旅客人次访港，按年增加约8.4%。入境处预计，整个黄金周将有约129万内地旅客访港，日均人次按年上升超过5%。除了内地旅客，今年以来从欧美和一些新兴市场到来的旅客人数，都录得可观增长。（大公文汇网）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173934",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173934",
+          "published_at": "2026-10-04T07:27:05+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "0c91e9e6cd86",
+      "title": "当地时间4日，伊朗外长阿拉格齐在会见驻伊各国使节时表示，伊朗坚定立场基于既奉行“有尊严的外交”，又“坚决捍卫国家安全”。他表示，伊朗向敌人发出的明确信号是，一方面，完全准备好通过外交途径寻求公正的解决方案；另一方面，一旦再次发生军事侵略，伊朗也已做好准备实施更为沉重的反击。  阿拉格齐表示，继续针对伊朗进行非法的战争，既无法通过军事手段解决问题，也无法通过新一轮制裁找到出路。结束这场冲突的唯一途径",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173933",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173933",
+          "published_at": "2026-10-04T07:24:36+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "b4be6e593de9",
+      "title": "当地时间4日，伊朗议会议长卡利巴夫表示，面对伊朗的坚定立场与顽强抵抗，美国陷入绝望境地。  卡利巴夫表示，尽管美国有另一套说辞，但近期美方已通过中间人提出了一些建议。美国必须意识到，通过消耗战强加单方面要求的时代已经一去不复返。伊朗的立场明确坚定，即在满足伊朗基于伊斯兰堡谅解备忘录提出的七项条件之前，霍尔木兹海峡绝不会开放。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173932",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173932",
+          "published_at": "2026-10-04T07:10:50+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "df9198b31943",
+      "title": "代表称，OPEC＋原则上同意在11月维持石油产量目标不变。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173930",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173930",
+          "published_at": "2026-10-04T06:49:11+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "c7fa17242b90",
+      "title": "据环球网援引法新社、路透社等媒体报道，当地时间10月4日，德国总理默茨突访乌克兰首都基辅。德国政府官员透露，默茨此行将宣布向乌提供10亿欧元军事援助以及3.5亿欧元用于能源部门的维修资金，此外，还将敲定一项联合生产多种无人机的协议，以展示对乌克兰的支持。（环球网）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173929",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173929",
+          "published_at": "2026-10-04T06:42:54+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "42796bb67f03",
+      "title": "最近从美国开放人工智能研究中心（OpenAI）离职的一名员工3日爆料前东家风险意识不足，并呼吁人工智能(AI)产业效仿航空或核能产业，采取多重安全防护措施。这名员工名为戴维·鲁滨逊，自称曾在OpenAI工作3年多，是该公司任职最久的员工之一。",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173928",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173928",
+          "published_at": "2026-10-04T06:41:49+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "6383a65b9fc5",
+      "title": "拉脱维亚中央选举委员会当地时间4日公布的初步计票结果显示，在已统计的约95.4%选票中，总理安德里斯·库尔贝格斯所在的政党联盟“联合名单”大幅领先其他政治力量，预计将在本届议会选举中获得最多席位。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173927",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173927",
+          "published_at": "2026-10-04T05:45:19+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "7a04ec74123f",
+      "title": "10月4日，从珠海边检总站了解到，国庆假期珠海毗邻港澳口岸迎来客流车流高峰，前三天该总站查验出入境客流量达224万人次，出入境交通运输工具达13万辆/艘/架次，分别同比增长约5%和10%。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173926",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173926",
+          "published_at": "2026-10-04T05:11:34+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "ded81923d727",
+      "title": "国庆假期前3天新能源汽车充电需求旺盛，高速公路充电基础设施运行平稳。10月1日0时至10月3日24时，通过对纳入国家充电设施监测服务平台的6.27万个高速公路充电设施（枪）进行统计分析，今年国庆假期前三天全国高速公路新能源汽车充电次数共计296.86万次，日均98.95万次，较去年国庆假期同期增长48.41%；充电量达到7161.93万千瓦时，日均2387.31万千瓦时，较去年国庆假期同期增长49",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173872",
+      "primary_url": "https://wallstreetcn.com/livenews/3173925",
       "markets": [
         "cn",
         "global"
@@ -5040,27 +6045,48 @@
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173872",
-          "published_at": "2026-10-03T08:33:56+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173925",
+          "published_at": "2026-10-04T04:13:10+00:00",
           "importance_score": 40
         },
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173871",
-          "published_at": "2026-10-03T08:33:56+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173924",
+          "published_at": "2026-10-04T04:13:10+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "5b2fb64b1aba",
-      "title": "在刚刚结束的爱知·名古屋亚运会男足铜牌赛中，中国队在常规时间与乌兹别克斯坦队2:2战平，最终中国队经过点球大战击败对手，获得铜牌。这是中国队时隔28年再次摘得亚运会男足奖牌。在1998年曼谷亚运会，中国男足获得铜牌。（新华社）",
+      "story_id": "08874712cfd5",
+      "title": "当地时间10月3日，厄瓜多尔国家石油公司通报，该国主要的国有输油管道系统——跨厄瓜多尔输油管道系统（SOTE），因一处位于纳波省的泵站发生火灾，于当日开始暂停运营。厄瓜多尔国家石油公司表示，已请求国家石油犯罪调查组和国家警察干预救援小组开展调查。据悉，跨厄瓜多尔输油管道系统全长约500公里，是亚马孙地区开采原油外运的关键输油管道。（央视新闻）",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://wallstreetcn.com/livenews/3173922",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "华尔街见闻快讯",
+          "url": "https://wallstreetcn.com/livenews/3173922",
+          "published_at": "2026-10-04T04:01:12+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "83fc5ae6afcf",
+      "title": "从上海机场边检站获悉，国庆假期前三天，上海浦东国际机场口岸累计出入境人员突破31.9万人次，出入境客货航班突破2100架次。国庆假期前三天，经浦东国际机场口岸出入境的内地居民达22万人次，占出入境人员总量的69%，构成口岸客流主体。（澎湃）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173870",
+      "primary_url": "https://wallstreetcn.com/livenews/3173921",
       "markets": [
         "cn",
         "global"
@@ -5068,153 +6094,90 @@
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173870",
-          "published_at": "2026-10-03T08:32:48+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173921",
+          "published_at": "2026-10-04T03:33:06+00:00",
           "importance_score": 40
         },
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173869",
-          "published_at": "2026-10-03T08:32:48+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173920",
+          "published_at": "2026-10-04T03:33:06+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "eb17e29bdfdf",
-      "title": "国际原子能机构当地时间10月3日表示，扎波罗热核电站周边近几周发生多起无人机袭击，导致部分关键供电设施受损，进一步威胁核电站安全。目前，国际原子能机构正与俄乌双方协调新一轮局部停火，以便开展维修工作。（央视新闻）",
+      "story_id": "b93571be1fad",
+      "title": "据央视报道，伊拉克油轮公司3日证实，已使用一艘大型油轮将200万桶原油运出霍尔木兹海峡，向在海峡外等候的买家交货。按公司高管的说法，这是这家国营公司几十年来首次通过这种办法交货。据悉，其他海湾产油国早已采取船对船转运的方式，在海峡外交货，伊拉克已经“来晚了”。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173868",
+      "primary_url": "https://wallstreetcn.com/livenews/3173919",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173868",
-          "published_at": "2026-10-03T08:31:19+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173919",
+          "published_at": "2026-10-04T03:32:33+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "13d942fef489",
-      "title": "9月AI债发行突然“踩刹车”，大摩判断：四季度或卷土重来",
+      "story_id": "d675f84b749f",
+      "title": "中国银行消息显示，近日，中国银行作为联席主承销商及账簿管理人，成功协助韩国产业银行发行3年期30亿元离岸人民币债券（点心债），票面利率1.69%。本次发行创下韩国产业银行最大规模离岸人民币公募债券发行纪录。（新华社）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/articles/3782964",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/articles/3782964",
-          "published_at": "2026-10-03T07:59:27+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "88116e32bb57",
-      "title": "当地时间10月3日，阿联酋总检察长沙姆西表示，迪拜航空FZ1073航班副驾驶在飞行途中袭击机长，并企图控制飞机的行为是“恐怖袭击”。总检察长表示，副驾驶在飞行过程中实施其策划的行动，在驾驶舱内使用紧急消防斧袭击机长，并试图控制飞机的操纵装置。总检察长还称，目前调查仍在进行中，调查人员正在对实物和数字证据进行核验，以确定事件的性质和动机等。待相关必要程序完成后，将公布最终调查结果。（央视新闻）",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173865",
+      "primary_url": "https://wallstreetcn.com/livenews/3173918",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173865",
-          "published_at": "2026-10-03T07:36:18+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173918",
+          "published_at": "2026-10-04T03:29:34+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "2874b0dab2c8",
-      "title": "GLP-1之后的下一张牌：礼来、诺和诺德为何同时押注胰淀素",
+      "story_id": "4869c5668f39",
+      "title": "巴西总统选举10月4日将迎来首轮投票，国际舆论对此高度关注。分析人士认为，当前巴西国内外局势的特殊背景是此次选举受到高度关注的主要原因。首先，主要候选人势均力敌，谁将赢得选举有较大悬念。此次选举共有13人竞选总统，其中最具竞争力的是现任总统、左翼领袖卢拉和前总统博索纳罗之子、右翼候选人弗拉维奥·博索纳罗。巴西多家机构近期民调显示，二人支持率均大幅领先其他候选人，但他们之间呈现“技术性持平”局面，导",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/articles/3782962",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻文章",
-          "url": "https://wallstreetcn.com/articles/3782962",
-          "published_at": "2026-10-03T06:34:11+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "e13273fd21de",
-      "title": "美国联邦航空局（FAA）2日宣布，波音737MAX客机一款飞行软件存在的问题不影响飞行安全。联邦航空局在声明中说，经专家组评估，“某些波音737MAX客机飞行计算机中的一个软件问题不构成安全忧虑”，因为驾驶员可“重新完全控制飞机，机组能获得清晰明确的指示”。该机构同时表示，如果今后“收到关于这一问题的新信息”，会“考虑采取相应措施”。（新华社）",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173864",
+      "primary_url": "https://wallstreetcn.com/livenews/3173917",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173864",
-          "published_at": "2026-10-03T06:30:17+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173917",
+          "published_at": "2026-10-04T03:15:57+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "5f6f016ba05b",
-      "title": "当地时间10月2日在以色列本-古里安国际机场现场看到，以色列飞往迪拜的航班已全部取消，机场整体运行维持正常，但客流量较以往明显下降，现场冷清。（新华社）",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173862",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173862",
-          "published_at": "2026-10-03T05:38:42+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "e6e8bcfd3cf2",
-      "title": "今天，全国铁路预计发送旅客1890万人次，预计加开列车910列。针对假期旅游出行需求高的特点，各地铁路部门利用国庆前夕开通的新线和车站资源，在热门方向和区间增加运力供给。全国高速公路车流量为6200万至6400万辆次，出行以中短途为主，主干大通道与景区周边路段双向承压。民航方面，今天全国民航预计运输旅客225万人次，预计保障航班18019班。多家航司在热门旅游城市间加密航线，增加宽体机投放，满足旅",
+      "story_id": "d1f33fab04af",
+      "title": "今天，全国铁路发送旅客1927.3万人次，同比增长6.1%，中短途客流明显增多。公路方面，跨省出行和新能源车流量持续增长。根据研判，全国高速公路有33个路段易发拥堵，主要集中在江苏、四川、广东、湖南、浙江等省份。水路方面，今天预计水路客运量超195万人次。海岛游、城市观光游、邮轮游客流持续保持高位运行。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173861",
+      "primary_url": "https://wallstreetcn.com/livenews/3173916",
       "markets": [
         "cn",
         "global"
@@ -5222,357 +6185,203 @@
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173861",
-          "published_at": "2026-10-03T05:13:24+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173916",
+          "published_at": "2026-10-04T03:11:59+00:00",
           "importance_score": 40
         },
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173860",
-          "published_at": "2026-10-03T05:13:24+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173915",
+          "published_at": "2026-10-04T03:11:59+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "6558b5994e55",
-      "title": "从中国出口信用保险公司获悉，今年前8个月，中国信保扩大出口信用保险覆盖面，承保金额8541.8亿美元，同比增长12.6%；服务客户25.1万家，同比增长5.2%。（新华社）",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173859",
-      "markets": [
-        "cn",
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173859",
-          "published_at": "2026-10-03T04:25:24+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173858",
-          "published_at": "2026-10-03T04:25:24+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "ae0e635de54a",
-      "title": "今天，我国首个深水油田——流花油田二次开发项目累计生产原油突破200万吨。截至目前，油田已生产原油超过4000万吨，日产量达到了投产22年来的新高，为保障国家能源安全提供了坚实保障。（央视新闻）",
+      "story_id": "bf6601814732",
+      "title": "据海口海关统计，10月1日至3日，2026年国庆假期前三天，海口海关共监管海南离岛免税购物金额3.58亿元，参与购物人数5.51万人次，购买离岛免税商品27.70万件，比2025年同期分别增长8.85%、12.90%、8.02%。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173857",
+      "primary_url": "https://wallstreetcn.com/livenews/3173914",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173857",
-          "published_at": "2026-10-03T03:33:36+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173914",
+          "published_at": "2026-10-04T02:38:43+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "fdd553771385",
-      "title": "当地时间10月2日，两名美国官员透露，沙特阿拉伯与也门政府军正计划在未来几天内，针对胡塞武装发起大规模打击。（央视新闻）",
+      "story_id": "2bde013a091e",
+      "title": "财联社10月4日电，今天，记者从中国海油获悉，我国首个海上注碳增气技术示范应用工程——东方1-1气田新建中心平台主体建造完工，全面进入调试阶段。项目投产后每年可在海底地层封存二氧化碳超100万吨，对于推动我国海洋能源行业大规模深度降碳具有重要意义。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173856",
+      "primary_url": "https://wallstreetcn.com/livenews/3173913",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173856",
-          "published_at": "2026-10-03T02:58:16+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173913",
+          "published_at": "2026-10-04T02:34:42+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "2788d000896b",
-      "title": "消息人士称，在迪拜航空公司客机驾驶舱冲突事件中涉嫌刺伤机长的副驾驶在调查中承认，他的意图是“在以色列坠毁该飞机”。（新华社）",
+      "story_id": "f5ee0d18c5e3",
+      "title": "美国阿克西奥斯新闻网站3日援引美国官员的话报道，出席纽约联合国大会的伊朗代表团两名成员于3日被“驱逐”出境，此前几天他们已被要求离开美国。该官员称，“联合国大会结束后很久，伊朗代表团仍有两名成员滞留在纽约。他们现已被驱逐出境”。",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173855",
+      "primary_url": "https://wallstreetcn.com/livenews/3173912",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173855",
-          "published_at": "2026-10-03T02:57:54+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173912",
+          "published_at": "2026-10-04T01:36:03+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "a8a235a4f139",
-      "title": "从中国铁路上海局集团有限公司获悉，今日上铁集团预计发送旅客372万人次。自9月23日中秋国庆假期运输启动以来，截至10月2日，长三角铁路累计发送旅客3350.5万人次，日均发送约335万人次，旅客出行需求旺盛。其中，10月1日国庆假期首日，长三角铁路发送旅客442.7万人次，超过2025年10月1日单日发送旅客420.5万人次的国庆假期运输纪录，创国庆假期运输单日客发量历史新高。（澎湃）",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173852",
-      "markets": [
-        "cn",
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173852",
-          "published_at": "2026-10-03T01:49:11+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173851",
-          "published_at": "2026-10-03T01:49:11+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "b4f0b36a31ea",
-      "title": "截至2026年10月2日，华为乾崑官网显示累计辅助驾驶里程已正式突破160亿公里。",
+      "story_id": "a826cd36e77d",
+      "title": "沙特阿拉伯主导的多国联军3日称，也门胡塞武装当天有关袭击沙特首都利雅得的说法“具有误导性”。  据沙特方面3日消息，多国联军发言人图尔基·马利基表示，胡塞武装近期在也门西南部塔伊兹省及其他战线遭受人员损失，这让该武装试图寻求“虚假胜利”。他称，胡塞武装此举意在转移外界对其损失的关注。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173850",
+      "primary_url": "https://wallstreetcn.com/livenews/3173910",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173850",
-          "published_at": "2026-10-03T01:46:26+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173910",
+          "published_at": "2026-10-04T00:43:21+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "179458031c17",
-      "title": "从国家能源局获悉，2026年1月至8月，全国各电力交易机构累计完成交易电量51800亿千瓦时，同比增长19.2%。 从交易范围看，省内交易电量40264亿千瓦时，同比增长21.5%；跨省跨区交易电量11536亿千瓦时，同比增长12.1%。从交易品种看，中长期交易电量46173亿千瓦时；现货交易电量5627亿千瓦时。绿电交易电量2182亿千瓦时，同比增长6.1%。电网企业市场化代理购电电量5638亿",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173848",
-      "markets": [
-        "cn",
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173848",
-          "published_at": "2026-10-03T01:35:19+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173847",
-          "published_at": "2026-10-03T01:35:19+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "579e94cc5a77",
-      "title": "沙特阿拉伯民防总局3日凌晨发表声明称，也门胡塞武装2日发射的一枚弹道导弹被拦截后，碎片坠落在沙特南部阿西尔省阿哈德·拉菲达县，造成1人受伤。声明还说，坠落碎片造成一栋建筑及多辆汽车受损。（新华社）",
+      "story_id": "019e9431c94a",
+      "title": "据朝鲜方面4日消息，朝鲜3日凌晨在东部地区进行了中程战略导弹发射训练。朝鲜劳动党总书记、国务委员长金正恩现场观摩训练。  消息说，用于训练的导弹命中了设定在朝鲜东部海域的目标。训练旨在让操纵高超音速战略武器系统的导弹兵熟练掌握火力操纵能力。  金正恩表示，要以强大的遏制力管控各种威胁，为国家建设保证安全环境。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173846",
+      "primary_url": "https://wallstreetcn.com/livenews/3173909",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173846",
-          "published_at": "2026-10-03T01:23:25+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173909",
+          "published_at": "2026-10-04T00:42:45+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "310a652c40fa",
-      "title": "越南9月贸易余额 12.71亿美元，前值 -1.13亿美元。",
+      "story_id": "cbbf09940541",
+      "title": "当地时间10月3日，据伊朗方面消息，过去5天内，伊朗伊斯兰革命卫队海军在霍尔木兹海峡针对至少7艘“违规”油轮采取行动。  多方消息称，尽管美国政府一直声称“霍尔木兹海峡保持开放并处在美国控制之下”，但伊方实际上平均每天针对不止一艘油轮采取行动。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173845",
+      "primary_url": "https://wallstreetcn.com/livenews/3173908",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173845",
-          "published_at": "2026-10-03T01:04:45+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173908",
+          "published_at": "2026-10-04T00:41:36+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "164ad46dc095",
-      "title": "越南9月进口同比 45.8%，前值 37.9%。",
+      "story_id": "ba06fb5926bb",
+      "title": "当地时间10月3日，伊拉克纳杰夫国际机场宣布，将于4日恢复往返伊朗的航班，首日晚间计划执行3组往返航班。根据伊拉克方面公布的航班时刻表，其中1组往返马什哈德，2组往返德黑兰。  机场管理方表示，相关航班此前已暂停数日，预计未来几天航班数量将根据各航空公司的运营安排逐步增加。（央视新闻）",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173844",
+      "primary_url": "https://wallstreetcn.com/livenews/3173907",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173844",
-          "published_at": "2026-10-03T01:01:53+00:00",
+          "url": "https://wallstreetcn.com/livenews/3173907",
+          "published_at": "2026-10-04T00:41:06+00:00",
           "importance_score": 40
         }
       ]
     },
     {
-      "story_id": "fccdf29defd6",
-      "title": "越南9月出口同比 39.1%，前值 26%。",
-      "label": "other",
-      "label_zh": "综合",
+      "story_id": "aff6a04f40a2",
+      "title": "Trump reiterates pledge to send $5,000 checks, and hands out smaller payments, as midterm elections loom",
+      "label": "capital",
+      "label_zh": "资本运作",
       "importance_label": "medium",
       "importance_score": 40,
       "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173843",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173843",
-          "published_at": "2026-10-03T01:01:41+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "d27ad994d1e2",
-      "title": "美国总统特朗普表示，将很快用委内瑞拉石油填满战略石油储备。",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173840",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173840",
-          "published_at": "2026-10-03T00:31:52+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "9d1ffae9e857",
-      "title": "美国总统特朗普2日称，与伊朗的战事将“很快结束，伊朗永远不会拥有核武器”。（央视新闻）",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://wallstreetcn.com/livenews/3173839",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173839",
-          "published_at": "2026-10-03T00:20:00+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "50663f97d0c1",
-      "title": "今天（3日）是国庆假期第三天，各地出行需求旺盛。而在昨天，也就是国庆假期第二天，全社会跨区域人员流动量预计超3亿人次，中短途出行增长明显。 昨天，全国公路人员流动量预计超2.8亿人次，高速公路车流量保持高位运行。出行以景区间串联漫游，区域内短途转场流动为主。铁路方面预计发送旅客2040万人次。针对假日短途客流集中出行的特点，多地铁路部门加密城际列车开行，充分释放运输能力。（央视新闻）",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 2,
-      "primary_url": "https://wallstreetcn.com/livenews/3173838",
-      "markets": [
-        "cn",
-        "global"
-      ],
-      "items": [
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173838",
-          "published_at": "2026-10-03T00:15:27+00:00",
-          "importance_score": 40
-        },
-        {
-          "source": "华尔街见闻快讯",
-          "url": "https://wallstreetcn.com/livenews/3173837",
-          "published_at": "2026-10-03T00:15:27+00:00",
-          "importance_score": 40
-        }
-      ]
-    },
-    {
-      "story_id": "32129cb223b7",
-      "title": "High mortgage rates are trapping homeowners in place, and making renovations harder to afford",
-      "label": "macro",
-      "label_zh": "宏观数据",
-      "importance_label": "medium",
-      "importance_score": 40,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/mortgage-rates-home-equity-heloc-remodeling.html",
+      "primary_url": "https://www.cnbc.com/2026/10/04/trump-5000-checks-cash-payments-midterms.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/mortgage-rates-home-equity-heloc-remodeling.html",
-          "published_at": "2026-10-03T17:57:40+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/trump-5000-checks-cash-payments-midterms.html",
+          "published_at": "2026-10-04T20:28:47+00:00",
+          "importance_score": 40
+        }
+      ]
+    },
+    {
+      "story_id": "b744677cfbea",
+      "title": "This NYC startup requires 4 days in office but just let everyone work remote for a whole month",
+      "label": "macro",
+      "label_zh": "宏观数据",
+      "importance_label": "medium",
+      "importance_score": 40,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/10/04/work-from-anywhere-month.html",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "CNBC Top News",
+          "url": "https://www.cnbc.com/2026/10/04/work-from-anywhere-month.html",
+          "published_at": "2026-10-04T14:00:01+00:00",
           "importance_score": 40
         }
       ]
@@ -5593,31 +6402,31 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5638,31 +6447,31 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5683,25 +6492,25 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5722,13 +6531,13 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5749,31 +6558,31 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5794,13 +6603,13 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5821,19 +6630,19 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5854,13 +6663,13 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5881,7 +6690,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5902,13 +6711,13 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5929,7 +6738,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5950,7 +6759,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5971,7 +6780,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -5992,31 +6801,31 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -6037,7 +6846,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -6058,7 +6867,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -6079,13 +6888,13 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         },
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -6106,7 +6915,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -6127,7 +6936,7 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
@@ -6148,154 +6957,175 @@
         {
           "source": "AkShare 龙虎榜",
           "url": "https://vip.stock.finance.sina.com.cn/q/go.php/vLHBData/kind/ggtj/index.phtml",
-          "published_at": "2026-10-04T00:10:31.200427+00:00",
+          "published_at": "2026-10-05T00:16:26.329702+00:00",
           "importance_score": 30
         }
       ]
     },
     {
-      "story_id": "8d81f5de356d",
-      "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
+      "story_id": "0f89eba982a7",
+      "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+      "label": "capital",
+      "label_zh": "资本运作",
+      "importance_label": "low",
+      "importance_score": 30,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "CNBC Top News",
+          "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+          "published_at": "2026-10-04T13:22:39+00:00",
+          "importance_score": 30
+        }
+      ]
+    },
+    {
+      "story_id": "0791340b7597",
+      "title": "Chick-fil-A wants to stay a family business even as it expands in the U.S. and abroad",
       "label": "management",
       "label_zh": "管理层",
       "importance_label": "low",
       "importance_score": 30,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
+      "primary_url": "https://www.cnbc.com/2026/10/04/chick-fil-a-ceo-andrew-cathy-family-ownership-growth.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
-          "published_at": "2026-10-03T11:00:01+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/chick-fil-a-ceo-andrew-cathy-family-ownership-growth.html",
+          "published_at": "2026-10-04T12:08:54+00:00",
           "importance_score": 30
         }
       ]
     },
     {
-      "story_id": "518de8162934",
-      "title": "Top McKinsey executive reveals Asian owner-CEOs' secrets to success",
-      "label": "management",
-      "label_zh": "管理层",
+      "story_id": "a0acbb045850",
+      "title": "Fed minutes coming this week could give markets important clues about future rate hikes",
+      "label": "other",
+      "label_zh": "综合",
       "importance_label": "low",
-      "importance_score": 30,
+      "importance_score": 25,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/mckinsey-asian-leaders-success-ambani-mahindra.html",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/mckinsey-asian-leaders-success-ambani-mahindra.html",
-          "published_at": "2026-10-03T06:00:01+00:00",
-          "importance_score": 30
-        }
-      ]
-    },
-    {
-      "story_id": "34c6720b6cbc",
-      "title": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "low",
-      "importance_score": 23,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
-          "published_at": "2026-10-03T20:29:07+00:00",
-          "importance_score": 23
-        }
-      ]
-    },
-    {
-      "story_id": "972fd8a930b0",
-      "title": "A tough job market is pushing more young Americans to make a big bet: on themselves",
-      "label": "product",
-      "label_zh": "产品业务",
-      "importance_label": "low",
-      "importance_score": 23,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/a-tough-job-market-is-pushing-more-young-americans-to-make-a-big-bet-on-themselves-1aaddeca?mod=mw_rss_topstories",
+      "primary_url": "https://www.marketwatch.com/story/fed-minutes-coming-this-week-could-give-markets-important-clues-about-future-rate-hikes-31bfba5b?mod=mw_rss_topstories",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/a-tough-job-market-is-pushing-more-young-americans-to-make-a-big-bet-on-themselves-1aaddeca?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T17:24:00+00:00",
-          "importance_score": 23
+          "url": "https://www.marketwatch.com/story/fed-minutes-coming-this-week-could-give-markets-important-clues-about-future-rate-hikes-31bfba5b?mod=mw_rss_topstories",
+          "published_at": "2026-10-04T12:00:00+00:00",
+          "importance_score": 25
         }
       ]
     },
     {
-      "story_id": "74c4fbf10315",
-      "title": "The government can take 15% of Social Security benefits to repay student loans. These proposals seek to stop it.",
+      "story_id": "cc66758d9589",
+      "title": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
+      "primary_url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
       "markets": [
         "global"
       ],
       "items": [
         {
-          "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
-          "published_at": "2026-10-04T00:02:00+00:00",
+          "source": "CNBC Top News",
+          "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
+          "published_at": "2026-10-04T22:08:34+00:00",
           "importance_score": 15
         }
       ]
     },
     {
-      "story_id": "b0f29a280c40",
-      "title": "Falling wages, soaring energy prices and inflation: It’s beginning to look a lot like the 1970s",
+      "story_id": "32e9d99bfeef",
+      "title": "All U.S. bombers leave UK air base on concerns of suspected terror plots; more tankers struck near Iran in the Middle East",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T23:58:00+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "fb7dd044d53d",
-      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar: WSJ reports",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+      "primary_url": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-          "published_at": "2026-10-03T23:37:23+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html",
+          "published_at": "2026-10-04T21:46:15+00:00",
+          "importance_score": 15
+        }
+      ]
+    },
+    {
+      "story_id": "9c5e3efee639",
+      "title": "It's time for us to put cash to work in this ugly market. Here's where we will do our buying",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "low",
+      "importance_score": 15,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/investingclub/2026/10/04/its-time-for-us-to-put-cash-to-work-in-this-ugly-market-heres-where-we-will-do-our-buying.html",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "CNBC Top News",
+          "url": "https://www.cnbc.com/investingclub/2026/10/04/its-time-for-us-to-put-cash-to-work-in-this-ugly-market-heres-where-we-will-do-our-buying.html",
+          "published_at": "2026-10-04T20:32:16+00:00",
+          "importance_score": 15
+        }
+      ]
+    },
+    {
+      "story_id": "5060f615af03",
+      "title": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "low",
+      "importance_score": 15,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch Real-time",
+          "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
+          "published_at": "2026-10-04T20:31:00+00:00",
+          "importance_score": 15
+        }
+      ]
+    },
+    {
+      "story_id": "7111a1521b92",
+      "title": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "low",
+      "importance_score": 15,
+      "source_count": 1,
+      "primary_url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch Real-time",
+          "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
+          "published_at": "2026-10-04T20:00:00+00:00",
           "importance_score": 15
         }
       ]
@@ -6316,7 +7146,7 @@
         {
           "source": "MarketWatch Real-time",
           "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T20:00:00+00:00",
+          "published_at": "2026-10-04T19:30:00+00:00",
           "importance_score": 15
         }
       ]
@@ -6337,196 +7167,133 @@
         {
           "source": "MarketWatch Real-time",
           "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T19:30:00+00:00",
+          "published_at": "2026-10-04T19:08:00+00:00",
           "importance_score": 15
         }
       ]
     },
     {
-      "story_id": "827bffe835d6",
-      "title": "These bond strategies can help you get a safe 5% return on your cash",
+      "story_id": "9e0ca2fa1d1b",
+      "title": "Starting a watch collection? What beginners should know before buying",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T18:49:00+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "97e69e976ad9",
-      "title": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T18:30:00+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "8b5151c6cee9",
-      "title": "Switching jobs to get higher pay works best in these industries",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/the-best-industry-to-change-jobs-to-get-paid-more-money-and-the-worst-ae33a3a7?mod=mw_rss_topstories",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/the-best-industry-to-change-jobs-to-get-paid-more-money-and-the-worst-ae33a3a7?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T16:42:00+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "1c917a82498f",
-      "title": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T16:00:00+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "932020ab58c8",
-      "title": "The No. 1 mistake beginners make with travel cards, according to The Points Guy",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.marketwatch.com/story/the-no-1-mistake-beginners-make-with-travel-cards-according-to-the-points-guy-3502e859?mod=mw_rss_topstories",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "MarketWatch Real-time",
-          "url": "https://www.marketwatch.com/story/the-no-1-mistake-beginners-make-with-travel-cards-according-to-the-points-guy-3502e859?mod=mw_rss_topstories",
-          "published_at": "2026-10-03T15:42:00+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "852500be5324",
-      "title": "How Nvidia, Micron and a surprising jobs report drove last week's stock action",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/how-nvidia-micron-and-a-surprising-jobs-report-drove-last-weeks-stock-action.html",
+      "primary_url": "https://www.cnbc.com/2026/10/04/watch-collecting-beginners.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/how-nvidia-micron-and-a-surprising-jobs-report-drove-last-weeks-stock-action.html",
-          "published_at": "2026-10-03T15:06:10+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/watch-collecting-beginners.html",
+          "published_at": "2026-10-04T13:44:31+00:00",
           "importance_score": 15
         }
       ]
     },
     {
-      "story_id": "7ed7b8b0c351",
-      "title": "Gen Alpha kids are earning money. Here's how parents can help them save and invest",
+      "story_id": "09f718e10488",
+      "title": "Top Wall Street analysts are upbeat about the prospects for these 3 stocks",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/investing-for-kids-accounts.html",
+      "primary_url": "https://www.cnbc.com/2026/10/04/top-analysts-are-upbeat-about-the-prospects-for-these-3-stocks.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/investing-for-kids-accounts.html",
-          "published_at": "2026-10-03T14:00:01+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/top-analysts-are-upbeat-about-the-prospects-for-these-3-stocks.html",
+          "published_at": "2026-10-04T13:24:16+00:00",
           "importance_score": 15
         }
       ]
     },
     {
-      "story_id": "d1e11c0e9793",
-      "title": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
+      "story_id": "0fbb5d404856",
+      "title": "October can be a scary month for stocks. Here’s what investors need to watch this year.",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
+      "primary_url": "https://www.marketwatch.com/story/october-can-be-a-scary-month-for-stocks-heres-what-investors-need-to-watch-this-year-ac1da700?mod=mw_rss_topstories",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "MarketWatch Real-time",
+          "url": "https://www.marketwatch.com/story/october-can-be-a-scary-month-for-stocks-heres-what-investors-need-to-watch-this-year-ac1da700?mod=mw_rss_topstories",
+          "published_at": "2026-10-04T13:00:00+00:00",
+          "importance_score": 15
+        }
+      ]
+    },
+    {
+      "story_id": "07eb78049da4",
+      "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "low",
+      "importance_score": 15,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
-          "published_at": "2026-10-03T13:30:48+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
+          "published_at": "2026-10-04T12:57:45+00:00",
           "importance_score": 15
         }
       ]
     },
     {
-      "story_id": "0eca2ecf87f1",
-      "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
+      "story_id": "90a39d88c75f",
+      "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
+      "primary_url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
-          "published_at": "2026-10-03T13:12:27+00:00",
+          "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+          "published_at": "2026-10-04T12:53:12+00:00",
+          "importance_score": 15
+        }
+      ]
+    },
+    {
+      "story_id": "26a74342f8bf",
+      "title": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
+      "label": "other",
+      "label_zh": "综合",
+      "importance_label": "low",
+      "importance_score": 15,
+      "source_count": 1,
+      "primary_url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
+      "markets": [
+        "global"
+      ],
+      "items": [
+        {
+          "source": "CNBC Top News",
+          "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
+          "published_at": "2026-10-04T12:00:01+00:00",
           "importance_score": 15
         }
       ]
@@ -6547,91 +7314,49 @@
         {
           "source": "CNBC Top News",
           "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
-          "published_at": "2026-10-03T12:55:31+00:00",
+          "published_at": "2026-10-04T09:33:19+00:00",
           "importance_score": 15
         }
       ]
     },
     {
-      "story_id": "85236d21305f",
-      "title": "America’s data center fight is a preview of what's to come for the rest of the world",
+      "story_id": "e7ac6e6981dd",
+      "title": "Singapore debuts a state-backed dating app for young government workers as it works to slow a demographic crisis",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
+      "primary_url": "https://www.cnbc.com/2026/10/04/government-dating-app-fertility-singapore-asia.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
-          "published_at": "2026-10-03T12:39:29+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/government-dating-app-fertility-singapore-asia.html",
+          "published_at": "2026-10-04T05:09:49+00:00",
           "importance_score": 15
         }
       ]
     },
     {
-      "story_id": "8fee03035cde",
-      "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
+      "story_id": "76f0a99e5bb0",
+      "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
       "label": "other",
       "label_zh": "综合",
       "importance_label": "low",
       "importance_score": 15,
       "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
+      "primary_url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
       "markets": [
         "global"
       ],
       "items": [
         {
           "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
-          "published_at": "2026-10-03T12:34:59+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "df47a5d52cc6",
-      "title": "Private capital is reshaping Hollywood moviemaking",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
-          "published_at": "2026-10-03T12:00:01+00:00",
-          "importance_score": 15
-        }
-      ]
-    },
-    {
-      "story_id": "a995e9d5846c",
-      "title": "High-tech vehicles are driving up auto repair costs for shops and consumers",
-      "label": "other",
-      "label_zh": "综合",
-      "importance_label": "low",
-      "importance_score": 15,
-      "source_count": 1,
-      "primary_url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
-      "markets": [
-        "global"
-      ],
-      "items": [
-        {
-          "source": "CNBC Top News",
-          "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
-          "published_at": "2026-10-03T12:00:01+00:00",
+          "url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
+          "published_at": "2026-10-04T05:00:01+00:00",
           "importance_score": 15
         }
       ]
