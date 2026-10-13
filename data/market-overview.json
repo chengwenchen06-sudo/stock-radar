@@ -1,8 +1,80 @@
 {
-  "generated_at": "2026-10-12T00:49:16.532683+00:00",
-  "indices": [],
-  "breadth": {},
-  "sectors_top": [],
-  "sectors_bottom": [],
-  "status": "failed"
+  "generated_at": "2026-10-13T02:47:30.356770+00:00",
+  "indices": [
+    {
+      "code": "000001",
+      "name": "上证指数",
+      "price": 3760.83,
+      "change_pct": -0.96,
+      "market": "cn"
+    },
+    {
+      "code": "000300",
+      "name": "沪深300",
+      "price": 4231.89,
+      "change_pct": -1.31,
+      "market": "cn"
+    },
+    {
+      "code": "000688",
+      "name": "科创50",
+      "price": 1396.12,
+      "change_pct": -2.14,
+      "market": "cn"
+    }
+  ],
+  "breadth": {
+    "total": 5000,
+    "up": 1500,
+    "down": 2750,
+    "flat": 750,
+    "limit_up": 32,
+    "limit_down": 10,
+    "note": "estimated breadth from index direction; limit up/down from AkShare"
+  },
+  "sectors_top": [
+    {
+      "name": "期货",
+      "change_pct": 4.32
+    },
+    {
+      "name": "纺织化学制品",
+      "change_pct": 3.43
+    },
+    {
+      "name": "焦炭Ⅲ",
+      "change_pct": 2.02
+    },
+    {
+      "name": "焦炭Ⅱ",
+      "change_pct": 2.02
+    },
+    {
+      "name": "印制电路板",
+      "change_pct": 1.84
+    }
+  ],
+  "sectors_bottom": [
+    {
+      "name": "锂电专用设备",
+      "change_pct": -6.35
+    },
+    {
+      "name": "电池化学品",
+      "change_pct": -5.59
+    },
+    {
+      "name": "视频媒体",
+      "change_pct": -5.5
+    },
+    {
+      "name": "电池",
+      "change_pct": -5.23
+    },
+    {
+      "name": "诊断服务",
+      "change_pct": -5.18
+    }
+  ],
+  "status": "ok"
 }
