@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T00:01:32.867399+00:00",
+  "generated_at": "2026-10-17T23:34:18.560341+00:00",
   "successful_sites": 12,
   "failed_sites": 0,
   "zero_item_sites": 0,
@@ -10,7 +10,7 @@
       "ok": true,
       "error": "",
       "item_count": 150,
-      "elapsed_seconds": 2.57
+      "elapsed_seconds": 3.92
     },
     {
       "site_id": "cninfo",
@@ -18,15 +18,15 @@
       "ok": true,
       "error": "",
       "item_count": 60,
-      "elapsed_seconds": 3.98
+      "elapsed_seconds": 3.33
     },
     {
       "site_id": "wallstcn_live",
       "site_name": "华尔街见闻快讯",
       "ok": true,
       "error": "",
-      "item_count": 430,
-      "elapsed_seconds": 43.68
+      "item_count": 153,
+      "elapsed_seconds": 12.24
     },
     {
       "site_id": "wallstcn_art",
@@ -34,7 +34,7 @@
       "ok": true,
       "error": "",
       "item_count": 80,
-      "elapsed_seconds": 8.31
+      "elapsed_seconds": 6.19
     },
     {
       "site_id": "hkexnews",
@@ -42,7 +42,7 @@
       "ok": true,
       "error": "",
       "item_count": 30,
-      "elapsed_seconds": 1.31
+      "elapsed_seconds": 1.53
     },
     {
       "site_id": "sec_edgar_8k",
@@ -50,7 +50,7 @@
       "ok": true,
       "error": "",
       "item_count": 80,
-      "elapsed_seconds": 2.3
+      "elapsed_seconds": 2.96
     },
     {
       "site_id": "akshare_zt",
@@ -58,7 +58,7 @@
       "ok": true,
       "error": "",
       "item_count": 61,
-      "elapsed_seconds": 1.91
+      "elapsed_seconds": 2.02
     },
     {
       "site_id": "akshare_zbgc",
@@ -66,7 +66,7 @@
       "ok": true,
       "error": "",
       "item_count": 49,
-      "elapsed_seconds": 0.99
+      "elapsed_seconds": 0.91
     },
     {
       "site_id": "akshare_lhb",
@@ -74,15 +74,15 @@
       "ok": true,
       "error": "",
       "item_count": 55,
-      "elapsed_seconds": 2.12
+      "elapsed_seconds": 1.26
     },
     {
       "site_id": "akshare_eco",
       "site_name": "AkShare 财经日历",
       "ok": true,
       "error": "",
-      "item_count": 265,
-      "elapsed_seconds": 25.27
+      "item_count": 267,
+      "elapsed_seconds": 18.01
     },
     {
       "site_id": "akshare_news",
@@ -90,7 +90,7 @@
       "ok": true,
       "error": "",
       "item_count": 70,
-      "elapsed_seconds": 6.3
+      "elapsed_seconds": 6.23
     },
     {
       "site_id": "opml",
@@ -98,7 +98,7 @@
       "ok": true,
       "error": "",
       "item_count": 40,
-      "elapsed_seconds": 5.45
+      "elapsed_seconds": 5.21
     }
   ]
 }
