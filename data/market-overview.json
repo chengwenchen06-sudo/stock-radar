@@ -1,8 +1,80 @@
 {
-  "generated_at": "2026-11-02T01:23:52.644940+00:00",
-  "indices": [],
-  "breadth": {},
-  "sectors_top": [],
-  "sectors_bottom": [],
-  "status": "failed"
+  "generated_at": "2026-11-03T03:25:00.639308+00:00",
+  "indices": [
+    {
+      "code": "000001",
+      "name": "上证指数",
+      "price": 3612.12,
+      "change_pct": -0.71,
+      "market": "cn"
+    },
+    {
+      "code": "000300",
+      "name": "沪深300",
+      "price": 4016.03,
+      "change_pct": -0.02,
+      "market": "cn"
+    },
+    {
+      "code": "000688",
+      "name": "科创50",
+      "price": 1161.95,
+      "change_pct": -2.92,
+      "market": "cn"
+    }
+  ],
+  "breadth": {
+    "total": 5000,
+    "up": 1500,
+    "down": 2750,
+    "flat": 750,
+    "limit_up": 51,
+    "limit_down": 4,
+    "note": "estimated breadth from index direction; limit up/down from AkShare"
+  },
+  "sectors_top": [
+    {
+      "name": "教育运营及其他",
+      "change_pct": 9.37
+    },
+    {
+      "name": "蓄电池及其他电池",
+      "change_pct": 5.46
+    },
+    {
+      "name": "文字媒体",
+      "change_pct": 5.2
+    },
+    {
+      "name": "视频媒体",
+      "change_pct": 5.16
+    },
+    {
+      "name": "涂料",
+      "change_pct": 4.45
+    }
+  ],
+  "sectors_bottom": [
+    {
+      "name": "半导体设备",
+      "change_pct": -4.21
+    },
+    {
+      "name": "医疗研发外包",
+      "change_pct": -3.67
+    },
+    {
+      "name": "诊断服务",
+      "change_pct": -3.48
+    },
+    {
+      "name": "通信网络设备及器件",
+      "change_pct": -3.2
+    },
+    {
+      "name": "半导体材料",
+      "change_pct": -2.96
+    }
+  ],
+  "status": "ok"
 }
