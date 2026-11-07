@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-06T02:46:06.570095+00:00",
+  "generated_at": "2026-11-07T01:38:54.647846+00:00",
   "indices": [
     {
       "code": "000001",
       "name": "上证指数",
-      "price": 3649.06,
-      "change_pct": -1.11,
+      "price": 3649.18,
+      "change_pct": -1.1,
       "market": "cn"
     },
     {
       "code": "000300",
       "name": "沪深300",
-      "price": 4057.16,
-      "change_pct": -1.37,
+      "price": 4054.28,
+      "change_pct": -1.44,
       "market": "cn"
     },
     {
       "code": "000688",
       "name": "科创50",
-      "price": 1272.21,
-      "change_pct": -1.12,
+      "price": 1253.2,
+      "change_pct": -2.6,
       "market": "cn"
     }
   ],
@@ -28,52 +28,52 @@
     "up": 1000,
     "down": 3250,
     "flat": 750,
-    "limit_up": 23,
-    "limit_down": 0,
+    "limit_up": 32,
+    "limit_down": 15,
     "note": "estimated breadth from index direction; limit up/down from AkShare"
   },
   "sectors_top": [
     {
-      "name": "种子",
-      "change_pct": 5.45
+      "name": "视频媒体",
+      "change_pct": 6.25
     },
     {
-      "name": "视频媒体",
-      "change_pct": 3.97
+      "name": "种子",
+      "change_pct": 4.64
     },
     {
       "name": "卫浴电器",
-      "change_pct": 3.64
+      "change_pct": 3.46
     },
     {
-      "name": "种植业",
-      "change_pct": 3.4
+      "name": "其他养殖",
+      "change_pct": 3.18
     },
     {
-      "name": "其他种植业",
-      "change_pct": 2.31
+      "name": "电信运营商",
+      "change_pct": 2.87
     }
   ],
   "sectors_bottom": [
     {
       "name": "印制电路板",
-      "change_pct": -4.47
+      "change_pct": -5.86
     },
     {
       "name": "元件",
-      "change_pct": -4.06
-    },
-    {
-      "name": "玻纤制造",
-      "change_pct": -3.62
+      "change_pct": -5.13
     },
     {
       "name": "通信线缆及配套",
-      "change_pct": -3.51
+      "change_pct": -4.78
     },
     {
       "name": "医疗研发外包",
-      "change_pct": -3.46
+      "change_pct": -4.67
+    },
+    {
+      "name": "玻纤制造",
+      "change_pct": -4.65
     }
   ],
   "status": "ok"
