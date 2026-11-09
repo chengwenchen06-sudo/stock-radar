@@ -1,65 +1,65 @@
 {
-  "generated_at": "2026-11-08T01:14:55.510781+00:00",
+  "generated_at": "2026-11-09T01:33:28.324490+00:00",
   "total": 10,
   "quotes": {
     "600519": {
       "name": "贵州茅台",
-      "price": 1453.0,
-      "change_pct": 0.07,
+      "price": 1444.61,
+      "change_pct": -0.58,
       "market": "cn"
     },
     "000001": {
       "name": "平安银行",
-      "price": 11.81,
-      "change_pct": 1.46,
+      "price": 11.8,
+      "change_pct": -0.08,
       "market": "cn"
     },
     "000002": {
       "name": "万  科Ａ",
-      "price": 3.24,
-      "change_pct": -2.7,
+      "price": 3.25,
+      "change_pct": 0.31,
       "market": "cn"
     },
     "600036": {
       "name": "招商银行",
-      "price": 42.88,
-      "change_pct": 0.8,
+      "price": 42.56,
+      "change_pct": -0.75,
       "market": "cn"
     },
     "601318": {
       "name": "中国平安",
-      "price": 54.5,
-      "change_pct": 0.28,
+      "price": 54.32,
+      "change_pct": -0.33,
       "market": "cn"
     },
     "300750": {
       "name": "宁德时代",
-      "price": 254.22,
-      "change_pct": -3.73,
+      "price": 252.4,
+      "change_pct": -0.72,
       "market": "cn"
     },
     "688981": {
       "name": "中芯国际",
-      "price": 110.9,
-      "change_pct": 0.19,
+      "price": 110.52,
+      "change_pct": -0.34,
       "market": "cn"
     },
     "002594": {
       "name": "比亚迪",
-      "price": 85.23,
-      "change_pct": -1.18,
+      "price": 85.45,
+      "change_pct": 0.26,
       "market": "cn"
     },
     "000858": {
       "name": "五 粮 液",
-      "price": 75.34,
-      "change_pct": -0.63,
+      "price": 75.36,
+      "change_pct": 0.03,
       "market": "cn"
     },
     "000333": {
       "name": "美的集团",
-      "price": 89.6,
-      "change_pct": 1.68,
+      "price": 88.77,
+      "change_pct": -0.93,
       "market": "cn"
     }
   }
