@@ -1,8 +1,50 @@
 {
-  "generated_at": "2026-11-16T01:45:25.354623+00:00",
+  "generated_at": "2026-11-17T04:31:01.125004+00:00",
   "indices": [],
   "breadth": {},
-  "sectors_top": [],
-  "sectors_bottom": [],
+  "sectors_top": [
+    {
+      "name": "集成电路制造",
+      "change_pct": 7.41
+    },
+    {
+      "name": "半导体设备",
+      "change_pct": 5.94
+    },
+    {
+      "name": "半导体材料",
+      "change_pct": 5.89
+    },
+    {
+      "name": "集成电路封测",
+      "change_pct": 5.32
+    },
+    {
+      "name": "电子化学品Ⅲ",
+      "change_pct": 5.18
+    }
+  ],
+  "sectors_bottom": [
+    {
+      "name": "其他数字媒体",
+      "change_pct": -6.97
+    },
+    {
+      "name": "院线",
+      "change_pct": -6.55
+    },
+    {
+      "name": "影视院线",
+      "change_pct": -6.16
+    },
+    {
+      "name": "影视动漫制作",
+      "change_pct": -6.05
+    },
+    {
+      "name": "稀土",
+      "change_pct": -5.96
+    }
+  ],
   "status": "failed"
 }
