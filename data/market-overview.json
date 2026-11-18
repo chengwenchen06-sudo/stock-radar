@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-11-17T04:31:01.125004+00:00",
+  "generated_at": "2026-11-18T03:28:01.653157+00:00",
   "indices": [],
   "breadth": {},
   "sectors_top": [
     {
-      "name": "集成电路制造",
-      "change_pct": 7.41
+      "name": "冰洗",
+      "change_pct": 4.48
     },
     {
-      "name": "半导体设备",
-      "change_pct": 5.94
+      "name": "通信工程及服务",
+      "change_pct": 4.0
     },
     {
-      "name": "半导体材料",
-      "change_pct": 5.89
+      "name": "白色家电",
+      "change_pct": 3.46
     },
     {
-      "name": "集成电路封测",
-      "change_pct": 5.32
+      "name": "厨房小家电",
+      "change_pct": 3.0
     },
     {
-      "name": "电子化学品Ⅲ",
-      "change_pct": 5.18
+      "name": "彩电",
+      "change_pct": 2.89
     }
   ],
   "sectors_bottom": [
     {
-      "name": "其他数字媒体",
-      "change_pct": -6.97
+      "name": "院线",
+      "change_pct": -6.68
     },
     {
-      "name": "院线",
-      "change_pct": -6.55
+      "name": "医疗研发外包",
+      "change_pct": -4.77
     },
     {
       "name": "影视院线",
-      "change_pct": -6.16
+      "change_pct": -4.74
     },
     {
-      "name": "影视动漫制作",
-      "change_pct": -6.05
+      "name": "百货",
+      "change_pct": -4.46
     },
     {
-      "name": "稀土",
-      "change_pct": -5.96
+      "name": "白银",
+      "change_pct": -4.42
     }
   ],
   "status": "failed"
