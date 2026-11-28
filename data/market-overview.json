@@ -1,8 +1,50 @@
 {
-  "generated_at": "2026-11-27T04:08:47.835389+00:00",
+  "generated_at": "2026-11-28T03:54:27.095172+00:00",
   "indices": [],
   "breadth": {},
-  "sectors_top": [],
-  "sectors_bottom": [],
+  "sectors_top": [
+    {
+      "name": "半导体设备",
+      "change_pct": 17.6
+    },
+    {
+      "name": "半导体材料",
+      "change_pct": 16.57
+    },
+    {
+      "name": "集成电路制造",
+      "change_pct": 16.49
+    },
+    {
+      "name": "半导体",
+      "change_pct": 15.0
+    },
+    {
+      "name": "电子化学品Ⅲ",
+      "change_pct": 14.74
+    }
+  ],
+  "sectors_bottom": [
+    {
+      "name": "水产养殖",
+      "change_pct": -3.06
+    },
+    {
+      "name": "国有大型银行Ⅲ",
+      "change_pct": -2.17
+    },
+    {
+      "name": "电信运营商",
+      "change_pct": -1.96
+    },
+    {
+      "name": "渔业",
+      "change_pct": -1.59
+    },
+    {
+      "name": "银行Ⅱ",
+      "change_pct": -1.07
+    }
+  ],
   "status": "failed"
 }
